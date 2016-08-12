@@ -12,3 +12,6 @@
 /*Elementos ocultos*/
 .hidden,
 li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--downloads { display: none!important; }
+
+/*Margin*/
+.margin-top--small { margin-top: 10px; }
