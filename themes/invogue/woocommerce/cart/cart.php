@@ -141,7 +141,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<div class="coupon">
 
 				<div class="htheme_coupon_wrap">
-					<div class="htheme_coupon_open htheme_cart_button_light" data-toggle="open">HAVE A COUPON?</div>
+					<div class="htheme_coupon_open htheme_cart_button_light" data-toggle="open">¿Tienes un cupon?</div>
 					<div class="htheme_coupon_inner">
 						<div class="htheme_form_field_item">
 							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" />
