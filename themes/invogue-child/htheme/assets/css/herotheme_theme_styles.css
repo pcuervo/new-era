@@ -1,5 +1,15 @@
 /* inVogue Child Theme - Stylesheet - Custom Developer Styles */
 
+/*HEADER*/
+	/*Header top*/
+.htheme_small_navigation { background-color: #fff!important; }
+.htheme_small_navigation a { color: #000000!important; font-weight: bold!important; }
+.htheme_small_navigation .htheme_inner_col { float: right; }
+.htheme_share.htheme_box_toggle { display: none; }
+
+	/*Header bottom*/
+.htheme_default_navigation { background-color: #000000!important; }
+
 /*WOOCOMMERCE*/
 /*Elementos ocultos*/
 .hidden,
@@ -7,3 +17,11 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 
 /*Margin*/
 .margin-top--small { margin-top: 10px; }
+
+/*Display*/
+.hidden { display: none; }
+.absolute { position: absolute; }
+.opacity--0 { opacity: 0; }
+
+.htheme_icon_nav_cart:before,
+.htheme_icon_nav_search:before { position: absolute; left: 0px; opacity: 0;  }

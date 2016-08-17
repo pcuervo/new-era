@@ -3,7 +3,7 @@
 	Plugin Name: Hero Utility Plugin
 	Plugin URI: http://www.heroplugins.com
 	Description: Utility plugin for HeroPlugin themes.
-	Version: 0.1.3
+	Version: 0.1.4
 	Author: Hero Plugins
 	Author URI: http://www.heroplugins.com
 	License: GPLv2 or later
@@ -56,10 +56,10 @@
 		private $plugin_name = 'hutility';
 		private $plugin_friendly_name = 'Hero Utility Plugin';
 		private $plugin_friendly_description = 'Utility plugin for HeroPlugin themes.';
-		private $plugin_version = '0.1.3';
+		private $plugin_version = '0.1.4';
 		private $plugin_prefix = 'hutility_';
 		private $first_release = '2016-06-27';
-		private $last_update = '2016-07-25';
+		private $last_update = '2016-08-16';
 		private $api_version = '2.0.1';
 		
 		#CLASS VARS

@@ -65,7 +65,7 @@ class htheme_faq {
 			'has_archive'        	=> 	true,
 			'hierarchical'       	=> 	false,
 			'menu_position'      	=> 	100,
-			'supports'           	=> 	array( 'title', 'editor' )
+			'supports'           	=> 	array( 'title', 'editor', 'page-attributes' )
 		);
 
 		register_post_type( $this->token, $args );
