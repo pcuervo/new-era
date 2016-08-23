@@ -48,7 +48,10 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 /*CATEGORY*/
 .header-category {
 	text-align: center;
-	background-image:
+	background-image: url(../images/header-category.png);
+	background-position: center;
+	background-size: cover;
+	padding: 70px 0;
 }
 
 /*PRODUCTS*/
