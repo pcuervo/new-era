@@ -18,6 +18,11 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!-- WP_HEAD -->
 	<?php wp_head(); ?>
+
+	<!-- Typekiy -->
+	<script src="https://use.typekit.net/fss2wri.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 </head>
 <?php
 
