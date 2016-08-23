@@ -10,7 +10,7 @@
 			<div class="htheme_inner_col">
 				<!-- TITLE DEFAULT -->
 				<div class="[ header-category ]">
-					<h1><?php the_title(); ?></h1>
+					<h1><?php single_term_title() ?></h1>
 				</div>
 			</div>
 		</div>
