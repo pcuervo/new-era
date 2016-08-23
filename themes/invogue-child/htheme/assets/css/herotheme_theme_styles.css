@@ -111,6 +111,8 @@ body {
 h2 { font-weight: bold!important }
 a { text-decoration: none!important; }
 
+.text-left { text-align: left!important; }
+
 	/*Color*/
 .color-light { color: #fff; }
 .color-dark { color: #000000; }
