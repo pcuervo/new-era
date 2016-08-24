@@ -24,7 +24,7 @@
 .htheme_default_navigation { background-color: #000000!important; }
 
 .woocommerce-page .htheme_intro_item { display: none!important; }
-.woocommerce-page .htheme_top_holder { height: 0px!important; }
+.woocommerce-page .htheme_top_holder { height: 80px!important; }
 .htheme_content_holder input,
 .htheme_content_holder .select2-container { border: 1px solid #000000!important; }
 
@@ -170,7 +170,7 @@ a { text-decoration: none!important; }
 .htheme_vc_row_contained.col-bg-image .wpb_column { padding-left: 10px!important; padding-right: 10px!important; }
 
 	/*Container*/
-
+pre { white-space: inherit!important; }
 
 /*Buttons*/
 .htheme_icon_backtop {
