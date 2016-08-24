@@ -86,10 +86,10 @@ function wc_get_account_menu_items() {
 	);
 
 	$items = array(
-		'dashboard'       => __( 'Mi cuenta', 'woocommerce' ),
+		'dashboard'       => __( 'Dashboard', 'woocommerce' ),
 		'orders'          => __( 'Orders', 'woocommerce' ),
 		'downloads'       => __( 'Downloads', 'woocommerce' ),
-		'edit-address'    => __( 'Direcciones', 'woocommerce' ),
+		'edit-address'    => __( 'Addresses', 'woocommerce' ),
 		'payment-methods' => __( 'Payment Methods', 'woocommerce' ),
 		'edit-account'    => __( 'Account Details', 'woocommerce' ),
 		'customer-logout' => __( 'Logout', 'woocommerce' ),
