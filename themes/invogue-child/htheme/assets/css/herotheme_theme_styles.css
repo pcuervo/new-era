@@ -187,3 +187,6 @@ a { text-decoration: none!important; }
 	border-radius: 10px;
 	padding: 30px;
 }
+
+@media(max-width:768px){ .hidden--sm { display: none; } }
+@media(min-width:769px){ .hidden--l { display: none; } }
