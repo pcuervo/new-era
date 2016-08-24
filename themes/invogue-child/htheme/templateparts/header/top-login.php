@@ -24,7 +24,7 @@
 
 <!-- search -->
 <div class="htheme_account_holder">
-	<span class="vc_icon_element-icon fa fa-search"></span>
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/icons/search.png" alt="icono carrito">
 	<a class="htheme_icon_nav_search htheme_overlay_search"></a>
 </div>
 
@@ -50,7 +50,10 @@
 <div class="htheme_account_holder">
 	<div class="htheme_box_toggle htheme_cart_box" data-toggle="open">
 		<span class="vc_icon_element-icon fa fa-shopping-bag"></span>
-		<a class="htheme_icon_nav_cart"><span><!-- LOAD CART COUNT --></span></a>
+		<a class="htheme_icon_nav_cart">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/icons/shop.png" alt="icono carrito">
+			<span><!-- LOAD CART COUNT --></span>
+		</a>
 		<div class="htheme_large_white_box htheme_white_box">
 			<div class="htheme_box_inner">
 				<div class="htheme_box_item" data-id="1">
