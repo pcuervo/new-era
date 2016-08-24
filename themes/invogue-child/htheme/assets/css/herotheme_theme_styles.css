@@ -24,7 +24,7 @@
 .htheme_default_navigation { background-color: #000000!important; }
 
 .woocommerce-page .htheme_intro_item { display: none!important; }
-.woocommerce-page .htheme_top_holder { height: 80px!important; }
+.woocommerce-page .htheme_top_holder { height: 40px!important; }
 .htheme_content_holder input,
 .htheme_content_holder .select2-container,
 .htheme_content_holder textarea { border: 1px solid #000000!important; }
@@ -137,7 +137,7 @@ body {
 
 .margin-left--5p { margin-left: 5%; }
 .margin-left--15p { margin-left: 15%; }
-
+.margin-left--small { margin-left: 5px; }
 .margin-right--5 { margin-right: 5px; }
 
 	/*Tipography*/
@@ -149,6 +149,8 @@ a { text-decoration: none!important; }
 	/*Color*/
 .color-light { color: #fff; }
 .color-dark { color: #000000; }
+
+.woocommerce-page .woocommerce-Price-amount { color: #000000!important; }
 
 	/*Box model*/
 .position-initial { position: inherit!important; }
@@ -172,6 +174,9 @@ a { text-decoration: none!important; }
 
 	/*Container*/
 pre { white-space: inherit!important; }
+
+input { text-transform: none!important;}
+.htheme_coupon_inner input[type=text]{ height: 48px!important; }
 
 /*Buttons*/
 .htheme_icon_backtop {
