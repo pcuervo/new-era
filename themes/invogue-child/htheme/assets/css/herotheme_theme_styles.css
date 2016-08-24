@@ -11,7 +11,16 @@
 .htheme_large_white_box.htheme_white_box .htheme_button_container { margin-bottom: 10px; }
 .htheme_large_white_box.htheme_white_box .woocommerce-Price-amount { color: #000000!important; }
 
+.htheme_icon_search_btn:after { display: none; }
+.search-header {
+	text-transform: none!important;
+	font-size: 12px!important;
+	border: 0px!important;
+	outline: none!important;
+}
+
 	/*Header bottom*/
+
 .htheme_default_navigation { background-color: #000000!important; }
 
 /*FOOTER*/
@@ -108,8 +117,11 @@ body {
 	font-family: "proxima-nova",sans-serif;
 }
 
+.width--20 { width: 20px!important; }
 .width--90p{ width: 90%!important; }
 .width--70p{ width: 70%!important; }
+
+.height--30 { height: 30px!important; }
 
 .margin-auto { margin: auto!important; }
 
@@ -131,10 +143,21 @@ a { text-decoration: none!important; }
 .color-light { color: #fff; }
 .color-dark { color: #000000; }
 
+	/*Box model*/
+.position-initial { position: inherit!important; }
 .relative { position: relative; }
 .top--7 { top: 7px; }
+.top---16 { top: -16px; }
+
+.inline-block { display: inline-block; }
+
+.middle { vertical-align: middle; }
 
 .hidden { display: none; }
+
+.border-bottom--dark { border-bottom: 1px solid #000000!important;}
+
+.min-width--170 { min-width: 170px; }
 
 @media(min-width:768px){.min-height--xlarge-l .vc_column-inner { min-height: 380px!important; }}
 

@@ -24,8 +24,12 @@
 
 <!-- search -->
 <div class="htheme_account_holder">
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/icons/search.png" alt="icono carrito">
-	<a class="htheme_icon_nav_search htheme_overlay_search"></a>
+	<form class="border-bottom--dark" action="<?php echo home_url( '/' ); ?>" method="get">
+			<input class="[ min-width--170 ][ inline-block ][ middle ][ search-header ]" placeholder="Búsqueda" type="text" value="<?php esc_attr(get_search_query()); ?>" name="s" id="s">
+			<div class="htheme_icon_search_btn [ inline-block ][ middle ][ position-initial ][ height--30 ][ width--20 ]">
+				<img class="relative top---16" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/icons/search.png" alt="icono carrito">
+			</div>
+	</form>
 </div>
 
 <div class="htheme_account_holder">
