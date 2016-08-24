@@ -45,6 +45,19 @@ if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_us
 
 			<div class="col-2">
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+
+				<div class="box-review">
+					<h3 id="order_review_heading"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
+
+					<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
+
+					<div id="order_review" class="woocommerce-checkout-review-order">
+						<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+					</div>
+
+					<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
+				</div>
+
 			</div>
 		</div>
 
@@ -52,15 +65,6 @@ if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_us
 
 	<?php endif; ?>
 
-	<h3 id="order_review_heading"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
-
-	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
-
-	<div id="order_review" class="woocommerce-checkout-review-order">
-		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-	</div>
-
-	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
 </form>
 
