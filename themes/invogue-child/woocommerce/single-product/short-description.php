@@ -26,11 +26,12 @@ if ( ! $post->post_excerpt ) {
 }
 
 global $product;
-
+$id = $product->id;
 ?>
 <div itemprop="description" class="htheme_single_product_excerpt htheme_default_content">
 	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
 </div>
-
-<?php echo $product->get_categories( ', ', '<span class="htheme_single_product_category htheme_h2_sub">' . _n( 'Category:', '', 'woocommerce' ) . ' ', '</span>' ); ?>
-
+<div class="[ margin-bottom--large ]">
+	<?php echo $product->get_categories( ', ', '<span class="htheme_single_product_category htheme_h2_sub ">' . _n( 'Category:', '', 'woocommerce' ) . ' ', '</span>' ); ?>
+</div>
+<p>ID: <?php echo $id; ?></p>
