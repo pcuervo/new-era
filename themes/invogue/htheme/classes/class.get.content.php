@@ -268,7 +268,7 @@ class htheme_getcontent{
 		</script>
 
 		<?php wp_enqueue_script( 'herothememapapi', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDDt1Fm617cqcy8gfXMqN8_7JpyAz362F4&callback=htheme_initMap' ); ?>
-		
+
 		<?php
 
 	}
@@ -773,7 +773,7 @@ class htheme_getcontent{
 
 		$args = array(
 			'post_type' => 'post',
-			'numberposts' => 2,
+			'numberposts' => 99,
 			'orderby' => 'date',
 			'taxonomy' => 'category',
 			'category' => $categories,
@@ -785,7 +785,7 @@ class htheme_getcontent{
 		if($the_posts){
 
 			$blog_style = '';
-			if(count($the_posts) < 2){
+			if(count($the_posts)){
 				$blog_style = 'htheme_blog_item_full';
 			}
 
@@ -800,10 +800,11 @@ class htheme_getcontent{
 								if(!$image_details[0]){
 									$no_image = 'htheme_no_category_img';
 								}
-								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item '.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
+								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item [ margin-bottom--xlarge ][ width--100p ]'.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
 									$html .= '<div class="htheme_blog_item_inner">';
 										$html .= '<h4>'.esc_html($post->post_title).'</h4>';
-										$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';										
+										/*$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';*/
+										/*$html .= '<a href="'.get_permalink($post->ID).'">VER MÁS</a>';*/
 									$html .= '</div>';
 									$html .= '<div class="htheme_blog_image '.esc_attr($no_image).'" style="background-image:url('.esc_url($image_details[0]).')"></div>';
 								$html .= '</a>';
@@ -862,7 +863,7 @@ class htheme_getcontent{
 										$html .= '</div>';
 										$html .= '<div class="htheme_post_slider_heading">';
 											$html .= '<h4>'.esc_html($post->post_title).'</h4>';
-											$html .= '<div class="htheme_post_slider_category htheme_h4_sub">';												
+											$html .= '<div class="htheme_post_slider_category htheme_h4_sub">';
 												$html .= mysql2date(get_option( 'date_format' ), $post->post_date);
 											$html .= '</div>';
 										$html .= '</div>';

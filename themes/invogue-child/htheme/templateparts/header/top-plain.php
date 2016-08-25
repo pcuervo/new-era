@@ -9,9 +9,11 @@
 		<div class="htheme_container">
 			<div class="htheme_inner_col">
 				<!-- TITLE DEFAULT -->
-				<div class="[ header-category ]">
-					<h1><?php single_term_title() ?></h1>
-				</div>
+				<?php if ( is_page('mi-cuenta') ) { ?>
+					<div class="[ header-category ]">
+						<h1><?php single_term_title() ?></h1>
+					</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
