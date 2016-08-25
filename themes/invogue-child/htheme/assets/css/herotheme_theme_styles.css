@@ -104,6 +104,7 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 	text-align: center;
 	padding: 10px 0!important;
 }
+.htheme_single_product_price ins { padding-left: 10px; }
 .woocommerce-Price-amount,
 .htheme_single_product_category,
 .woocommerce-page .htheme_single_product_price .woocommerce-Price-amount { color: #fff!important; }
@@ -116,6 +117,11 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 }
 
 .single .cart:nth-of-type(2) { display: none!important; }
+
+.htheme_onsale {
+	width: 60px!important; height: 60px!important;
+	line-height: 60px!important;
+}
 
 	/*Message*/
 .woocommerce-message .button, .woocommerce-message .woocommerce-Button.button { color: #FFF200!important; }
@@ -142,6 +148,9 @@ body {
 .margin-left--small { margin-left: 5px; }
 .margin-right--5 { margin-right: 5px; }
 
+.no-padding-top { padding-top: 0px!important; }
+.padding-top--xlarge { padding-top: 50px!important; }
+
 	/*Tipography*/
 h2 { font-weight: bold!important }
 a { text-decoration: none!important; }
@@ -149,10 +158,12 @@ a { text-decoration: none!important; }
 .text-left { text-align: left!important; }
 
 	/*Color*/
-.color-light { color: #fff; }
-.color-dark { color: #000000; }
+.color-light { color: #fff!important; }
+.color-dark,
+.color-dark--all * { color: #000000!important; }
 
 .woocommerce-page .woocommerce-Price-amount { color: #000000!important; }
+.archive.woocommerce-page .woocommerce-Price-amount { color: #fff!important; }
 
 	/*Box model*/
 .position-initial { position: inherit!important; }
@@ -161,6 +172,7 @@ a { text-decoration: none!important; }
 .top---16 { top: -16px; }
 
 .inline-block { display: inline-block; }
+.inline--all * { display: inline!important; }
 
 .float-none { float: none!important; }
 
@@ -208,3 +220,9 @@ input { text-transform: none!important;}
 .box-review td span { color: #000000!important; }
 
 .payment_box p { color: #fff!important; }
+
+/*Search*/
+.htheme_search_row { height: 180px!important; }
+.htheme_search_row .htheme_onsale { top: 0px; right: 0px; }
+@media(max-width: 768px){.htheme_search_row .htheme_search_image { width: 25%!important; } }
+@media(max-width: 400px){ .htheme_search_row .htheme_col_9, .htheme_search_row .htheme_search_image { width: 100%!important; } }
