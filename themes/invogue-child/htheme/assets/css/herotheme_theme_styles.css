@@ -134,6 +134,7 @@ body {
 .margin-auto { margin: auto!important; }
 
 .margin-bottom--small { margin-bottom: 10px!important;}
+.margin-bottom { margin-bottom: 20px!important;}
 .margin-bottom--large { margin-bottom: 30px!important;}
 
 .margin-left--5p { margin-left: 5%; }
@@ -160,6 +161,8 @@ a { text-decoration: none!important; }
 .top---16 { top: -16px; }
 
 .inline-block { display: inline-block; }
+
+.float-none { float: none!important; }
 
 .middle { vertical-align: middle; }
 
