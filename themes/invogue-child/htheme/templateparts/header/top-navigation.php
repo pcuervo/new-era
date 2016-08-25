@@ -41,7 +41,8 @@
 
 ?>
 
-<div class="htheme_navigation">
+
+<div class="htheme_navigation [ js-header ]">
 	<?php if($htheme_header_layout == 2){ ?>
 	<div class="htheme_small_navigation">
 		<div class="htheme_container">
@@ -167,5 +168,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</div><!-- start header -->
+</div><!-- end js-header -->

@@ -102,7 +102,8 @@ function htheme_footer_script() {
 
 	#LOAD SCRIPT FUNCTIONS FILE
 	wp_enqueue_script( 'htheme-script', get_template_directory_uri().'/htheme/assets/js/functions.js', array( 'jquery' ) );
-	//wp_enqueue_script( 'htheme-footer', get_template_directory_uri().'/htheme/assets/js/footer-fixed.js', array( 'jquery' ) );
+	wp_enqueue_script( 'htheme-footer', get_template_directory_uri().'/htheme/assets/js/footer-fixed.js', array( 'jquery' ) );
+
 
 	#VARIABLES CUSTOM PAGE LOAD
 	$htheme_pageLoader = $GLOBALS['htheme_global_object']['settings']['general']['pageLoader'];

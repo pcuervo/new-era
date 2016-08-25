@@ -120,3 +120,5 @@
 	</div>
 </div>
 <!-- LOADER -->
+
+<div class="[ main-body ]">

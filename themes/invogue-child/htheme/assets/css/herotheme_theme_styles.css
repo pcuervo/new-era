@@ -79,6 +79,8 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 	padding: 70px 0;
 }
 
+.archive .header-category { padding: 90px 0 70px; margin-top: 50px; }
+
 /*PRODUCTS*/
 	/*Etiqueta*/
 .htheme_product_list_percent, .htheme_product_list_new, .htheme_onsale {
@@ -226,3 +228,24 @@ input { text-transform: none!important;}
 .htheme_search_row .htheme_onsale { top: 0px; right: 0px; }
 @media(max-width: 768px){.htheme_search_row .htheme_search_image { width: 25%!important; } }
 @media(max-width: 400px){ .htheme_search_row .htheme_col_9, .htheme_search_row .htheme_search_image { width: 100%!important; } }
+
+/*Fijar footer*/
+html,
+body { height: 100%; }
+/*
+.main-body {
+  min-height: -moz-calc(100% - 125px);
+  min-height: -o-calc(100% - 125px);
+  min-height: -webkit-calc(100% - 125px);
+  min-height: calc(100% - 125px);
+  position: relative;
+}
+
+.htheme_footer_holder{
+  width: 100%;
+  position: absolute!important; bottom: 0;
+}
+
+.js-header{
+  width: 100%;
+}*/
