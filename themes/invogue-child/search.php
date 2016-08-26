@@ -67,7 +67,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<?php else : ?>
-				<h4 class="htheme_align_center"><?php esc_html_e('No results have been found!', 'invogue'); ?></h4>
+				<h4 class="htheme_align_center [ margin-top-bottom--xlarge ]"><?php esc_html_e('No se han encontrado resultados!', 'invogue'); ?></h4>
 			<?php endif; ?>
 		</div>
 	</div>

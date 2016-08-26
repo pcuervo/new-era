@@ -141,13 +141,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<div class="coupon [ col-1 ]">
 
 				<div class="htheme_coupon_wrap">
-					<div class="htheme_coupon_open htheme_cart_button_light" data-toggle="open">¿Tienes cupon?</div>
+					<div class="htheme_coupon_open htheme_cart_button_light" data-toggle="open">¿Tienes un cupón?</div>
 					<div class="htheme_coupon_inner">
 						<div class="htheme_form_field_item">
 							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" />
-							<label class="[ margin-left--small ]" for="coupon_code"><?php esc_html_e( 'Coupon Code', 'woocommerce' ); ?></label>
+							<label class="[ margin-left--small ]" for="coupon_code"><?php esc_html_e( 'Código cupón', 'woocommerce' ); ?></label>
 						</div>
-						<input type="submit" class="button htheme_cart_button_dark" name="apply_coupon" value="<?php esc_attr_e( 'Apply', 'woocommerce' ); ?>" />
+						<input type="submit" class="button htheme_cart_button_dark" name="apply_coupon" value="<?php esc_attr_e( 'Aplicar', 'woocommerce' ); ?>" />
 						<?php do_action( 'woocommerce_cart_coupon' ); ?>
 					</div>
 				</div>

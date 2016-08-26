@@ -637,7 +637,7 @@ function htheme_anable_misc_functions(){
 
             jQuery(this).attr('data-toggle', 'close');
 
-            jQuery(this).html('Close coupon!');
+            jQuery(this).html('Cerrar cupón!');
 
         } else {
 
@@ -660,7 +660,7 @@ function htheme_anable_misc_functions(){
 
             jQuery(this).attr('data-toggle', 'open');
 
-            jQuery(this).html('Have a coupon?');
+            jQuery(this).html('Tienes un cupón?');
 
         }
 
