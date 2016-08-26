@@ -159,6 +159,8 @@ body {
 h2 { font-weight: bold!important }
 a { text-decoration: none!important; }
 
+.uppercase { text-transform: uppercase; }
+
 .text-left { text-align: left!important; }
 .text-center { text-align: center!important; }
 
@@ -278,3 +280,12 @@ body { height: 100%; }
 
 /*Blog*/
 @media(min-width: 769px){.principal-blog .htheme_blog_item { width: 48%!important; margin-right: 2%!important; }}
+
+/*Contact*/
+.htheme_contact_form label { margin-left: 15px; margin-top: 13px; }
+.htheme_contact_form label:after { display: none; }
+.htheme_contact_form input,
+.htheme_contact_form textarea {
+	padding: 5px 15px!important;
+	border-left: none!important; border-top: none!important; border-right: none!important;
+}
