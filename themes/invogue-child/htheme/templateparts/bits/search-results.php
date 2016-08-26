@@ -11,6 +11,16 @@
 
 	global $post, $product;
 
+	#VARIABLES
+	$price = get_post_meta( $post->ID, '_regular_price', true );
+	$sale_price = get_post_meta( $post->ID, '_sale_price', true );
+
+	#DATE
+	$now = time(); // or your date as well
+	$your_date = strtotime($post->post_date);
+	$datediff = $now - $your_date;
+	$days = floor($datediff/(60*60*24));
+
 ?>
 
 <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="htheme_search_row">
@@ -20,6 +30,17 @@
 		<?php if ( $product->is_on_sale() ) : ?>
 			<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="htheme_onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
 		<?php endif; ?>
+		<?php
+			#IF PRODUCT IS OLDER THAN 20 DAYS
+			/*if($days <= 20){
+				echo '<div class="htheme_product_list_new">'._e('NUEVO', 'invogue').'</div>';
+			}
+
+			#IF PRODUCT ON SALE SHOW TAG
+			if($product->is_on_sale()){
+				echo '<div class="htheme_product_list_percent">-' . round((($price - $sale_price ) / $price ) * 100) . '%</div>';
+			}*/
+		?>
 	</div>
 	<?php } ?>
 	<div class="htheme_col_9 htheme_position">
