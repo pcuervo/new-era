@@ -800,7 +800,7 @@ class htheme_getcontent{
 								if(!$image_details[0]){
 									$no_image = 'htheme_no_category_img';
 								}
-								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item [ margin-bottom--xlarge ][ width--100p ]'.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
+								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item [ margin-bottom--xlarge ][ width--100p ] '.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
 									$html .= '<div class="htheme_blog_item_inner">';
 										$html .= '<h4>'.esc_html($post->post_title).'</h4>';
 										/*$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';*/

@@ -275,3 +275,6 @@ body { height: 100%; }
 .htheme_blog_categories,
 .htheme_post_sub.htheme_h2_sub,
 .screen-reader-text { display: none!important; }
+
+/*Blog*/
+@media(min-width: 769px){.principal-blog .htheme_blog_item { width: 48%!important; margin-right: 2%!important; }}
