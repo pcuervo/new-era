@@ -21,7 +21,7 @@
 
 	/*Header bottom*/
 
-.htheme_default_navigation { background-color: #000000!important; }
+.htheme_default_navigation,.htheme_inner_navigation { background-color: #000000!important; }
 
 .woocommerce-page .htheme_intro_item { display: none!important; }
 .woocommerce-page .htheme_top_holder { height: 40px!important; }
@@ -48,6 +48,8 @@
 .htheme_footer_social_wrap a:hover { text-decoration: underline!important; }
 .htheme_footer_social_wrap p { float: left!important; margin: 0 10px!important; line-height: 70px!important; }
 .htheme_footer_social_wrap .htheme_footer_social_item { display: none!important; }
+
+@media(max-width:768px){.htheme_footer_holder .htheme_col_3 { margin-bottom: 20px; }}
 
 /*WOOCOMMERCE*/
 /*Elementos ocultos*/
