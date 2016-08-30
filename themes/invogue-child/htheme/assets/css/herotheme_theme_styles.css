@@ -291,3 +291,26 @@ body { height: 100%; }
 	padding: 5px 15px!important;
 	border-left: none!important; border-top: none!important; border-right: none!important;
 }
+
+form.htheme_signup_form { margin-bottom: 20px; }
+form.htheme_signup_form .htheme_row,
+form.htheme_signup_form .htheme_signup_fields,
+form.htheme_signup_form .htheme_signup_form_holder{
+	padding-top: 0px!important; padding-bottom: 0px!important;
+	margin-top: 0px!important; margin-bottom: 0px!important;
+}
+form.htheme_signup_form .htheme_container,
+.htheme_signup_controls * { width: 100%!important; }
+form.htheme_signup_form .htheme_signup_container,
+form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
+#user_signup_email, .htheme_h2_sub { color: #fff!important; }
+.htheme_signup_field_item { border-bottom: 1px solid #fff; }
+.htheme_icon_signup,
+.htheme_icon_signup_btn { display: none; }
+.htheme_form_status_message_success,
+.htheme_form_status_message_error {
+	background-color: transparent!important;
+	margin-bottom: 10px!important;
+}
+.htheme_form_status_message_success { color: #FFF200!important; }
+.htheme_form_status_message_error { color: #fd3a4b!important; }

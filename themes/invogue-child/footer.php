@@ -56,6 +56,12 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 							</div>
 						</div>
 					<?php endif; ?>
+					<div class="htheme_inner_col">
+						<div class="htheme_footer_content">
+							<?php echo do_shortcode('[htheme_signup_slug]'); ?>
+							<p>Suscríbete a nuestro newsletter para recibir las últimas promociones y estar al tanto de nuestras novedades.</p>
+						</div>
+					</div>
 				</div>
 				<?php } ?>
 				<?php if( $htheme_number_cols >= 3 ){ ?>
