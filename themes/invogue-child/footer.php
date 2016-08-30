@@ -46,17 +46,10 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 				<?php } ?>
 				<?php if( $htheme_number_cols >= 2 ){ ?>
 				<div class="<?php echo esc_attr($htheme_col_style); ?>">
-					<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Footer Column (2)') ) : else : ?>
-						<div class="htheme_inner_col">
-							<div class="htheme_footer_heading">
-								<?php esc_html_e('Footer Widget Area (2)', 'invogue'); ?>
-							</div>
-							<div class="htheme_footer_content">
-								<a href="<?php echo esc_url(admin_url('widgets.php')); ?>"><?php esc_html_e('Click here', 'invogue'); ?></a> <?php esc_html_e('to add some widgets.', 'invogue'); ?>
-							</div>
-						</div>
-					<?php endif; ?>
 					<div class="htheme_inner_col">
+						<div class="htheme_footer_heading">
+							NEWLETTER
+						</div>
 						<div class="htheme_footer_content">
 							<?php echo do_shortcode('[htheme_signup_slug]'); ?>
 							<p>Suscríbete a nuestro newsletter para recibir las últimas promociones y estar al tanto de nuestras novedades.</p>
