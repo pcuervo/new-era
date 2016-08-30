@@ -328,3 +328,6 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 }
 .htheme_form_status_message_success { color: #FFF200!important; }
 .htheme_form_status_message_error { color: #fd3a4b!important; }
+
+/*Container*/
+@media(min-width: 1025px) and (max-width: 1200px){ .htheme_vc_row_contained, .htheme_container { width: 990px!important } }
