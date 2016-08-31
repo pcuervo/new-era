@@ -60,7 +60,7 @@
 										<td>6</td>
 										<td>infantil</td>
 									</tr>
-									<tr class="[ background-color--gray--lighter ]">
+									<tr class="[ background-color--gray--medium ]">
 										<td>51.1</td>
 										<td>6 3/8</td>
 										<td>Niño pequeño</td>
@@ -74,7 +74,7 @@
 										<td>53</td>
 										<td>6 3/4</td>
 									</tr>
-									<tr class="[ background-color--gray--lighter ]">
+									<tr class="[ background-color--gray--medium ]">
 										<td>53.9</td>
 										<td>6 7/8</td>
 										<td>Joven</td>

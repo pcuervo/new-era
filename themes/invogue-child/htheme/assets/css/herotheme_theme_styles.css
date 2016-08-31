@@ -190,7 +190,7 @@ a { text-decoration: none!important; }
 
 .background-color--primary { background-color: #FFF200; }
 .background-color--gray--light { background-color: #F6F6F6; }
-.background-color--gray--lighter { background-color: #EBEBEB; }
+.background-color--gray--medium { background-color: #EBEBEB; }
 
 .woocommerce-page .woocommerce-Price-amount { color: #000000!important; }
 .archive.woocommerce-page .woocommerce-Price-amount { color: #fff!important; }
