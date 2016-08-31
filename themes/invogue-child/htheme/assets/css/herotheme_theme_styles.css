@@ -172,6 +172,8 @@ body {
 .no-padding-top { padding-top: 0px!important; }
 .padding-top--xlarge { padding-top: 50px!important; }
 
+.paddin-top-bottom { padding-top: 10px; padding-bottom: 10px; }
+
 	/*Tipography*/
 h2 { font-weight: bold!important }
 a { text-decoration: none!important; }
@@ -185,6 +187,10 @@ a { text-decoration: none!important; }
 .color-light { color: #fff!important; }
 .color-dark,
 .color-dark--all * { color: #000000!important; }
+
+.background-color--primary { background-color: #FFF200; }
+.background-color--gray--light { background-color: #F6F6F6; }
+.background-color--gray--lighter { background-color: #EBEBEB; }
 
 .woocommerce-page .woocommerce-Price-amount { color: #000000!important; }
 .archive.woocommerce-page .woocommerce-Price-amount { color: #fff!important; }
