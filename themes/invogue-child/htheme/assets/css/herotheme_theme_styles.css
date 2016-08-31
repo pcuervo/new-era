@@ -104,6 +104,8 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 .htheme_product_list_options .htheme_icon_list_product_wishlist,
 .htheme_product_list_title:after { display: none!important; }
 
+.single input[type=number]{ font-size: 22px!important; }
+
 	/*Preview*/
 
 .htheme_popup_preview h2 { margin-bottom: 20px; }
@@ -194,6 +196,7 @@ a { text-decoration: none!important; }
 
 .woocommerce-page .woocommerce-Price-amount { color: #000000!important; }
 .archive.woocommerce-page .woocommerce-Price-amount { color: #fff!important; }
+.archive.woocommerce-page .htheme_large_white_box.htheme_white_box .woocommerce-Price-amount { color: #000000!important; }
 
 	/*Box model*/
 .position-initial { position: inherit!important; }
@@ -366,7 +369,13 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 
 #billing_company_field,
 .about_paypal { display: none; }
-
-
-
 .padding-left--small { padding-left: 10px!important; }
+
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 8px;
+}
