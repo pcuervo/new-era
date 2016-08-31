@@ -30,9 +30,6 @@ $cart_url = $woocommerce->cart->get_cart_url();
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
 	<!-- SUB TOTAL -->
-	<div class="htheme_cart_footer_row">
-		<h4 class="htheme_sub_total"><?php esc_html_e( 'Sub total:', 'woocommerce' ); ?> <?php wc_cart_totals_subtotal_html(); ?></h4>
-	</div>
 
 	<!-- COUPON TOTALS -->
 	<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
