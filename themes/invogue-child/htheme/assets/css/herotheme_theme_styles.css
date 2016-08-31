@@ -164,6 +164,7 @@ body {
 .margin-bottom--large { margin-bottom: 30px!important;}
 .margin-bottom--xlarge { margin-bottom: 60px!important;}
 
+.margin-top--30 { margin-top: 30px!important; }
 .margin-top-bottom--xlarge { margin-bottom: 70px!important; margin-top: 70px!important;}
 
 .margin-left--5p { margin-left: 5%; }
@@ -193,6 +194,8 @@ a { text-decoration: none!important; }
 .background-color--primary { background-color: #FFF200; }
 .background-color--gray--light { background-color: #F6F6F6; }
 .background-color--gray--medium { background-color: #EBEBEB; }
+
+.border-bottom--dark {border-bottom: 1px solid #000000;}
 
 .woocommerce-page .woocommerce-Price-amount { color: #000000!important; }
 .archive.woocommerce-page .woocommerce-Price-amount { color: #fff!important; }
@@ -313,7 +316,7 @@ body { height: 100%; }
 .htheme_contact_form input,
 .htheme_contact_form textarea {
 	padding: 5px 15px!important;
-	border-left: none!important; border-top: none!important; border-right: none!important;
+	border: none!important; ;
 }
 
 /*Newsletter*/
@@ -372,10 +375,27 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 .padding-left--small { padding-left: 10px!important; }
 
 
-
+/*Forms*/
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 8px;
+}
+
+
+.select {
+	border-bottom: 1px solid #000000;
+	width: 100%;
+	overflow: hidden;
+	background: #fff url("arrowdown.gif") no-repeat 90% center;
+}
+.select select {
+	padding: 5px 8px;
+	width: 110%;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	background-image: none;
+	appearance: none;
 }
