@@ -15,6 +15,16 @@
 	$htheme_header_cart_status = $GLOBALS['htheme_global_object']['settings']['header']['optionCart'];
 	$htheme_header_wishlist_status = $GLOBALS['htheme_global_object']['settings']['header']['optionWishlist'];
 	$htheme_header_search_status = $GLOBALS['htheme_global_object']['settings']['header']['optionSearch'];
+	$htheme_header_hamburger_status = $GLOBALS['htheme_global_object']['settings']['header']['hamburger'];
+
+	$htheme_burger = '';
+
+	if($htheme_header_hamburger_status == 'true'){
+		$htheme_burger = 'htheme_is_burger';
+		get_template_part( 'htheme/templateparts/header/top', 'hamburger' );
+	}
+
+	$htheme_woocommerce_wishlist_page = $GLOBALS['htheme_global_object']['settings']['woocommerce']['wishlistPage'];
 
 	$cart_style = '';
 	$nav_icon_style = '';
@@ -41,7 +51,7 @@
 
 ?>
 
-<div class="htheme_navigation">
+<div class="htheme_navigation <?php echo esc_attr($htheme_burger); ?>">
 	<?php if($htheme_header_layout == 2){ ?>
 	<div class="htheme_small_navigation">
 		<div class="htheme_container">
@@ -95,11 +105,16 @@
 										$login_status = 'out';
 										$toggle_classes = '';
 										$href = '';
+										$htheme_wishlist_page = '';
 										if(is_user_logged_in() && class_exists( 'WooCommerce' )){
 											$login_status = 'in';
-											$page = get_page_by_title('Wishlist');
-											if($page){
-												$href = 'href="'.esc_url(get_permalink($page->ID)).'"';
+											if($htheme_woocommerce_wishlist_page != ''){
+												$htheme_wishlist_page = get_post(intval($htheme_woocommerce_wishlist_page));
+											} else {
+												$htheme_wishlist_page = get_page_by_title('Wishlist');
+											}
+											if($htheme_wishlist_page){
+												$href = 'href="'.esc_url(get_permalink($htheme_wishlist_page->ID)).'"';
 											}
 										} else {
 											$toggle_classes = 'class="htheme_box_toggle htheme_wishlist_box" data-toggle="open"';
@@ -141,11 +156,14 @@
 													</div>
 												</div>
 												<div class="htheme_box_line htheme_has_items"></div>
-												<div class="htheme_box_item htheme_has_items" data-id="3">
-													<div class="htheme_box_price"><!-- SHOW TOTAL --></div>
+												<div class="htheme_box_item htheme_has_items htheme_qty_remove" data-id="3">
+													<div class="htheme_box_qty_text"><!-- SHOW QTY TOTAL TEXT --><?php esc_html_e('View full list in cart.', 'invogue'); ?></div>
+												</div>
+												<div class="htheme_box_item htheme_has_items" data-id="4">
+													<div class="htheme_box_price"><?php esc_html_e('Total', 'invogue'); ?>: <span></span><!-- SHOW TOTAL --></div>
 												</div>
 												<div class="htheme_box_line htheme_has_items"></div>
-												<div class="htheme_box_item htheme_has_items" data-id="4">
+												<div class="htheme_box_item htheme_has_items" data-id="5">
 													<div class="htheme_button_holder">
 														<a href="<?php echo esc_url($woocommerce->cart->get_cart_url()); ?>" class="htheme_button_container">
 															<?php esc_html_e('VIEW CART', 'invogue'); ?>
@@ -160,6 +178,7 @@
 									</li>
 								<?php } ?>
 								<li style="<?php echo esc_attr($search_style); ?>"><a class="htheme_icon_nav_search htheme_overlay_search"></a></li>
+								<li class="htheme_burger_li"><a class="htheme_icon_hamburger_toggle"></a></li>
 							</ul>
 						</div>
 						<?php } ?>

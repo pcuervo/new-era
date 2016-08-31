@@ -59,7 +59,7 @@
 	$htheme_is_top_image = true;
 
 	#DO CHECK
-	if(is_front_page() || is_page_template( 'templates/template.home.php' )){
+	if(is_front_page() || is_page_template( 'templates/template.home.php' ) || (is_front_page() && is_page_template( 'templates/template.home-noslider.php' ))){
 		$htheme_front_top_style = '';
 	} else if(isset($post) && ($post->post_type == 'post' || is_search() || is_archive())){
 		$htheme_front_top_style = 'htheme_content_top';
@@ -93,7 +93,9 @@
 	get_template_part( 'htheme/templateparts/header/top', 'navigation' );
 
 	#GET TEMPLATE PART - SLIDER
-	if(is_front_page() || is_page_template( 'templates/template.home.php' )){
+	if(is_page_template( 'templates/template.home-noslider.php' )){
+		get_template_part( 'htheme/templateparts/header/top', 'content-image' );
+	} else if(is_front_page() || is_page_template( 'templates/template.home.php' )){
 		get_template_part( 'htheme/templateparts/header/top', 'home-slider' );
 	} else if(isset($post) && ($post->post_type == 'post' || is_search() || is_archive() || is_404())){
 		#NONE

@@ -100,9 +100,11 @@ function htheme_footer_script() {
 	#MASONRY
 	wp_enqueue_script( 'htheme-masonry', get_template_directory_uri().'/htheme/assets/js/masonry.pkgd.min.js', array( 'jquery' ) );
 
+	#TRANSIT
+	wp_enqueue_script( 'htheme-transit', get_template_directory_uri().'/htheme/assets/js/jquery.transit.min.js', array( 'jquery' ) );
+
 	#LOAD SCRIPT FUNCTIONS FILE
 	wp_enqueue_script( 'htheme-script', get_template_directory_uri().'/htheme/assets/js/functions.js', array( 'jquery' ) );
-	//wp_enqueue_script( 'htheme-footer', get_template_directory_uri().'/htheme/assets/js/footer-fixed.js', array( 'jquery' ) );
 
 	#VARIABLES CUSTOM PAGE LOAD
 	$htheme_pageLoader = $GLOBALS['htheme_global_object']['settings']['general']['pageLoader'];
@@ -131,7 +133,7 @@ add_action( 'wp_footer', 'htheme_footer_script' );
 function htheme_add_admin_scripts(){
 
 	#ADD ADMIN STYLES
-	if(is_admin()){ //admin panel
+	if(is_admin() && isset($_GET['page']) && $_GET['page'] == 'htheme_settings' || isset($_GET['post'])){ //admin panel
 		//admin vc styles
 		wp_enqueue_style( 'htheme-vcstyles', get_template_directory_uri().'/htheme/assets/css/herotheme_vc_styles.css' );
 		//admin setting styles
@@ -174,17 +176,6 @@ function htheme_styles() {
 
 	#ADD GOOGLE FONTS
 	wp_enqueue_style( 'htheme-google-fonts', htheme_add_google_fonts(), array(), '1.0.0' );
-
-	#VARIABLES CUSTOM PAGE LOAD
-	$htheme_pageLoader = $GLOBALS['htheme_global_object']['settings']['general']['pageLoader'];
-
-	if($htheme_pageLoader != 'false'){
-		$custom_pageload_css = $htheme_create_css->htheme_get_pageload_css($htheme_pageLoader);
-		wp_add_inline_style( 'htheme-styles', $custom_pageload_css );
-	} else {
-		$custom_pageload_css = $htheme_create_css->htheme_get_pageload_css($htheme_pageLoader);
-		wp_add_inline_style( 'htheme-styles', $custom_pageload_css );
-	}
 
 }
 

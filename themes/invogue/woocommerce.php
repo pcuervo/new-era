@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <!-- CONTENT HOLDER -->
 <div class="htheme_content_holder">
 

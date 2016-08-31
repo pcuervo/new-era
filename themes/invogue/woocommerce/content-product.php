@@ -49,7 +49,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 }
 ?>
 
-<li<?php //post_class( $classes ); ?>>
+<li class="htheme_single_wc_item">
 
 	<?php
 	/**

@@ -53,7 +53,7 @@
 		private $theme_name = 'invogue';
 		private $theme_slug = 'invogue';
 		private $theme_friendly_name = 'InVogue';
-		private $theme_version = '1.9.12';
+		private $theme_version = '1.10.14';
 		private $api_version = '1.0.0';
 
 		#CLASS VARS
@@ -186,15 +186,15 @@
 	 * ALTER POST THUMBNAIL OUTPUT
 	 */
 
-	function htheme_modify_post_thumbnail_html() {
-
-		$id = get_post_thumbnail_id(); // gets the id of the current post_thumbnail (in the loop)
-		$src = wp_get_attachment_image_src($id, 'large'); // gets the image url specific to the passed in size (aka. custom image size)
-		return $src[0];
-
+	function htheme_modify_post_thumbnail_html(){
+			$id = get_post_thumbnail_id(); // gets the id of the current post_thumbnail (in the loop)
+			$src = wp_get_attachment_image_src($id, 'large'); // gets the image url specific to the passed in size (aka. custom image size)
+			return $src[0];
 	}
 
-	add_filter('post_thumbnail_html', 'htheme_modify_post_thumbnail_html', 99, 3);
+	if(!isset($_GET['post_type'])){
+		add_filter('post_thumbnail_html', 'htheme_modify_post_thumbnail_html', 99, 3);
+	}
 
 	/**
 	 * ADD CLASS TO BODY CLASS

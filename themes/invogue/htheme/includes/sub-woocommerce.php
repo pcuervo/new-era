@@ -41,3 +41,25 @@
 	</div>
 </div>
 <!-- ROW -->
+<!-- ROW SPLIT -->
+<div class="htheme_row_split"></div>
+<!-- ROW SPLIT -->
+<!-- ROW -->
+<div class="htheme_form_row">
+	<div class="htheme_form_col_12">
+		<div class="htheme_label htheme_red_heading"><?php esc_html_e('Wishlist', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt"><?php esc_html_e('Default wishlist settings.', 'invogue'); ?></div>
+	</div>
+</div>
+<!-- ROW -->
+<!-- ROW -->
+<div class="htheme_form_row">
+	<div class="htheme_form_col_3">
+		<div class="htheme_label"><?php esc_html_e('Wishlist page URL', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt"><?php esc_html_e('This will link the wishlist icon to the selected page.', 'invogue'); ?></div>
+	</div>
+	<div class="htheme_form_col_9">
+		<select name="wishlistPage" id="wishlistPage" class="htheme_field_fixed_400"></select>
+	</div>
+</div>
+<!-- ROW -->

@@ -169,6 +169,9 @@ function htheme_add_slide(){
         htheme_remove_slide();
         htheme_flag_save(true);
 
+        //SET REMOVE
+        htheme_set_remove();
+
     });
 
 }
@@ -266,6 +269,9 @@ function htheme_set_slide_data(index){
     if(global_options.settings.slider.slides[index].order){
         jQuery('#order_'+index).val(global_options.settings.slider.slides[index].order);
     }
+
+    //SET REMOVE
+    htheme_set_remove();
 
     //CONVERT COMPONENTS
     htheme_convert_components();
@@ -489,6 +495,7 @@ slide_html += '<div class="htheme_show_hide_slider" data-show="image">';
     slide_html += '</div>';
     slide_html += '<div class="htheme_form_col_12">';
     slide_html += '<div class="htheme_image_holder" id="image_imageContentSrc_'+index+'"></div>';
+    slide_html += '<span class="htheme_remove_image" data-input="imageContentSrc_'+index+'">Remove image [x]</span>';
     slide_html += '</div>';
     slide_html += '</div>';
     slide_html += '<!-- ROW -->';
@@ -508,6 +515,7 @@ slide_html += '</div>';
     slide_html += '</div>';
     slide_html += '<div class="htheme_form_col_12">';
     slide_html += '<div class="htheme_image_holder" id="image_backgroundSrc_'+index+'"></div>';
+    slide_html += '<span class="htheme_remove_image" data-input="backgroundSrc_'+index+'">Remove image [x]</span>';
     slide_html += '</div>';
     slide_html += '</div>';
     slide_html += '<!-- ROW -->';

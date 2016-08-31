@@ -333,11 +333,14 @@
 			// if(defined('DONOTCACHEPAGE')){
 			// 	return array("DONOTCACHEPAGE <label>constant is defined as TRUE. It must be FALSE</label>", "error");
 			// }else 
+			
 
 			if(!get_option('permalink_structure')){
 				return array("You have to set <strong><u><a href='".admin_url()."options-permalink.php"."'>permalinks</a></u></strong>", "error");
 			}else if($res = $this->checkSuperCache($path, $htaccess)){
 				return $res;
+			}else if($this->isPluginActive('wp-hide-security-enhancer/wp-hide.php')){
+				return array("WP Hide & Security Enhancer needs to be deactived<br>", "error");
 			}else if($this->isPluginActive('adrotate/adrotate.php') || $this->isPluginActive('adrotate-pro/adrotate.php')){
 				return $this->warningIncompatible("AdRotate");
 			}else if($this->isPluginActive('mobilepress/mobilepress.php')){
@@ -390,7 +393,7 @@
 
 
 			$data = "# BEGIN LBCWpFastestCache"."\n".
-					'<FilesMatch "\.(?i:ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|x-html|css|xml|js|woff|woff2|ttf|svg|eot)(\.gz)?$">'."\n".
+					'<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|x-html|css|xml|js|woff|woff2|ttf|svg|eot)(\.gz)?$">'."\n".
 					'<IfModule mod_expires.c>'."\n".
 					'ExpiresActive On'."\n".
 					'ExpiresDefault A0'."\n".
@@ -701,6 +704,13 @@
 			$wpFastestCacheRenderBlockingCss = isset($this->options->wpFastestCacheRenderBlockingCss) ? 'checked="checked"' : "";
 
 			$wpFastestCacheLanguage = isset($this->options->wpFastestCacheLanguage) ? $this->options->wpFastestCacheLanguage : "eng";
+			
+
+			$wpFastestCacheLazyLoad = isset($this->options->wpFastestCacheLazyLoad) ? 'checked="checked"' : "";
+
+
+
+
 			$wpFastestCacheLBC = isset($this->options->wpFastestCacheLBC) ? 'checked="checked"' : "";
 			$wpFastestCacheLoggedInUser = isset($this->options->wpFastestCacheLoggedInUser) ? 'checked="checked"' : "";
 			$wpFastestCacheMinifyCss = isset($this->options->wpFastestCacheMinifyCss) ? 'checked="checked"' : "";
@@ -1041,18 +1051,38 @@
 								<?php } ?>
 							<?php } ?>
 
-							<?php if(class_exists("WpFastestCachePowerfulHtml") && method_exists("WpFastestCachePowerfulHtml", "render_blocking")){ ?>
-							<div class="questionCon">
-								<div class="question">Render Blocking Js</div>
-								<div class="inputCon"><input type="checkbox" <?php echo $wpFastestCacheRenderBlocking; ?> id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking">Remove render-blocking JavaScript</label></div>
-								<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
-							</div>
+							<?php if(class_exists("WpFastestCachePowerfulHtml")){ ?> 
+								<?php if(method_exists("WpFastestCachePowerfulHtml", "render_blocking")){ ?>
+									<div class="questionCon">
+										<div class="question">Render Blocking Js</div>
+										<div class="inputCon"><input type="checkbox" <?php echo $wpFastestCacheRenderBlocking; ?> id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking">Remove render-blocking JavaScript</label> <b style="color:red;">(Beta)</b></div>
+										<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
+									</div>
+								<?php }else{ ?>
+									<div class="questionCon update-needed">
+										<div class="question">Render Blocking Js</div>
+										<div class="inputCon"><input type="checkbox" id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking">Remove render-blocking JavaScript</label> <b style="color:red;">(Beta)</b></div>
+										<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
+									</div>
+								<?php } ?>
 							<?php }else{ ?>
-							<div class="questionCon disabled">
-								<div class="question">Render Blocking Js</div>
-								<div class="inputCon"><input type="checkbox" <?php echo $wpFastestCacheRenderBlocking; ?> id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking">Remove render-blocking JavaScript</label></div>
+								<div class="questionCon disabled">
+									<div class="question">Render Blocking Js</div>
+									<div class="inputCon"><input type="checkbox" id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking">Remove render-blocking JavaScript</label> <b style="color:red;">(Beta)</b></div>
+									<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
+								</div>
+							<?php } ?>
+
+
+							<?php if(false){ ?>
+							<div class="questionCon">
+								<div class="question">Lazy Load</div>
+								<div class="inputCon"><input type="checkbox" <?php echo $wpFastestCacheLazyLoad; ?> id="wpFastestCacheLazyLoad" name="wpFastestCacheLazyLoad"><label for="wpFastestCacheLazyLoad">Lazy Load</label></div>
 								<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
 							</div>
+
+							<?php include(WPFC_MAIN_PATH."templates/lazy_load.php"); ?>
+
 							<?php } ?>
 
 							<div class="questionCon">
@@ -1245,6 +1275,11 @@
 								    					$tmp_array = array("schedule" => $event["schedule"],
 								    									   "prefix" => $tmp_std->prefix,
 								    									   "content" => $tmp_std->content);
+
+								    					if(isset($tmp_std->hour) && isset($tmp_std->minute)){
+								    						$tmp_array["hour"] = $tmp_std->hour;
+								    						$tmp_array["minute"] = $tmp_std->minute;
+								    					}
 							    					}else{
 							    						// old cronjob which is (wp_fastest_cache)
 							    						$tmp_array = array("schedule" => $event["schedule"],
@@ -1408,12 +1443,16 @@
 				    			</div>
 				    			<div class="wpfc-premium-step-footer">
 				    				<?php
-				    					$svn_price_arr = wp_remote_get("https://plugins.svn.wordpress.org/wp-fastest-cache/assets/price.html", 5);
+				    					$svn_price_arr = wp_remote_get("http://plugins.svn.wordpress.org/wp-fastest-cache/assets/price.html", 5);
 
-				    					if($svn_price_arr["response"]["code"] == "200"){
-				    						$premium_price = $svn_price_arr["body"];
+				    					if ( !$svn_price_arr || is_wp_error( $svn_price_arr ) ) {
+				    						$premium_price = $svn_price_arr->get_error_message();
 				    					}else{
-				    						$premium_price = "Error";
+				    						if(wp_remote_retrieve_response_code($svn_price_arr) == 200){
+				    							$premium_price = wp_remote_retrieve_body( $svn_price_arr );
+					    					}else{
+					    						$premium_price = "Error";
+					    					}
 				    					}
 
 				    				?>
@@ -1427,6 +1466,8 @@
 							    				</button>
 						    				<?php }else{ ?>
 							    				<form action="http://api.wpfastestcache.net/paypal/buypremium/" method="post">
+							    					<input type="hidden" name="wpfclang" value="<?php echo $this->options->wpFastestCacheLanguage; ?>">
+							    					<input type="hidden" name="bloglang" value="<?php echo get_bloginfo('language'); ?>">
 							    					<input type="hidden" name="hostname" value="<?php echo str_replace(array("http://", "www."), "", $_SERVER["HTTP_HOST"]); ?>">
 								    				<button id="wpfc-buy-premium-button" type="submit" class="wpfc-btn primaryCta" style="width:200px;">
 								    					<span>Buy</span>
@@ -1917,8 +1958,22 @@
 				</script>
 			<?php }else{ ?>
 				<script type="text/javascript">
-					jQuery(".update-needed").click(function(e){
-						Wpfc_Dialog.dialog("wpfc-modal-updatenow");
+					jQuery(".update-needed").click(function(){
+						if(jQuery("div[id^='wpfc-modal-updatenow-']").length === 0){
+							Wpfc_New_Dialog.dialog("wpfc-modal-updatenow", {close: function(){
+								Wpfc_New_Dialog.clone.find("div.window-content input").each(function(){
+									if(jQuery(this).attr("checked")){
+										var id = jQuery(this).attr("action-id");
+										jQuery("div.tab1 div[template-id='wpfc-modal-updatenow'] div.window-content input#" + id).attr("checked", true);
+									}
+								});
+
+								Wpfc_New_Dialog.clone.remove();
+							}});
+
+							Wpfc_New_Dialog.show_button("close");
+						}
+
 						return false;
 					});
 				</script>

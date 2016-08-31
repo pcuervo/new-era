@@ -249,8 +249,9 @@
 						$woocommerce_ids = array();
 
 						//wc_get_page_id('product')
+						//wc_get_page_id('product-category')
 						
-						array_push($woocommerce_ids, wc_get_page_id('cart'), wc_get_page_id('checkout'), wc_get_page_id('receipt'), wc_get_page_id('confirmation'), wc_get_page_id('product-category'));
+						array_push($woocommerce_ids, wc_get_page_id('cart'), wc_get_page_id('checkout'), wc_get_page_id('receipt'), wc_get_page_id('confirmation'));
 
 						if (in_array($page_id[1], $woocommerce_ids)) {
 							return true;
@@ -259,8 +260,9 @@
 				}
 
 				//"\/product"
+				//"\/product-category"
 
-				array_push($list, "\/cart", "\/checkout", "\/receipt", "\/confirmation", "\/product-category", "\/wc-api\/");
+				array_push($list, "\/cart", "\/checkout", "\/receipt", "\/confirmation", "\/wc-api\/");
 			}
 
 			if(preg_match("/".implode("|", $list)."/i", $_SERVER["REQUEST_URI"])){
@@ -436,6 +438,15 @@
 						// url()
 						$content = preg_replace_callback("/(url)\(([^\)]+)\)/i", array($this, 'cdn_replace_urls'), $content);
 					}
+					
+					if(isset($this->options->wpFastestCacheLazyLoad)){
+						include_once plugin_dir_path( __FILE__ )."pro/library/lazy-load.php";
+
+						if(method_exists("WpFastestCacheLazyLoad", "images_to_lazyload")){
+							$content = WpFastestCacheLazyLoad::images_to_lazyload($content, $this->options->wpFastestCacheLazyLoad_type);
+						}
+					}
+
 
 					if(isset($this->options->wpFastestCacheRenderBlocking) && method_exists("WpFastestCachePowerfulHtml", "render_blocking")){
 						if(isset($this->options->wpFastestCacheRenderBlockingCss)){

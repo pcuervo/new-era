@@ -34,6 +34,8 @@
 			*/
 			//update existing database objects with default object data
 			$this->object_manager->htheme_update_database_objects();
+			//flush rewrite rules
+			flush_rewrite_rules();
 			//mark the upgrade as successful
 			$this->htheme_mark_update_complete();
 		}

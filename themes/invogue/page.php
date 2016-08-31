@@ -30,7 +30,7 @@ get_header(); ?>
 	<?php } else { ?>
 		<?php get_template_part( 'htheme/templateparts/content/the', 'content' ); ?>
 	<?php } ?>
-
+    
     <!-- COMMENTS -->
 	<?php if ( comments_open() || get_comments_number() ) : ?>
         <!-- GREY LINE -->

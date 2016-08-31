@@ -19,6 +19,12 @@
 	outline: none!important;
 }
 
+.htheme_small_navigation {
+	height: 45px!important;
+	display: table;
+	overflow: visible;
+}
+
 	/*Header bottom*/
 
 .htheme_default_navigation,.htheme_inner_navigation { background-color: #000000!important; }
@@ -29,6 +35,7 @@
 .htheme_content_holder .select2-container,
 .htheme_content_holder textarea { border: 1px solid #000000!important; }
 
+.htheme_default_navigation.htheme_sticky_nav { height: 70px!important; }
 /*FOOTER*/
 .htheme_footer_holder .formas-pago {
     background-color: #fff;
@@ -345,6 +352,9 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 
 /*Container*/
 @media(min-width: 1025px) and (max-width: 1200px){ .htheme_vc_row_contained, .htheme_container { width: 990px!important } }
+
+/*Content Cart*/
+.htheme_large_white_box.htheme_white_box .htheme_box_product_sub, .htheme_box_qty_text { color: #000000!important; }
 
 /*Cart*/
 @media(min-width: 769px) and (max-width: 955px){

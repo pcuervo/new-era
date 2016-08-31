@@ -147,7 +147,9 @@
 			$document_write = $this->find_tags("document.write(", ")");
 
 			foreach ($comment_tags as $key => $value) {
-				$this->jsLinksExcept = $value["text"].$this->jsLinksExcept;
+				if(preg_match("/<script/i", $value["text"]) && preg_match("/<\/script/i", $value["text"])){
+					$this->jsLinksExcept = $value["text"].$this->jsLinksExcept;
+				}
 			}
 
 			foreach ($document_write as $key => $value) {

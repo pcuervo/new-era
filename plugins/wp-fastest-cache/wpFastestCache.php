@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.6.0
+Version: 0.8.6.1
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -74,7 +74,18 @@ GNU General Public License for more details.
 				$this->rm_folder_recursively($this->getWpContentDir()."/cache/tmpWpfc");
 			}
 
-			if(isset($_POST) && isset($_POST["action"]) && $_POST["action"] == "vc_get_vc_grid_data"){
+			if(isset($_POST) && isset($_POST["action"]) && $_POST["action"] == "wpestate_ajax_agent_contact_form"){
+				if(isset($_POST["nonce"]) && $_POST["nonce"]){
+					//for WpResidence theme contact form
+					include_once ABSPATH."wp-includes/pluggable.php";
+
+					foreach ($_POST as $key => &$value) {
+						if(preg_match("/nonce/", $key)){
+							$value = wp_create_nonce('ajax-property-contact');
+						}
+					}
+				}
+			}else if(isset($_POST) && isset($_POST["action"]) && $_POST["action"] == "vc_get_vc_grid_data"){
 				if(isset($_POST["vc_post_id"]) && $_POST["vc_post_id"]){
 					if(isset($_POST["_vcnonce"]) && $_POST["_vcnonce"]){
 						//for Visual Composer Grid-View
@@ -107,6 +118,14 @@ GNU General Public License for more details.
 					$img = new WpFastestCacheImageOptimisation();
 					$img->hook();
 				}
+			}else if(isset($_GET) && isset($_GET["action"])  && $_GET["action"] == "wpfastestcache"){
+				if(isset($_GET) && isset($_GET["type"])  && $_GET["type"] == "preload"){
+					// /?action=wpfastestcache&type=preload
+					
+					$this->create_preload_cache();
+				}
+				
+				exit;
 			}else{
 				$this->setCustomInterval();
 
@@ -360,18 +379,31 @@ GNU General Public License for more details.
 					$cdn_exist = false;
 					$arr = json_decode($data);
 
-					foreach ($arr as $cdn_key => &$cdn_value) {
-						if($cdn_value->id == $_POST["values"]["id"]){
-							$cdn_value = $_POST["values"];
-							$cdn_exist = true;
+					if(is_array($arr)){
+						foreach ($arr as $cdn_key => &$cdn_value) {
+							if($cdn_value->id == $_POST["values"]["id"]){
+								$cdn_value = $_POST["values"];
+								$cdn_exist = true;
+							}
 						}
-					}
 
-					if(!$cdn_exist){
-						array_push($arr, $_POST["values"]);	
-					}
+						if(!$cdn_exist){
+							array_push($arr, $_POST["values"]);	
+						}
 
-					update_option("WpFastestCacheCDN", json_encode($arr));
+						update_option("WpFastestCacheCDN", json_encode($arr));
+					}else{
+						$tmp_arr = array();
+						
+						if($arr->id == $_POST["values"]["id"]){
+							array_push($tmp_arr, $_POST["values"]);
+						}else{
+							array_push($tmp_arr, $arr);
+							array_push($tmp_arr, $_POST["values"]);
+						}
+
+						update_option("WpFastestCacheCDN", json_encode($tmp_arr));
+					}
 				}else{
 					$arr = array();
 					array_push($arr, $_POST["values"]);
@@ -530,9 +562,18 @@ GNU General Public License for more details.
 					$i = 0;
 
 					foreach ($_POST["rules"] as $key => $value) {
-						$args = array("prefix" => $value["prefix"], "content" => $value["content"]);
+						if(false && preg_match("/^(daily|onceaday)$/i", $value["schedule"]) && isset($value["hour"]) && isset($value["minute"]) && strlen($value["hour"]) > 0 && strlen($value["minute"]) > 0){
+							$args = array("prefix" => $value["prefix"], "content" => $value["content"], "hour" => $value["hour"], "minute" => $value["minute"]);
 
-						wp_schedule_event(time(), $value["schedule"], "wp_fastest_cache_".$i, array(json_encode($args)));
+							$timestamp = mktime($value["hour"],$value["minute"],0,date("m"),date("d"),date("Y"));
+
+							$timestamp = $timestamp > time() ? $timestamp : $timestamp + 60*60*24;
+						}else{
+							$args = array("prefix" => $value["prefix"], "content" => $value["content"]);
+							$timestamp = time();
+						}
+
+						wp_schedule_event($timestamp, $value["schedule"], "wp_fastest_cache_".$i, array(json_encode($args)));
 						$i = $i + 1;
 					}
 				}
@@ -1149,8 +1190,12 @@ GNU General Public License for more details.
 						$this->wpfc_remote_get($arr["url"], $user_agent);
 					}
 
+					echo count($urls)." page have been cached";
+
 		    		update_option("WpFastestCachePreLoad", json_encode($pre_load));
 				}else{
+					echo "Completed";
+					
 					wp_clear_scheduled_hook("wp_fastest_cache_Preload");
 				}
 			}
@@ -1336,6 +1381,12 @@ GNU General Public License for more details.
 			    'wpfc' => true
 		    );
 
+		    $schedules['everytwohours'] = array(
+			    'interval' => 60*60*2,
+			    'display' => __( 'Once Every 2 Hours' ),
+			    'wpfc' => true
+		    );
+
 		    $schedules['everysixhours'] = array(
 			    'interval' => 60*60*6,
 			    'display' => __( 'Once Every 6 Hours' ),
@@ -1463,11 +1514,17 @@ GNU General Public License for more details.
 				$path = preg_replace("/.+\/wp-content\/(.+)/", WPFC_WP_CONTENT_DIR."/"."$1", $url);
 
 				if(file_exists($path)){
-					$myfile = fopen($path, "r") or die("Unable to open file!");
-					$data = fread($myfile, filesize($path));
-					fclose($myfile);
+					$filesize = filesize($path);
 
-					return $data;
+					if($filesize > 0){
+						$myfile = fopen($path, "r") or die("Unable to open file!");
+						$data = fread($myfile, $filesize);
+						fclose($myfile);
+
+						return $data;
+					}else{
+						return false;
+					}
 				}
 			}
 

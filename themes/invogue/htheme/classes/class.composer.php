@@ -66,7 +66,7 @@ class htheme_composer{
 		add_action('vc_before_init', array($this, 'htheme_line_element')); // ~ HORIZONTAL LINE ELEMENT
 
 		#IF POST TYPES ARE AVAILABLE
-		if(is_plugin_active( 'htypes/htypes.php' )){
+		if(is_plugin_active( 'hutility/hutility.php' )){
 			add_action('vc_before_init', array($this, 'htheme_people_element')); // ~ PEOPLE/MEMBERS ELEMENT
 			add_action('vc_before_init', array($this, 'htheme_signup_form_element')); // ~ NEWSLETTER SIGNUP FORM ELEMENT
 			add_action('vc_before_init', array($this, 'htheme_lookbooks')); // ~ LOOKBOOKS

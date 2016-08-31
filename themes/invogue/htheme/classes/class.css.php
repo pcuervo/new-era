@@ -56,6 +56,8 @@ class htheme_css{
 
 		$htheme_option_search = $GLOBALS['htheme_global_object']['settings']['header']['optionSearch'];
 
+		$htheme_pageLoader = $GLOBALS['htheme_global_object']['settings']['general']['pageLoader'];
+
 		#SLIDER
 		$slides = $GLOBALS['htheme_global_object']['settings']['slider']['slides'];
 		$slide_count = 0;
@@ -77,7 +79,17 @@ class htheme_css{
 			';
 		endif;
 
-		if($slide_count == 0 && is_front_page() || $slide_count == 0 && is_page_template( 'templates/template.home.php' ) || is_search()){
+		if($htheme_pageLoader == 'false'):
+			$htheme_css .= '
+				.htheme_page_loader{
+					display:none;
+				}
+			';
+		endif;
+
+		if(is_page_template( 'templates/template.home-noslider.php' )){
+			//DO NOTHING
+		} else if($slide_count == 0 && is_front_page() || $slide_count == 0 && is_page_template( 'templates/template.home.php' ) || is_search()){
 			$htheme_css .= '
 				.htheme_top_holder{
 					height:125px !important;
@@ -169,7 +181,8 @@ class htheme_css{
 					.htheme_nav ul li:hover > a{
 						color:'.$header_options['hoverColor'].';
 					}
-					.htheme_icon_nav{
+					.htheme_icon_nav,
+					.htheme_icon_hamburger_toggle{
 						border-left: 1px solid rgba('.$this->htheme_hex_to_rgb($header_options['color']).', 0.2);
 					}
 					.htheme_icon_dropdown:after{
@@ -300,14 +313,12 @@ class htheme_css{
 					.htheme_mobile .htheme_inner_navigation .htheme_icon_mobile[data-toggle="open"]:hover:before,
 					.htheme_mobile .htheme_inner_navigation .htheme_icon_mobile[data-toggle="close"]:hover:before{
 						color:'.$header_options['hoverColor'].';
-					}
-					
+					}					
 					@media (max-width: 768px) {
 						.htheme_default_logo_text_inner a{
 							color:'.$header_options['color'].' !important;						
 						}
-					}
-					
+					}					
 				';
 				break;
 				case 'navigation_login':
@@ -341,6 +352,33 @@ class htheme_css{
 						letter-spacing:'.$header_options['spacing'].';
 					}
 				';
+				break;
+				case 'navigation_hamburger':
+					$htheme_css .= '
+						.htheme_hamburger_holder{
+							background:rgba('.$this->htheme_hex_to_rgb($header_options['background']).', '.$header_options['opacity'].');
+						}
+						.htheme_hamburger_holder ul li > a{
+							color:'.$header_options['color'].';
+							font-family:'.$header_options['family'].' !important;
+							'.$this->htheme_return_weight_style($header_options['weight']).';
+							font-size:'.$header_options['size'].' !important;
+							text-transform:'.$header_options['transform'].' !important;
+							letter-spacing:'.$header_options['spacing'].' !important;
+						}
+						.htheme_hamburger_holder ul li:hover{
+							background:rgba('.$this->htheme_hex_to_rgb($header_options['background']).', 0.3);
+						} 
+						.htheme_hamburger_holder ul li > a:hover{
+							color:'.$header_options['hoverColor'].';
+						}
+						.htheme_hamburger_logo{
+							border: 1px solid rgba('.$this->htheme_hex_to_rgb($header_options['color']).', .1);
+						}		
+						.htheme_hamburger_close{
+							color:'.$header_options['color'].';
+						}
+					';
 				break;
 			}
 		}
@@ -380,7 +418,9 @@ class htheme_css{
 					.htheme_sidebar_right .textwidget,
 					.htheme_sidebar_left .textwidget,
 					.calendar_wrap,
-					.htheme_caution_yellow{
+					.htheme_caution_yellow,
+					.shipping,
+					.htheme_shipping_holder{
 						color:'.$this->htheme_get_accent($type['color']).';
 						font-family:'.$type['family'].';
 						'.$this->htheme_return_weight_style($type['weight']).';
@@ -878,6 +918,35 @@ class htheme_css{
 					}
 				';
 				break;
+				case 'cart_popup_heading':
+				$htheme_css .= '
+					.htheme_box_price,
+					.htheme_box_product_heading,
+					.htheme_box_heading{
+						color:'.$this->htheme_get_accent($type['color']).' !important;
+						font-family:'.$type['family'].';
+						'.$this->htheme_return_weight_style($type['weight']).';
+						font-size:'.$type['size'].';
+						text-transform:'.$type['transform'].';
+						letter-spacing:'.$type['spacing'].';
+						text-decoration:none;
+					}	
+				';
+				break;
+				case 'cart_popup_sub_heading':
+				$htheme_css .= '
+					.htheme_box_product_sub,
+					.htheme_box_qty_text{
+						color:'.$this->htheme_get_accent($type['color']).' !important;
+						font-family:'.$type['family'].';
+						'.$this->htheme_return_weight_style($type['weight']).';
+						font-size:'.$type['size'].';
+						text-transform:'.$type['transform'].';
+						letter-spacing:'.$type['spacing'].';
+						text-decoration:none;
+					}	
+				';
+				break;
 			}
 		}
 
@@ -1050,7 +1119,7 @@ class htheme_css{
 		';
 
 		#META TOP SHORTCODE
-		if(!is_front_page() && !is_page_template( 'templates/template.home.php' )){
+		if(is_page_template( 'templates/template.home-noslider.php' ) || !is_front_page() && !is_page_template( 'templates/template.home.php' )){
 			if($htheme_meta_shortcode != ''){
 				$htheme_css .= '
 					.htheme_top_holder{
@@ -1224,12 +1293,6 @@ class htheme_css{
 
 		#VARIABLES
 		$css = '';
-
-		if($status != 'false'){
-			$css = 'body > div{	opacity: 0; filter: alpha(opacity=00); }';
-		} else {
-			$css = '.htheme_page_loader{ display:none !important; }';
-		}
 
 		return $css;
 

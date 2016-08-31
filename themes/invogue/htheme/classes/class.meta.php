@@ -315,7 +315,7 @@ class htheme_meta{
 		echo '<div class="htheme_form_row">';
 		echo '<div class="htheme_form_col_3">';
 		echo '<div class="htheme_label">'.esc_html__('Slider shortcode', 'invogue').'</div>';
-		echo '<div class="htheme_label_excerpt">'.esc_html__('Replace current header layout with a custom slider shortcode.', 'invogue').' <a target="_blank" href="http://codecanyon.net/item/hero-slider-wordpress-slider-plugin/13067813?s_rank=1">'.esc_html__('HeroSlider', 'invogue').'</a></div>';
+		echo '<div class="htheme_label_excerpt">'.esc_html__('Replace current header layout with a custom slider shortcode.', 'invogue').'</div>';
 		echo '</div>';
 		echo '<div class="htheme_form_col_9">';
 		//INPUT
@@ -366,6 +366,7 @@ class htheme_meta{
 				echo '<div class="htheme_label">'.esc_html__('Secondary Product Image', 'invogue').'</div>';
 				echo '<input type="hidden" name="htheme_meta_image_featured" id="htheme_meta_image_featured" class="htheme_field_fixed_400" value="' . esc_attr( $htheme_meta_product_image_featured ) . '">';
 				echo '<div class="htheme_image_product_holder htheme_media_uploader" data-connect="htheme_meta_image_featured" data-multiple="false" data-size="full" id="image_htheme_meta_image_featured"></div>';
+				echo '<span class="htheme_remove_image" data-input="htheme_meta_image_featured">'.esc_html__('Remove image [x]', 'invogue') .'</span>';
 			echo '</div>';
 		echo '</div>';
 
@@ -374,6 +375,7 @@ class htheme_meta{
 				echo '<div class="htheme_label">'.esc_html__('Promo Slide Image', 'invogue').'</div>';
 				echo '<input type="hidden" name="htheme_meta_image" id="htheme_meta_image" class="htheme_field_fixed_400" value="' . esc_attr( $htheme_meta_product_image ) . '">';
 				echo '<div class="htheme_image_product_holder htheme_media_uploader" data-connect="htheme_meta_image" data-multiple="false" data-size="full" id="image_htheme_meta_image"></div>';
+				echo '<span class="htheme_remove_image" data-input="htheme_meta_image">'.esc_html__('Remove image [x]', 'invogue') .'</span>';
 			echo '</div>';
 		echo '</div>';
 

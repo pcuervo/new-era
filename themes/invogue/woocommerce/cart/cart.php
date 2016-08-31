@@ -39,7 +39,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<?php esc_html_e( 'Price', 'woocommerce' ); ?>
 				</div>
 			</div>
-			<div class="htheme_col_2">
+			<div class="htheme_col_1">
 				<div class="htheme_inner_col">
 					<?php esc_html_e( 'Quantity', 'woocommerce' ); ?>
 				</div>
@@ -91,7 +91,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									?>
 								</div>
 							</div>
-							<div class="htheme_col_2 htheme_position">
+							<div class="htheme_col_1 htheme_position">
 								<div class="htheme_inner_col product-quantity">
 									<?php
 									if ( $_product->is_sold_individually() ) {
@@ -108,7 +108,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									?>
 								</div>
 							</div>
-							<div class="htheme_col_1 htheme_position">
+							<div class="htheme_col_2 htheme_position">
 								<div class="htheme_inner_col">
 									<?php
 										echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
@@ -141,7 +141,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<div class="coupon">
 
 				<div class="htheme_coupon_wrap">
-					<div class="htheme_coupon_open htheme_cart_button_light" data-toggle="open">¿Tienes un cupon?</div>
+					<div class="htheme_coupon_open htheme_cart_button_light" data-toggle="open"><?php esc_html_e( 'HAVE A COUPON?', 'woocommerce' ); ?></div>
 					<div class="htheme_coupon_inner">
 						<div class="htheme_form_field_item">
 							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" />

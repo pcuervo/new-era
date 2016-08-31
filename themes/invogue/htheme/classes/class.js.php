@@ -55,7 +55,7 @@ class htheme_js{
 		#VARIABLES
 		$htheme_js = '';
 
-		$htheme_js .= 'jQuery(function(){ htheme_page_load(); });';
+		$htheme_js .= 'jQuery(function(){ htheme_page_load(); jQuery(window).on(\'blur focus\', function(){ htheme_page_load(); }); });';
 
 		return $htheme_js;
 

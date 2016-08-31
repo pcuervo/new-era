@@ -28,13 +28,13 @@ global $product;
 		<div class="htheme_inner_col">
 			<div class="htheme_single_product_options_inner">
 				<?php if($product->get_categories()){ ?>
-					<span>Category: <?php echo $product->get_categories( ', ', '' . _n( 'Category:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
+					<span><?php esc_html_e('Category:', 'woocommerce'); ?> <?php echo $product->get_categories( ', ', '' . _n( '', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
 				<?php } ?>
 				<?php if($product->get_sku()){ ?>
-				<span> Product SKU: <a> <?php echo esc_html($product->get_sku()); ?> </a> </span>
+					<span><?php esc_html_e('Product SKU:', 'woocommerce'); ?> <a> <?php echo esc_html($product->get_sku()); ?> </a> </span>
 				<?php } ?>
 				<?php if($product->get_tags()){ ?>
-					<span> Tags: <?php echo $product->get_tags( ', ', '' . _n( 'Tags:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
+					<span><?php esc_html_e('Tags:', 'woocommerce'); ?> <?php echo $product->get_tags( ', ', '' . _n( '', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
 				<?php } ?>
 			</div>
 		</div>

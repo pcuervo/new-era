@@ -450,7 +450,7 @@ class htheme_backend{
 				$new_page = array(
 					'post_type' => $new_page_type,
 					'post_title' => esc_html($new_page_title),
-					'post_content' => esc_html($new_page_content),
+					'post_content' => $new_page_content,
 					'post_excerpt' => esc_html($new_page_excerpt),
 					'post_status' => 'publish',
 					'post_author' => 1,
@@ -492,7 +492,7 @@ class htheme_backend{
 			array(
 				'page_title' => esc_html__('Home Demo Simple', 'invogue'),
 				'page_content' => $this->htheme_get_layout('home_simple', $data_array),
-				'page_template' => '',
+				'page_template' => 'templates/template.home-noslider.php',
 				'post_type' => 'page',
 				'header_settings' => array(
 					'layout' => 1,
@@ -506,7 +506,7 @@ class htheme_backend{
 			array(
 				'page_title' => esc_html__('Home Demo Two', 'invogue'),
 				'page_content' => $this->htheme_get_layout('home_demo_2', $data_array),
-				'page_template' => '',
+				'page_template' => 'templates/template.home-noslider.php',
 				'post_type' => 'page',
 				'header_settings' => array(
 					'layout' => 1,
@@ -522,7 +522,7 @@ class htheme_backend{
 			array(
 				'page_title' => esc_html__('Home Demo Three', 'invogue'),
 				'page_content' => $this->htheme_get_layout('home_demo_3', $data_array),
-				'page_template' => '',
+				'page_template' => 'templates/template.home-noslider.php',
 				'post_type' => 'page',
 				'header_settings' => array(
 					'layout' => 1,
@@ -551,7 +551,7 @@ class htheme_backend{
 				),
 			),
 			array(
-				'page_title' => esc_html__('What\'s Hot', 'invogue'),
+				'page_title' => esc_html__('Whats Hot', 'invogue'),
 				'page_content' => $this->htheme_get_layout('what_hot_demo_1', $data_array),
 				'page_template' => '',
 				'post_type' => 'page',
@@ -604,7 +604,7 @@ class htheme_backend{
 			$new_page = array(
 				'post_type' => $new_page_type,
 				'post_title' => esc_html($new_page_title),
-				'post_content' => esc_html($new_page_content),
+				'post_content' => $new_page_content,
 				'post_status' => 'publish',
 				'post_author' => 1,
 			);
@@ -785,7 +785,7 @@ class htheme_backend{
 			'home' => "Home Demo One",
 			'about' => "About Us",
 			'lookbook' => "Lookbooks",
-			'hot' => "What's Hot",
+			'hot' => "Whats Hot",
 			'wishlist' => "Wishlist",
 			'contact' => "Contact",
 		);

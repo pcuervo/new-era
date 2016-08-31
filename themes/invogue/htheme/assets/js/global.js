@@ -25,6 +25,16 @@ jQuery(function(){
 
 });
 
+function htheme_set_remove(){
+
+    jQuery('.htheme_remove_image').on('click', function(){
+        var input_to_remove = jQuery(this).attr('data-input');
+        jQuery('#'+input_to_remove).val('');
+        jQuery('#'+input_to_remove).trigger('change');
+    });
+
+}
+
 /*
  **************** PAGES
  */

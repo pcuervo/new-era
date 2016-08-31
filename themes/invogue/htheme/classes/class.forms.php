@@ -192,12 +192,12 @@ class htheme_forms{
 				add_post_meta($signup_post_id, 'htheme_meta_user_signup_email', $form_data['user_signup_email']);
 
 				$email_status = true;
-				echo json_encode(array('status' => $status, 'email_status' => $email_status, 'insert_msg' => 'Registro exitoso!' ));
+				echo json_encode(array('status' => $status, 'email_status' => $email_status, 'insert_msg' => 'Signup successful!' ));
 				exit();
 
 			} else {
 				$email_status = false;
-				echo json_encode(array('status' => $status, 'email_status' => $email_status, 'insert_msg' => 'Email registrado!' ));
+				echo json_encode(array('status' => $status, 'email_status' => $email_status, 'insert_msg' => 'Email already used!' ));
 				exit();
 			}
 

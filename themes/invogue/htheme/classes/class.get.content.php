@@ -268,7 +268,7 @@ class htheme_getcontent{
 		</script>
 
 		<?php wp_enqueue_script( 'herothememapapi', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDDt1Fm617cqcy8gfXMqN8_7JpyAz362F4&callback=htheme_initMap' ); ?>
-
+		
 		<?php
 
 	}
@@ -353,40 +353,38 @@ class htheme_getcontent{
 					$html .= '<div class="htheme_inner_col">';
 						$html .= '<div class="htheme_form_holder">';
 
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ border-bottom--dark ]">';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
 								$html .= '<input type="text" name="user_name" id="user_name">';
 								$html .= '<label for="user_name" class="">';
-									$html .= esc_html__('Nombre', 'invogue');
+									$html .= esc_html__('First Name', 'invogue');
 								$html .= '</label>';
 							$html .= '</div>';
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ border-bottom--dark ]">';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
 								$html .= '<input type="text" name="user_last" id="user_last">';
 								$html .= '<label for="user_last" class="">';
-									$html .= esc_html__('Apellido', 'invogue');
+									$html .= esc_html__('Last Name', 'invogue');
 								$html .= '</label>';
 							$html .= '</div>';
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ border-bottom--dark ]">';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
 								$html .= '<input type="text" name="user_email" id="user_email">';
 								$html .= '<label for="user_email" class="">';
-									$html .= esc_html__('Email', 'invogue');
+									$html .= esc_html__('Email Address', 'invogue');
 								$html .= '</label>';
 							$html .= '</div>';
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ select ][ margin-top--30 ]">';
-								$html .= '<select>';
-									$html .= '<option value="volvo">Asunto</option>';
-									$html .= '<option value="volvo">Sobre el envío</option>';
-									$html .= '<option value="volvo">Sobre mi producto</option>';
-									$html .= '<option value="volvo">Comentarios</option>';
-								$html .= '</select>';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
+								$html .= '<input type="text" name="user_message_type" id="user_message_type">';
+								$html .= '<label for="user_message_type" class="">';
+									$html .= esc_html__('Message Type', 'invogue');
+								$html .= '</label>';
 							$html .= '</div>';
-							$html .= '<div class="htheme_col_12 htheme_form_field_item htheme_form_textarea_item [ border-bottom--dark ]">';
+							$html .= '<div class="htheme_col_12 htheme_form_field_item htheme_form_textarea_item">';
 								$html .= '<textarea name="user_message" id="user_message"></textarea>';
 								$html .= '<label for="user_message" class="">';
-									$html .= esc_html__('Mensaje', 'invogue');
+									$html .= esc_html__('Message', 'invogue');
 								$html .= '</label>';
 							$html .= '</div>';
 							$html .= '<div class="htheme_form_status_message"></div>';
-							$html .= '<div class="htheme_btn_style_1" id="htheme_button_submit">Enviar</div>';
+							$html .= '<div class="htheme_btn_style_1" id="htheme_button_submit">SEND</div>';
 						$html .= '</div>';
 					$html .= '</div>';
 				$html .= '</div>';
@@ -775,7 +773,7 @@ class htheme_getcontent{
 
 		$args = array(
 			'post_type' => 'post',
-			'numberposts' => 99,
+			'numberposts' => 2,
 			'orderby' => 'date',
 			'taxonomy' => 'category',
 			'category' => $categories,
@@ -787,7 +785,7 @@ class htheme_getcontent{
 		if($the_posts){
 
 			$blog_style = '';
-			if(count($the_posts)){
+			if(count($the_posts) < 2){
 				$blog_style = 'htheme_blog_item_full';
 			}
 
@@ -802,12 +800,10 @@ class htheme_getcontent{
 								if(!$image_details[0]){
 									$no_image = 'htheme_no_category_img';
 								}
-								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item [ margin-bottom--xlarge ][ width--100p ] '.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
+								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item '.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
 									$html .= '<div class="htheme_blog_item_inner">';
-										$html .= '<h4 class="[ margin-bottom ]">'.esc_html($post->post_title).'</h4>';
-										$html .= '<p class="[ htheme_btn_style_1 btn-primary ][ margin-auto ]">ver más</p>';
-										/*$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';*/
-										/*$html .= '<a href="'.get_permalink($post->ID).'">VER MÁS</a>';*/
+										$html .= '<h4>'.esc_html($post->post_title).'</h4>';
+										$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';										
 									$html .= '</div>';
 									$html .= '<div class="htheme_blog_image '.esc_attr($no_image).'" style="background-image:url('.esc_url($image_details[0]).')"></div>';
 								$html .= '</a>';
@@ -866,7 +862,7 @@ class htheme_getcontent{
 										$html .= '</div>';
 										$html .= '<div class="htheme_post_slider_heading">';
 											$html .= '<h4>'.esc_html($post->post_title).'</h4>';
-											$html .= '<div class="htheme_post_slider_category htheme_h4_sub">';
+											$html .= '<div class="htheme_post_slider_category htheme_h4_sub">';												
 												$html .= mysql2date(get_option( 'date_format' ), $post->post_date);
 											$html .= '</div>';
 										$html .= '</div>';

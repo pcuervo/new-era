@@ -46,6 +46,9 @@ jQuery(function(){
     //UPDATE DATA
     htheme_update_data();
 
+    //SET REMOVE
+    htheme_set_remove();
+
 });
 
 function htheme_set_data(){
@@ -68,6 +71,8 @@ function htheme_set_data(){
     var _optionCart = global_options.settings.header.optionCart;
     var _optionWishlist = global_options.settings.header.optionWishlist;
     var _optionSearch = global_options.settings.header.optionSearch;
+    var _optionBurger = global_options.settings.header.hamburger;
+    var _srcHamburgerLogo = global_options.settings.header.srcHamburgerLogo;
     var _optionLanguage = global_options.settings.header.optionLanguage;
     var _colorScheme = global_options.settings.header.colorScheme;
     var _socialIcons = global_options.settings.header.socialIcons;
@@ -190,6 +195,20 @@ function htheme_set_data(){
         }
     }
 
+    if(_optionBurger){
+        if(jQuery('#hamburger').val() == _optionBurger){
+            jQuery('#hamburger').attr('checked', 'checked');
+        }
+    }
+
+    if(_srcHamburgerLogo){
+        jQuery('#srcHamburgerLogo').val(_srcHamburgerLogo);
+        //SET IMAGE
+        jQuery('#image_srcHamburgerLogo').css({
+            'background-image' : 'url('+_srcHamburgerLogo+')'
+        });
+    }
+
     if(_optionLanguage){
         if(jQuery('#optionLanguage').val() == _optionLanguage){
             jQuery('#optionLanguage').attr('checked', 'checked');
@@ -237,6 +256,8 @@ function htheme_update_data(){
     var _optionCart = jQuery('#optionCart');
     var _optionWishlist = jQuery('#optionWishlist');
     var _optionSearch = jQuery('#optionSearch');
+    var _optionBurger = jQuery('#hamburger');
+    var _srcHamburgerLogo = jQuery('#srcHamburgerLogo');
     var _optionLanguage = jQuery('#optionLanguage');
     var _colorScheme = jQuery('#colorScheme');
     var _socialIcons = jQuery('#socialIcons');
@@ -361,6 +382,20 @@ function htheme_update_data(){
 
     jQuery(_optionSearch).on('change', function(){
         jQuery(this).prop('checked') ? global_options.settings.header.optionSearch = jQuery(this).val() : global_options.settings.header.optionSearch = false;
+        htheme_flag_save(true);
+    });
+
+    jQuery(_optionBurger).on('change', function(){
+        jQuery(this).prop('checked') ? global_options.settings.header.hamburger = jQuery(this).val() : global_options.settings.header.hamburger = false;
+        htheme_flag_save(true);
+    });
+
+    jQuery(_srcHamburgerLogo).on('change', function(){
+        global_options.settings.header.srcHamburgerLogo = jQuery(this).val();
+        //SET IMAGE
+        jQuery('#image_srcHamburgerLogo').css({
+            'background-image' : 'url('+jQuery(this).val()+')'
+        });
         htheme_flag_save(true);
     });
 

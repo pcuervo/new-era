@@ -27,7 +27,9 @@
 <div class="htheme_form_row">
 	<div class="htheme_form_col_3">
 		<div class="htheme_label"><?php esc_html_e('Logo upload', 'invogue'); ?></div>
-		<div class="htheme_label_excerpt"><?php esc_html_e('Upload a logo that\'s approximately 150px in height, to make sure it\'s crisp on all retina screens.', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt">
+			<?php esc_html_e('Upload a logo that\'s approximately 150px in height, to make sure it\'s crisp on all retina screens.', 'invogue'); ?>
+		</div>
 	</div>
 	<div class="htheme_form_col_9">
 		<div class="htheme_button htheme_dark_btn htheme_media_uploader" data-connect="srcLogo" data-multiple="false" data-size="full">
@@ -37,6 +39,7 @@
 	</div>
 	<div class="htheme_form_col_12">
 		<div class="htheme_image_holder" id="image_srcLogo"></div>
+		<span class="htheme_remove_image" data-input="srcLogo"><?php esc_html_e('Remove image [x]', 'invogue'); ?></span>
 	</div>
 </div>
 <!-- ROW -->
@@ -44,7 +47,9 @@
 <div class="htheme_form_row" style="display:none">
 	<div class="htheme_form_col_3">
 		<div class="htheme_label"><?php esc_html_e('Logo retina upload', 'invogue'); ?></div>
-		<div class="htheme_label_excerpt"><?php esc_html_e('Choose between a navigation bar that runs the full width of the screen, or at a fixed width.', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt">
+			<?php esc_html_e('Choose between a navigation bar that runs the full width of the screen, or at a fixed width.', 'invogue'); ?>
+		</div>
 	</div>
 	<div class="htheme_form_col_9">
 		<div class="htheme_button htheme_dark_btn htheme_media_uploader" data-connect="srcLogoRetina" data-multiple="false" data-size="full">
@@ -102,7 +107,9 @@
 <div class="htheme_form_row">
 	<div class="htheme_form_col_3">
 		<div class="htheme_label"><?php esc_html_e('Logo upload', 'invogue'); ?></div>
-		<div class="htheme_label_excerpt"><?php esc_html_e('Upload a logo that\'s approximately 150px in height, to make sure it\'s crisp on all retina screens.', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt">
+			<?php esc_html_e('Upload a logo that\'s approximately 150px in height, to make sure it\'s crisp on all retina screens.', 'invogue'); ?>
+		</div>
 	</div>
 	<div class="htheme_form_col_9">
 		<div class="htheme_button htheme_dark_btn htheme_media_uploader" data-connect="srcStickyLogo" data-multiple="false" data-size="full">
@@ -112,6 +119,7 @@
 	</div>
 	<div class="htheme_form_col_12">
 		<div class="htheme_image_holder" id="image_srcStickyLogo"></div>
+		<span class="htheme_remove_image" data-input="srcStickyLogo"><?php esc_html_e('Remove image [x]', 'invogue'); ?></span>
 	</div>
 </div>
 <!-- ROW -->
@@ -199,6 +207,7 @@
 	</div>
 	<div class="htheme_form_col_12">
 		<div class="htheme_image_holder" id="image_srcMobileLogo"></div>
+		<span class="htheme_remove_image" data-input="srcMobileLogo"><?php esc_html_e('Remove image [x]', 'invogue'); ?></span>
 	</div>
 </div>
 <!-- ROW -->
@@ -209,7 +218,7 @@
 <div class="htheme_form_row">
 	<div class="htheme_form_col_12">
 		<div class="htheme_label htheme_red_heading"><?php esc_html_e('Layout Options', 'invogue'); ?></div>
-		<div class="htheme_label_excerpt"><?php esc_html_e('Choose between a navigation bar that runs the full width of the screen, or at a fixed width.', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt"><?php esc_html_e('Enable some extra navigational items.', 'invogue'); ?></div>
 	</div>
 </div>
 <!-- ROW -->
@@ -265,6 +274,35 @@
 	</div>
 	<div class="htheme_form_col_9">
 		<input type="checkbox" name="optionSearch" id="optionSearch" value="true">
+	</div>
+</div>
+<!-- ROW -->
+<!-- ROW -->
+<div class="htheme_form_row">
+	<div class="htheme_form_col_3">
+		<div class="htheme_label"><?php esc_html_e('Enable desktop hamburger menu', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt"><?php esc_html_e('This transforms your navigation into a mobile like menu on desktop views.', 'invogue'); ?> </div>
+	</div>
+	<div class="htheme_form_col_9">
+		<input type="checkbox" name="hamburger" id="hamburger" value="true">
+	</div>
+</div>
+<!-- ROW -->
+<!-- ROW -->
+<div class="htheme_form_row">
+	<div class="htheme_form_col_3">
+		<div class="htheme_label"><?php esc_html_e('Hamburger menu logo upload', 'invogue'); ?></div>
+		<div class="htheme_label_excerpt"><?php esc_html_e('You can upload a different version of your logo to cater for the smaller space that it would be in.', 'invogue'); ?></div>
+	</div>
+	<div class="htheme_form_col_9">
+		<div class="htheme_button htheme_dark_btn htheme_media_uploader" data-connect="srcHamburgerLogo" data-multiple="false" data-size="full">
+			<?php esc_html_e('Upload', 'invogue'); ?>
+		</div>
+		<input type="hidden" name="srcHamburgerLogo" id="srcHamburgerLogo" class="htheme_field_fixed_400">
+	</div>
+	<div class="htheme_form_col_12">
+		<div class="htheme_image_holder" id="image_srcHamburgerLogo"></div>
+		<span class="htheme_remove_image" data-input="srcHamburgerLogo"><?php esc_html_e('Remove image [x]', 'invogue'); ?></span>
 	</div>
 </div>
 <!-- ROW -->

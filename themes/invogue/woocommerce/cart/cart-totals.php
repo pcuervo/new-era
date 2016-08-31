@@ -91,7 +91,7 @@ $cart_url = $woocommerce->cart->get_cart_url();
 	<!-- CHECK OUT BUTTON -->
 	<div class="htheme_cart_footer_row">
 		<a href="<?php echo esc_url($checkout_url); ?>" class="htheme_cart_button_dark htheme_float_right">
-			Checkout
+			<?php esc_html_e('Checkout', 'woocommerce'); ?>
 		</a>
 	</div>
 
@@ -100,7 +100,7 @@ $cart_url = $woocommerce->cart->get_cart_url();
 	<!-- CONTINUE SHOPPING -->
 	<div class="htheme_cart_footer_row">
 		<a href="<?php echo esc_url(get_permalink(wc_get_page_id( 'shop'))); ?>" class="htheme_continue_shopping htheme_float_right">
-			Continue shopping
+			<?php esc_html_e('Continue shopping', 'woocommerce'); ?>
 		</a>
 	</div>
 
