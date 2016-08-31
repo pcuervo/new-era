@@ -19,11 +19,6 @@ get_header(); ?>
 		<!-- ROW -->
 		<div class="htheme_row">
 			<div class="htheme_container">
-
-				<div class="[ header-category ][ margin-bottom--large ]">
-					<h2><?php the_title(); ?></h2>
-				</div>
-
 				<div class="htheme_inner_col">
 					<?php the_content(); ?>
 				</div>
