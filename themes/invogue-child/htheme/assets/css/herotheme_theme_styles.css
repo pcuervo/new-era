@@ -340,7 +340,7 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 /*Container*/
 @media(min-width: 1025px) and (max-width: 1200px){ .htheme_vc_row_contained, .htheme_container { width: 990px!important } }
 
-/**/
+/*Cart*/
 @media(min-width: 769px) and (max-width: 955px){
 	.woocommerce-cart .shop_table .woocommerce-Price-amount,
 	.woocommerce-cart .shop_table .woocommerce-Price-currencySymbol { font-size: 15px!important; }
@@ -355,3 +355,8 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 	.top--0--xs { top: 0px!important; }
 	.transform--0--xs { transform: translateY(0%)!important; }
 }
+
+/*Checkout*/
+
+#billing_company_field,
+.about_paypal { display: none; }
