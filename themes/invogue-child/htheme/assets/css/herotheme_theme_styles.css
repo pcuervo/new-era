@@ -58,7 +58,7 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 .htheme_horz_pager_wrapper { display: none!important; }
 
 /*Margin*/
-.no-margin { margin: 0px; }
+.no-margin { margin: 0px!important; }
 .margin-top--small { margin-top: 10px!important; }
 .margin-bottom--small { margin-bottom: 10px!important; }
 
@@ -339,3 +339,19 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 
 /*Container*/
 @media(min-width: 1025px) and (max-width: 1200px){ .htheme_vc_row_contained, .htheme_container { width: 990px!important } }
+
+/**/
+@media(min-width: 769px) and (max-width: 955px){
+	.woocommerce-cart .shop_table .woocommerce-Price-amount,
+	.woocommerce-cart .shop_table .woocommerce-Price-currencySymbol { font-size: 15px!important; }
+}
+
+.htheme_col_2.width--12p { width: 12.666666666666664% }
+.htheme_col_1.width--12p { width: 12.333333333333332% }
+.width--180 { width: 180px; }
+.line-height--48 { line-height: 48px!important; }
+
+@media(max-width: 769px){
+	.top--0--xs { top: 0px!important; }
+	.transform--0--xs { transform: translateY(0%)!important; }
+}

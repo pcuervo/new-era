@@ -39,7 +39,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<?php esc_html_e( 'Price', 'woocommerce' ); ?>
 				</div>
 			</div>
-			<div class="htheme_col_2">
+			<div class="htheme_col_2 width--12p">
 				<div class="htheme_inner_col">
 					<?php esc_html_e( 'Quantity', 'woocommerce' ); ?>
 				</div>
@@ -60,8 +60,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 				if ( $_product && $_product->exists() && $cart_item['quantity'] > 0 && apply_filters( 'woocommerce_cart_item_visible', true, $cart_item, $cart_item_key ) ) {
 					?>
 						<div class="htheme_cart_row <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-							<div class="htheme_col_1 htheme_position htheme_cart_image" style="background-image:url(<?php echo esc_url($image[0]); ?>)">
-								<div class="htheme_inner_col"></div>
+							<div class="htheme_col_1 htheme_position htheme_cart_image">
+								<div class="htheme_inner_col [ no-margin ][ transform--0--xs ][ top--0--xs ]">
+									<img src="<?php echo esc_url($image[0]); ?>" alt="image product">
+								</div>
 							</div>
 							<div class="htheme_col_5 htheme_position">
 								<div class="htheme_inner_col">
@@ -91,7 +93,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									?>
 								</div>
 							</div>
-							<div class="htheme_col_2 htheme_position">
+							<div class="htheme_col_2 width--12p htheme_position">
 								<div class="htheme_inner_col product-quantity">
 									<?php
 									if ( $_product->is_sold_individually() ) {
@@ -108,7 +110,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 									?>
 								</div>
 							</div>
-							<div class="htheme_col_1 htheme_position">
+							<div class="htheme_col_1 width--12p htheme_position">
 								<div class="htheme_inner_col">
 									<?php
 										echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
@@ -141,13 +143,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<div class="coupon [ col-1 ]">
 
 				<div class="htheme_coupon_wrap">
-					<div class="htheme_coupon_open htheme_cart_button_light" data-toggle="open">¿Tienes un cupón?</div>
+					<div class="htheme_coupon_open [ htheme_btn_style_1 btn-primary ][ width--180 ]" data-toggle="open">¿Tienes un cupón?</div>
 					<div class="htheme_coupon_inner">
 						<div class="htheme_form_field_item">
 							<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" />
 							<label class="[ margin-left--small ]" for="coupon_code"><?php esc_html_e( 'Código cupón', 'woocommerce' ); ?></label>
 						</div>
-						<input type="submit" class="button htheme_cart_button_dark" name="apply_coupon" value="<?php esc_attr_e( 'Aplicar', 'woocommerce' ); ?>" />
+						<input type="submit" class="button [ htheme_btn_style_1 btn-primary ][ line-height--48 ]" name="apply_coupon" value="<?php esc_attr_e( 'Aplicar', 'woocommerce' ); ?>" />
 						<?php do_action( 'woocommerce_cart_coupon' ); ?>
 					</div>
 				</div>

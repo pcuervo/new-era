@@ -90,7 +90,7 @@ $cart_url = $woocommerce->cart->get_cart_url();
 
 	<!-- CHECK OUT BUTTON -->
 	<div class="htheme_cart_footer_row">
-		<a href="<?php echo esc_url($checkout_url); ?>" class="htheme_cart_button_dark htheme_float_right">
+		<a href="<?php echo esc_url($checkout_url); ?>" class="htheme_btn_style_1 btn-primary htheme_float_right">
 			Pagar
 		</a>
 	</div>

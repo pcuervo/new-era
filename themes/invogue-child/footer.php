@@ -132,7 +132,7 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 					<div class="htheme_footer_social_wrap">
 						<a href="<?php echo esc_url(home_url( '/aviso-de-privacidad' )); ?>">Aviso de privacidad</a><p>|</p>
 						<a href="<?php echo esc_url(home_url( '/terminos-y-condiciones' )); ?>">Términos y condiciones</a><p>|</p>
-						<a href="<?php echo esc_url(home_url( '/politicas de devoluciones' )); ?>">Políticas de devoluciones</a><p>|</p>
+						<a href="<?php echo esc_url(home_url( '/politicas-de-devoluciones' )); ?>">Políticas de devoluciones</a><p>|</p>
 						<a href="<?php echo esc_url(home_url( '/sobre-el-envio' )); ?>">Sobre el envío</a>
 						<?php
 							foreach($htheme_social_items as $social){
