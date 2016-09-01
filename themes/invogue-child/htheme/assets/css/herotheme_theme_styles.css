@@ -74,6 +74,8 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 .absolute { position: absolute; }
 .opacity--0 { opacity: 0; }
 
+.overflow--hidden { overflow: hidden; }
+
 .htheme_small_navigation .htheme_icon_nav_cart:before,
 .htheme_small_navigation .htheme_icon_nav_search:before { position: absolute; left: 0px; opacity: 0;  }
 
@@ -208,6 +210,12 @@ body {
 .width--100p{ width: 100%!important; }
 
 .height--30 { height: 30px!important; }
+
+.height--100p { height: 100%!important; }
+
+.max-width--100p{ max-width: 100%!important; }
+.max-height--100p{ max-height: 100%!important; }ç
+.min-height--100p{ min-height: 100%!important; }
 
 .margin-auto { margin: auto!important; }
 

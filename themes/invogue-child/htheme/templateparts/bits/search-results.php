@@ -25,8 +25,10 @@
 
 <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="htheme_search_row">
 	<?php if($image_details[0] != ''){ ?>
-	<div class="htheme_col_3 htheme_position htheme_search_image" style="background-image:url(<?php echo esc_url($image_details[0]); ?>)">
-		<div class="htheme_inner_col"></div>
+	<div class="htheme_col_3 htheme_position htheme_search_image [ overflow--hidden ]">
+		<div class="htheme_inner_col [  top--0--xs transform--0--xs ][ height--100p ]">
+			<img class="[ width--100p min-height--100p ]" src="<?php echo esc_url($image_details[0]); ?>" alt="imagen de producto">
+		</div>
 		<?php if ( $product->is_on_sale() ) : ?>
 			<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="htheme_onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
 		<?php endif; ?>
