@@ -26,6 +26,7 @@
 <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="htheme_search_row">
 	<?php if($image_details[0] != ''){ ?>
 	<div class="htheme_col_3 htheme_position htheme_search_image [ overflow--hidden ]">
+
 		<div class="htheme_inner_col [  top--0--xs transform--0--xs ][ height--100p ]">
 			<img class="[ width--100p min-height--100p ]" src="<?php echo esc_url($image_details[0]); ?>" alt="imagen de producto">
 		</div>
@@ -59,6 +60,19 @@
 						<span class="price"><?php echo $price_html; ?></span>
 					<?php endif; ?>
 				</p>
+
+				<!-- listones -->
+				<div>
+					<?php if (has_term( ( 'exclusivo-online' ), 'product_cat' )){ ?>
+						<div class="htheme_product_list_new htheme_product_list_exclusivo-online [ inline-block ][ margin-right--small ]"><div></div>Exclusivo online</div>
+					<?php } ?>
+					<?php if (has_term( ( 'mas-vendido' ), 'product_cat' )){ ?>
+						<div class="htheme_product_list_new htheme_product_list_mas-vendido [ inline-block ][ margin-right--small ]"><div></div>Más vendido</div>
+					<?php } ?>
+					<?php if (has_term( ( 'edicion-limitada' ), 'product_cat' )){ ?>
+					<div class="htheme_product_list_new htheme_product_list_edicion-limitada [ inline-block ][ margin-right--small ]"><div></div>Edición limitada</div>
+					<?php } ?>
+				</div>
 			</div>
 		</div>
 	</div>

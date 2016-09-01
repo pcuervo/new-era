@@ -549,15 +549,15 @@ class htheme_getwoo{
 				}
 				#IF PRODUCT IS OLDER THAN 20 DAYS
 				if ( has_term( 'exclusivo-online', 'product_cat' ) ) {
-					$html .= '<div class="htheme_product_list_new htheme_product_list_exclusivo-online"><div></div>'.esc_html__('Exclusivo online','invogue').'</div>';
+					$html .= '<div class="htheme_product_list_new htheme_product_list_exclusivo-online">'.esc_html__('Exclusivo','invogue').'</div>';
 				}
 				#IF PRODUCT IS Más vendido
 				if ( has_term( 'mas-vendido', 'product_cat' ) ) {
-					$html .= '<div class="htheme_product_list_new htheme_product_list_mas-vendido"><div></div>'.esc_html__('Más vendido','invogue').'</div>';
+					$html .= '<div class="htheme_product_list_new htheme_product_list_mas-vendido">'.esc_html__('Popular','invogue').'</div>';
 				}
 				#IF PRODUCT IS Edición limitada
 				if ( has_term( 'edicion-limitada', 'product_cat' ) ) {
-					$html .= '<div class="htheme_product_list_new htheme_product_list_edicion-limitada"><div></div>'.esc_html__('Edición limitada','invogue').'</div>';
+					$html .= '<div class="htheme_product_list_new htheme_product_list_edicion-limitada">'.esc_html__('Limitado','invogue').'</div>';
 				}
 
 				#OPTIONS - WISHLIST, ADD, PREVIEW

@@ -359,8 +359,6 @@ class htheme_getwoo{
 					'link' => get_permalink($item['product_id']),
 					'price' => wc_get_price_decimals(),
 					'image' => $image[0],
-					'price_html' => $this->htheme_return_price_html($item['product_id']),
-					'qty' => esc_html__('Qty', 'invogue'),
 				);
 
 				$total_quantity += $item['quantity'];
@@ -374,7 +372,7 @@ class htheme_getwoo{
 				'status' => 'active',
 				'count' => $total_quantity,
 				'url' => $cart_link,
-				'cart' => $cart_items,
+				'cart' => $cart_items,				
 				'symbol' => get_woocommerce_currency_symbol(get_option('woocommerce_currency')),
 				'total' => $woocommerce->cart->get_cart_total(),
 			));
@@ -545,19 +543,7 @@ class htheme_getwoo{
 
 				#IF PRODUCT IS OLDER THAN 20 DAYS
 				if($days <= 20){
-					$html .= '<div class="htheme_product_list_new">'.esc_html__('Nuevo','invogue').'</div>';
-				}
-				#IF PRODUCT IS OLDER THAN 20 DAYS
-				if ( has_term( 'exclusivo-online', 'product_cat' ) ) {
-					$html .= '<div class="htheme_product_list_new htheme_product_list_exclusivo-online">'.esc_html__('Exclusivo','invogue').'</div>';
-				}
-				#IF PRODUCT IS Más vendido
-				if ( has_term( 'mas-vendido', 'product_cat' ) ) {
-					$html .= '<div class="htheme_product_list_new htheme_product_list_mas-vendido">'.esc_html__('Popular','invogue').'</div>';
-				}
-				#IF PRODUCT IS Edición limitada
-				if ( has_term( 'edicion-limitada', 'product_cat' ) ) {
-					$html .= '<div class="htheme_product_list_new htheme_product_list_edicion-limitada">'.esc_html__('Limitado','invogue').'</div>';
+					$html .= '<div class="htheme_product_list_new">'.esc_html__('NEW','invogue').'</div>';
 				}
 
 				#OPTIONS - WISHLIST, ADD, PREVIEW
@@ -577,7 +563,7 @@ class htheme_getwoo{
 				}
 
 				$html .= '<div class="htheme_product_list_options">';
-					$html .= '<div class="htheme_icon_list_product_preview htheme_activate_preview" data-product-id="'.esc_attr($data['id']).'" data-product-url="'.esc_url($data['url']).'" data-tooltip="true" data-tooltip-text="'.esc_html__('Preview','invogue').'"></div>';
+					$html .= '<div class="htheme_icon_list_product_preview htheme_activate_preview" data-product-id="'.esc_attr($data['id']).'" data-product-url="'.esc_url($data['url']).'" data-tooltip="true" data-tooltip-text="Preview"></div>';
 					$html .= '<a rel="nofollow" href="'.esc_url($data['cart_url']).'" data-quantity="1" data-tooltip="true" data-tooltip-text="'.esc_html($data['cart_text']).'" data-product_id="'.esc_attr($data['id']).'" data-product_sku="'.esc_attr($data['cart_sku']).'" class="htheme_icon_list_product_add product_type_'.esc_attr($data['cart_type']).' '.esc_attr($is_ajax_add).'"></a>';
 				$html .= '</div>';
 
@@ -1367,8 +1353,7 @@ class htheme_getwoo{
 
 	#RETURN PRODUCT HTML
 	public function htheme_return_price_html($ID){
-		#$product_id = new WC_Product($ID); OLD VERSION - NOT WORKING WITH SUDO REWARDS PLUGIN
-		$product_id = wc_get_product($ID);
+		$product_id = new WC_Product($ID);
 		return $product_id->get_price_html();
 	}
 

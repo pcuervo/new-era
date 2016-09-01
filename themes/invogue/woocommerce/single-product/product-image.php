@@ -92,7 +92,6 @@ if(!$image_src_array[0]['image']){
 
 		<div class="htheme_single_product_featured">
 			<!-- listones -->
-
 			<?php if (has_term( ( 'exclusivo-online' ), 'product_cat' )){ ?>
 				<div class="htheme_product_list_new htheme_product_list_exclusivo-online"><div></div>Exclusivo online</div>
 			<?php } ?>
