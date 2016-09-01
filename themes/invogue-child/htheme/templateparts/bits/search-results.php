@@ -64,13 +64,13 @@
 				<!-- listones -->
 				<div>
 					<?php if (has_term( ( 'exclusivo-online' ), 'product_cat' )){ ?>
-						<div class="htheme_product_list_new htheme_product_list_exclusivo-online [ inline-block ][ margin-right--small ]"><div></div>Exclusivo online</div>
+						<div class="htheme_product_list_new htheme_product_list_exclusivo-online [ inline-block ][ margin-right--small ]"><div></div>Exclusivo</div>
 					<?php } ?>
 					<?php if (has_term( ( 'mas-vendido' ), 'product_cat' )){ ?>
-						<div class="htheme_product_list_new htheme_product_list_mas-vendido [ inline-block ][ margin-right--small ]"><div></div>Más vendido</div>
+						<div class="htheme_product_list_new htheme_product_list_mas-vendido [ inline-block ][ margin-right--small ]"><div></div>Popular</div>
 					<?php } ?>
 					<?php if (has_term( ( 'edicion-limitada' ), 'product_cat' )){ ?>
-					<div class="htheme_product_list_new htheme_product_list_edicion-limitada [ inline-block ][ margin-right--small ]"><div></div>Edición limitada</div>
+					<div class="htheme_product_list_new htheme_product_list_edicion-limitada [ inline-block ][ margin-right--small ]"><div></div>Limitado</div>
 					<?php } ?>
 				</div>
 			</div>
