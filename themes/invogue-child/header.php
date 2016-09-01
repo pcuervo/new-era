@@ -11,6 +11,27 @@
 	<!-- META -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Facebook, Twitter metas -->
+	<meta property="og:title" content="New era">
+	<meta property="og:type" content="article" />
+	<meta name="og:url" content="<?php echo get_the_permalink(); ?>" />
+	<meta name="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/new-era-share.png" alt="logo de new era">
+	<meta property="og:image:width" content="210" />
+	<meta property="og:image:height" content="110" />
+	<meta property="fb:app_id" content="149936212117170" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@NewEraMX" />
+	<meta name="twitter:title" content="New Era México" />
+	<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
+	<meta name="twitter:image" content="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/new-era-share.png" alt="logo de new era" />
+	<!-- Compatibility -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="cleartype" content="on">
+	<!-- Sitemap Google Verify -->
+	<meta name="google-site-verification" content="4Bt7KHVG0kzwetxi_LnrYR8QUCkKFdSNGA4PU2hpaDs" />
+
 	<!-- GET TEMPLATE PART - FAV ICON -->
 	<?php get_template_part( 'htheme/templateparts/bits/fav', 'icon' ); ?>
 	<!-- LINK -->
@@ -38,6 +59,25 @@
 
 ?>
 <body <?php body_class(); ?>>
+
+<!-- Facebook, Twitter metas -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '149936212117170',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <?php
 	#GET TEMPLATE PART - NAVIGATION

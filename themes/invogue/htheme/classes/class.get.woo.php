@@ -374,7 +374,7 @@ class htheme_getwoo{
 				'status' => 'active',
 				'count' => $total_quantity,
 				'url' => $cart_link,
-				'cart' => $cart_items,				
+				'cart' => $cart_items,
 				'symbol' => get_woocommerce_currency_symbol(get_option('woocommerce_currency')),
 				'total' => $woocommerce->cart->get_cart_total(),
 			));
@@ -545,7 +545,19 @@ class htheme_getwoo{
 
 				#IF PRODUCT IS OLDER THAN 20 DAYS
 				if($days <= 20){
-					$html .= '<div class="htheme_product_list_new">'.esc_html__('NEW','invogue').'</div>';
+					$html .= '<div class="htheme_product_list_new">'.esc_html__('NUEVO','invogue').'</div>';
+				}
+				#IF PRODUCT IS OLDER THAN 20 DAYS
+				if ( has_term( 'exclusivo-online', 'product_cat' ) ) {
+					$html .= '<div class="htheme_product_label_promo htheme_product_list_exclusive-online">'.esc_html__('Exclusivo online','invogue').'</div>';
+				}
+				#IF PRODUCT IS Más vendido
+				if ( has_term( 'mas-vendido', 'product_cat' ) ) {
+					$html .= '<div class="htheme_product_label_promo htheme_product_list_mas-vendido">'.esc_html__('Más vendido','invogue').'</div>';
+				}
+				#IF PRODUCT IS Edición limitada
+				if ( has_term( 'edicion-limitada', 'product_cat' ) ) {
+					$html .= '<div class="htheme_product_label_promo htheme_product_list_edicion-limitada">'.esc_html__('Edición limitada','invogue').'</div>';
 				}
 
 				#OPTIONS - WISHLIST, ADD, PREVIEW
