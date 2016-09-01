@@ -15,11 +15,33 @@
 							</div>
 						</div>
 					</div><!-- ROW -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="htheme_vc_row_contained">
+		<div class="wpb_column vc_column_container vc_col-sm-8">
+			<div class="vc_column-inner ">
+				<div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
 						<div class="wpb_wrapper">
 							<div class="htheme_inner_col htheme_default_content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wpb_column vc_column_container vc_col-sm-4">
+			<div class="vc_column-inner ">
+				<div class="wpb_wrapper">
+					<div class="wpb_text_column wpb_content_element ">
+						<div class="wpb_wrapper">
+							<div class="htheme_inner_col htheme_default_content">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/size.png" alt="imagen de tallas de cabeza">
 							</div>
 						</div>
 					</div>
@@ -175,7 +197,7 @@
 			</div>
 		</div>
 	</div>
-		<div class="htheme_vc_row_contained">
+	<div class="htheme_vc_row_contained">
 		<div class="wpb_column vc_column_container vc_col-sm-6">
 			<div class="vc_column-inner ">
 				<div class="wpb_wrapper">

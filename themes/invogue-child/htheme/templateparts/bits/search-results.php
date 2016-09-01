@@ -29,6 +29,8 @@
 		<div class="htheme_inner_col [  top--0--xs transform--0--xs ][ height--100p ]">
 			<img class="[ width--100p min-height--100p ]" src="<?php echo esc_url($image_details[0]); ?>" alt="imagen de producto">
 		</div>
+
+
 		<?php if ( $product->is_on_sale() ) : ?>
 			<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="htheme_onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
 		<?php endif; ?>
