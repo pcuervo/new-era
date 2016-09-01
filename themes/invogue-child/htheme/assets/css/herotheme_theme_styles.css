@@ -99,7 +99,10 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 	color: #000000!important;
 	font-size: 11px!important;
 }
-.htheme_product_list_percent { display: none; }
+
+/*ocultar la etiqueta de las ofertas*/
+.htheme_product_list_percent,
+.htheme_onsale { display: none; }
 
 	/*Promo*/
 .htheme_product_list_new {
@@ -108,16 +111,17 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 	margin-bottom: 9px;
 	position: relative!important; right: 0px!important;
 	font-weight: 400!important;
+	z-index: 1;
 }
 .htheme_product_list_new.htheme_product_list_exclusivo-online,
 .htheme_product_list_new.htheme_product_list_mas-vendido,
-.htheme_product_list_new.htheme_product_list_adicion-limitada {
+.htheme_product_list_new.htheme_product_list_edicion-limitada {
 	line-height: 20px!important;
 	font-size: 10px!important;
 }
 .htheme_product_list_new.htheme_product_list_exclusivo-online div,
 .htheme_product_list_new.htheme_product_list_mas-vendido div,
-.htheme_product_list_new.htheme_product_list_adicion-limitada div {
+.htheme_product_list_new.htheme_product_list_edicion-limitada div {
 	height: 18px;
 }
 .htheme_product_list_edicion-limitada::before{ margin-top: 10px;}

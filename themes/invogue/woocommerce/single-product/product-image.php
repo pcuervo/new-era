@@ -91,6 +91,18 @@ if(!$image_src_array[0]['image']){
 		</div>
 
 		<div class="htheme_single_product_featured">
+			<!-- listones -->
+
+			<?php if (has_term( ( 'exclusivo-online' ), 'product_cat' )){ ?>
+				<div class="htheme_product_list_new htheme_product_list_exclusivo-online"><div></div>Exclusivo online</div>
+			<?php } ?>
+			<?php if (has_term( ( 'mas-vendido' ), 'product_cat' )){ ?>
+				<div class="htheme_product_list_new htheme_product_list_mas-vendido"><div></div>Más vendido</div>
+			<?php } ?>
+			<?php if (has_term( ( 'edicion-limitada' ), 'product_cat' )){ ?>
+			<div class="htheme_product_list_new htheme_product_list_edicion-limitada"><div></div>Edición limitada</div>
+			<?php } ?>
+
 			<div class="htheme_icon_single_product_featured_zoom htheme_activate_zoom" data-zoom-id="1"></div>
 			<?php
 			#MAIN IMAGE

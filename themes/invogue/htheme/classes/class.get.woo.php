@@ -557,7 +557,7 @@ class htheme_getwoo{
 				}
 				#IF PRODUCT IS Edición limitada
 				if ( has_term( 'edicion-limitada', 'product_cat' ) ) {
-					$html .= '<div class="htheme_product_list_new htheme_product_list_adicion-limitada"><div></div>'.esc_html__('Edición limitada','invogue').'</div>';
+					$html .= '<div class="htheme_product_list_new htheme_product_list_edicion-limitada"><div></div>'.esc_html__('Edición limitada','invogue').'</div>';
 				}
 
 				#OPTIONS - WISHLIST, ADD, PREVIEW
