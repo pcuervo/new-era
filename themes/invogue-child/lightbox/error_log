@@ -1,0 +1,6 @@
+[05-Jul-2016 17:03:22 America/New_York] PHP Fatal error:  Using $this when not in object context in /home/seoconsu/public_html/new-era/conexion-get-response.php on line 9
+[05-Jul-2016 17:20:25 America/New_York] PHP Warning:  curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments in /home/seoconsu/public_html/new-era/conexion-get-response.php on line 11
+[07-Jul-2016 18:50:26 America/New_York] PHP Warning:  curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: You must pass either an object or an array with the CURLOPT_HTTPHEADER, CURLOPT_QUOTE, CURLOPT_HTTP200ALIASES and CURLOPT_POSTQUOTE arguments in /home/seoconsu/public_html/new-era/conexion-get-response.php on line 11
+[07-Jul-2016 18:59:06 America/New_York] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /home/seoconsu/public_html/new-era/conexion-get-response.php on line 5
+[07-Jul-2016 19:43:23 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/seoconsu/public_html/new-era/conexion-get-response.php on line 26
+[07-Jul-2016 19:47:31 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING in /home/seoconsu/public_html/new-era/conexion-get-response.php on line 26

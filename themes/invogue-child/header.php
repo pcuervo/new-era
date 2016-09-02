@@ -11,7 +11,7 @@
 	<!-- META -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 	<!-- Facebook, Twitter metas -->
 	<meta property="og:title" content="New era">
 	<meta property="og:type" content="article" />
@@ -37,6 +37,7 @@
 	<!-- LINK -->
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
 	<!-- WP_HEAD -->
 	<?php wp_head(); ?>
 

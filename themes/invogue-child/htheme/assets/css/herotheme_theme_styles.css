@@ -312,6 +312,8 @@ input { text-transform: none!important;}
 .htheme_btn_style_1.btn-primary:hover { font-weight: 700!important; background-color: #FBD915 !important; color: #000000!important; }
 .banner-position-button .htheme_banner_inner_button { top: 70%!important; }
 
+.htheme_inner_col .htheme_btn_style_1.btn-primary{ color: #000 !important;}
+
 .htheme_cart_button_light { width: 240px!important; }
 
 /*Checkout*/
