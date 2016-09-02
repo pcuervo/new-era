@@ -1,0 +1,19 @@
+[04-Jul-2016 12:50:55 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'pinguspa_NE'@'localhost' (using password: YES) in /home/cliento/public_html/apps/facebook/ws/info.php on line 4
+[04-Jul-2016 12:50:58 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'pinguspa_NE'@'localhost' (using password: YES) in /home/cliento/public_html/apps/facebook/ws/info.php on line 4
+[04-Jul-2016 12:51:02 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'pinguspa_NE'@'localhost' (using password: YES) in /home/cliento/public_html/apps/facebook/ws/info.php on line 4
+[04-Jul-2016 12:51:29 America/New_York] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'pinguspa_NE'@'localhost' (using password: YES) in /home/cliento/public_html/apps/facebook/ws/info.php on line 4
+[04-Jul-2016 19:06:25 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:09:32 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:09:38 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:10:35 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:10:36 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:10:36 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:10:36 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:10:48 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:11:01 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[04-Jul-2016 19:11:05 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[05-Jul-2016 12:05:06 America/New_York] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cliento/public_html/apps/facebook/ws/close.php on line 7
+[25-Jul-2016 13:08:23 America/New_York] PHP Parse error:  syntax error, unexpected T_ECHO, expecting ',' or ';' in /home/cliento/public_html/apps/facebook/ws/estados.php on line 40
+[25-Jul-2016 13:08:59 America/New_York] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cliento/public_html/apps/facebook/ws/estados.php on line 41
+[25-Jul-2016 13:09:28 America/New_York] PHP Warning:  utf8_decode() expects parameter 1 to be string, array given in /home/cliento/public_html/apps/facebook/ws/estados.php on line 41
+[25-Jul-2016 13:09:54 America/New_York] PHP Warning:  utf8_decode() expects parameter 1 to be string, array given in /home/cliento/public_html/apps/facebook/ws/estados.php on line 41

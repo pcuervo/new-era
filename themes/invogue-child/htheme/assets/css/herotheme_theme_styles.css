@@ -593,3 +593,356 @@ input.ui-button.ui-icon-notext .ui-icon {
 /* positioning */
 .ui-icon-triangle-1-n { background-position: 0 -16px; }
 .ui-icon-triangle-1-s { background-position: -65px -16px; }
+
+
+/*Map*/
+@charset "utf-8";
+@import url(https://db.onlinewebfonts.com/c/cb7d0b0968943ceca839712e38df14c1?family=TradeGothic+LT+Bold);
+@font-face {font-family: "TradeGothic LT Bold";
+    src: url("https://db.onlinewebfonts.com/t/cb7d0b0968943ceca839712e38df14c1.eot");
+    src: url("https://db.onlinewebfonts.com/t/cb7d0b0968943ceca839712e38df14c1.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/cb7d0b0968943ceca839712e38df14c1.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/cb7d0b0968943ceca839712e38df14c1.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/cb7d0b0968943ceca839712e38df14c1.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/cb7d0b0968943ceca839712e38df14c1.svg#TradeGothic LT Bold") format("svg");
+}
+.container{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.nav{
+	background: #000;
+	width: 100%;
+	height: 60px;
+	position: relative
+}
+.side{
+    margin-top: 100px;
+    background: #000;
+    width: 25px;
+    height: 50px;
+    position: relative;
+    left: 0px;
+}
+
+.search {
+    border: 1px solid #ffde01;
+    max-width: 320px;
+    height: 32px;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 3px 0;
+}
+
+#map{
+	width: 100%;
+	height: 100%;
+}
+
+.store-search{
+	border-right: 2px solid #ffde01;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-right: 10px;
+    width: 28px;
+    height: 28px;
+    float: right;
+}
+
+.filter{
+    padding-top: 3px;
+    padding-left: 5px;
+    width: 27px;
+    height: 27px;
+    float: right;
+}
+
+.style-input {
+    min-width: 120px;
+    max-width: 200px;
+    height: 7px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    padding: 10px 0;
+}
+/********* TERMINA NAV  *********/
+
+/********* INICIA CONTENT *********/
+#demo{
+	width: 100%;
+	height: 400px;
+}
+
+#pins-container{
+	max-height: 550px;
+	max-width: 320px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.map{
+    height: 100%;
+    width: 100%;
+    position: absolute
+}
+
+.banner-left{
+	left: -320px;
+	top:60px;
+	width: 320px;
+	height: 600px;
+	background: #000;
+	padding-top: 27px;
+	position: absolute;
+}
+
+.padding-div{
+	padding-bottom: 10px;
+	padding-top: 21px;
+	max-height: 600px;
+}
+
+.arrow{
+	max-width: 40px;
+    margin-left: 269px;
+	display: none;
+}
+
+.pin{
+	max-width: 33px;
+	padding-left: 10px;
+    float: left;
+    display: none;
+}
+
+.style-titles{
+	font-family: sans-serif;
+	font-size: 20px;
+    padding-top: 7px;
+    width: 239px;
+    color: #ffde01;
+    float: left;
+    padding-left: 10px;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+.style-subtitle{
+	font-family: sans-serif;
+	font-size: 17px;
+	color: #ffde01;
+	cursor: pointer;
+}
+
+.style-adress{
+	font-family: Arial;
+	font-size: 14px;
+	color: white;
+	opacity: 0.7;
+	width: 151px;
+    padding-left: 51px;
+
+}
+
+/************ TERMINA CONTENT ***************/
+
+
+
+/************* INICIA INDEX-2 ******************/
+
+.padding-div2{
+	padding-top: 45px;
+	padding-bottom: 30px;
+    border-style: solid;
+    border-bottom-color: #ffde01;
+}
+
+.store{
+	left: -320px;
+	top: 60px;
+	width: 320px;
+	height: 595px;
+	background: #000;
+	padding-top: 27px;
+	position: absolute;
+}
+
+.style-place{
+	font-family: sans-serif;
+	font-size: 17px;
+	padding-left: 12px;
+	color: white;
+}
+
+.style-logo-store{
+	max-width: 120px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+}
+
+.style-title{
+	font-family: sans-serif;
+	font-size: 20px;
+    padding-top: 7px;
+    width: 239px;
+    color: white;
+    float: left;
+    padding-left: 10px;
+    font-weight: bold;
+	width: 100%;
+}
+
+.style-adress-State{
+	font-family: Arial;
+	font-size: 14px;
+	color: white;
+	opacity: 0.7;
+	width: 100%;
+}
+
+.style-adressState{
+	font-family: Arial;
+    font-size: 17px;
+    color: white;
+    width: 100%;
+}
+
+.close-bar{
+    max-width: 30px;
+    margin-left: 280px;
+}
+
+/****** INICIA PANTALLA DE FILTROS *****/
+
+.barFilters{
+	top: -950px;
+	width: 320px;
+	height: 600px;
+	background: #000;
+	padding-top: 21px;
+	position: absolute;
+}
+.close-bar2{
+    max-width: 30px;
+    margin-left: 280px;
+    padding-bottom: 33px;
+}
+.style-select{
+	/*width: 70%;
+    padding: 16px 20px;
+    border-radius: 4px;
+    border-color: white;
+    background-color: black;*/
+    width: 190px;
+    background-color: #000;
+    color: white;
+    /*padding: 14px 20px;*/
+    border: 2px solid white;
+
+}
+.font-select{
+	font-family: sans-serif;
+	font-size: 14px;
+	color: white;
+}
+.position-form{
+	padding-top: 10px;
+	font-family: sans-serif;
+	font-size: 17px;
+	color: white;
+}
+.checkbox{
+	font-family: sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+.style-checkbox{
+	margin-right: 5px;
+	max-width: 23px;
+	cursor: pointer;
+}
+.center{
+	width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+	background-color: #ffde01;
+    border: none;
+    color: #000;
+    font-family: "TradeGothic LT Bold";
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav {
+    background: #000;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+.store-search {
+    border-right: 2px solid #ffde01;
+   padding: 3px 15px;
+    width: 28px;
+    height: 28px;
+    float: right;
+    /* display: inherit; */
+}
+.filter {
+    padding-top: 3px;
+    padding: 3px 10px;
+    width: 27px;
+    height: 27px;
+    float: right;
+}
+.logo{
+	max-width: 66px;
+    padding-top: 24px;
+    right: 4px;
+    position: absolute;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ font-style:italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+ font-style:italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-style:italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+ font-style:italic;
+}
+.arrow {
+    max-width: 40px;
+    margin-left: 80%;
+}
+.font-select {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 3px;
+}
+.checkbox label{
+	font-size: 18px;
+	margin-top: 2px;
+	display: inline-block;
+	vertical-align: top;
+}
+.detalle-container{
+	text-align: center;
+}

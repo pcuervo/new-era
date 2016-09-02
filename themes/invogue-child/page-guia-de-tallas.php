@@ -10,7 +10,8 @@
 								<div class="htheme_title_container" data-title-type="top_bottom">
 									<div class="htheme_title">
 										<h2>Guía de tallas</h2>
-									</div>								</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div><!-- ROW -->
