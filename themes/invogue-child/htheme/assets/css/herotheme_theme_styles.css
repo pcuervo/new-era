@@ -529,8 +529,8 @@ a.ui-button:active, .ui-button:active { background-color: #FBD915 !important; bo
 	text-align: left!important;
 	width: 80px!important;
 }
-.woocommerce-cart  .ui-widget-content .ui-button { background-color: #FFF200; border: 1px solid #777;  }
-.woocommerce-cart .ui-button-icon-only .ui-icon { top: 25%!important; left: 25%!important; }
+.woocommerce-cart  .ui-widget-content .ui-button { background-color: #FFF200; border: 1px solid #000000;  }
+.woocommerce-cart .ui-button-icon-only .ui-icon { top: 10%!important; left: 25%!important; }
 .woocommerce-cart a.ui-button:active, .ui-button:active { background-color: #FBD915 !important; border-color: #FBD915 !important; }
 
 .ui-button.ui-icon-notext .ui-icon {
