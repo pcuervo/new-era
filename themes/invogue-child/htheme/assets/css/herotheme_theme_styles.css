@@ -524,10 +524,15 @@ a.ui-button:active, .ui-button:active { background-color: #FBD915 !important; bo
 	position: absolute; top: 50%; left: 50%;
 	margin-top: -8px; margin-left: -8px;
 }
-.woocommerce-cart .ui-button-icon-only .ui-icon {
-	position: absolute; top: 50%; left: 50%;
-	margin-top: -8px; margin-left: -8px;
+
+.woocommerce-cart .ui-spinner input {
+	text-align: left!important;
+	width: 80px!important;
 }
+.woocommerce-cart  .ui-widget-content .ui-button { background-color: #FFF200; border: 1px solid #777;  }
+.woocommerce-cart .ui-button-icon-only .ui-icon { top: 25%!important; left: 25%!important; }
+.woocommerce-cart a.ui-button:active, .ui-button:active { background-color: #FBD915 !important; border-color: #FBD915 !important; }
+
 .ui-button.ui-icon-notext .ui-icon {
 	padding: 0;
 	width: 2.1em;
