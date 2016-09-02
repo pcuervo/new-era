@@ -60,7 +60,7 @@ function initMap() {
 		success: function(data){
 			jsonResult = data;
 			var image = {
-				url: 'http://localhost:8888/new-era/wp-content/themes/invogue-child/img/Pin.png',
+				url: 'https://www.socialpro.mx/apps/facebook/img/Pin.png',
 				size: new google.maps.Size(90, 90),
 				origin: new google.maps.Point(0, 0),
 				anchor: new google.maps.Point(17, 34),
@@ -98,7 +98,7 @@ function addMarkers(x){
 	jsonResult = x;
 
 	var image = {
-      url: 'http://localhost:8888/new-era/wp-content/themes/invogue-child/img/Pin.png',
+      url: 'https://www.socialpro.mx/apps/facebook/img/Pin.png',
       size: new google.maps.Size(90, 90),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(17, 34),
@@ -561,7 +561,7 @@ function showTienda(idTienda){
 		if(data["logo"] != ""){
 			$("#store-logo").attr('src', data["logo"]);
 		}else{
-			$("#store-logo").attr('src', "http://localhost:8888/new-era/wp-content/themes/invogue-child/img/new_era.png");
+			$("#store-logo").attr('src', "https://www.socialpro.mx/apps/facebook/img/new_era.png");
 		}
 
 		var pos = {
@@ -818,10 +818,10 @@ function filtra(datos, filtro, word){
 $("#zone-check").click(function(){
 
 	if(zone_check == false){
-		$("#zone-check").attr('src', "http://localhost:8888/new-era/wp-content/themes/invogue-child/img/select_checked.svg");
+		$("#zone-check").attr('src', "https://www.socialpro.mx/apps/facebook/img/select_checked.svg");
 		zone_check = true;
 	}else{
-		$("#zone-check").attr('src', "http://localhost:8888/new-era/wp-content/themes/invogue-child/img/select_empty.svg");
+		$("#zone-check").attr('src', "https://www.socialpro.mx/apps/facebook/img/select_empty.svg");
 		zone_check = false;
 	}
 });

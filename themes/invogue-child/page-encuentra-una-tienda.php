@@ -45,18 +45,12 @@
 
 <div class="container">
 	<div class="nav">
-		<div>
-			<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/encuentra-tienda/Logo.png">
-		</div>
-
 		<div class="search">
 			<input id="word" class="style-input" type="text"  placeholder="Buscar">
 			<img class="filter" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/encuentra-tienda/filter.svg">
 			<img id="searcher" class="store-search" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/encuentra-tienda/store.svg">
 		</div>
 	</div>
-
-
 	<div class="map" >
 		<div id="map"></div>
 	</div>
@@ -68,7 +62,6 @@
 		<div id="pins-container">
 		</div>
 	</div>
-
 	<div class="store">
 		<img class="close-bar" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/encuentra-tienda/cancel-button.svg">
 		<div class="padding-div2">
@@ -84,10 +77,8 @@
 			<p class="style-adress-State"  id="store-cp"></p>
 		</div>
 	</div>
-
 	<div class="barFilters">
 		<img class="close-bar2" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/encuentra-tienda/cancel-button.svg">
-
 		<div class="position-form">
 			<div class="center" >
 				<select class="style-select font-select" id="select-state" onchange="cambiar(this.value)" name="state">
@@ -95,9 +86,7 @@
 				</select>
 			</div>
 		</div>
-
 		</br>
-
 		<div class="position-form">
 			<div class="center" id="container-city">
 				<select class="style-select font-select" id="select-city" name="city">
@@ -105,9 +94,7 @@
 				</select>
 			</div>
 		</div>
-
 		</br>
-
 		<div class="position-form">
 			<div class="center">
 				<select class="style-select font-select" id="select-store" name="store">
@@ -115,17 +102,14 @@
 				</select>
 			</div>
 		</div>
-
 		</br>
 		</br>
-
 		<div class="checkbox center" id="check-zone-container">
 			<img class="style-checkbox" id="zone-check" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/encuentra-tienda/select_empty.svg"/>
 			<input class="style-checkbox" type="hidden" name="" value="">
 			<label>En mi zona</label>
 			</br>
 			</br>
-
 			<input class="button center" type="button" onclick="close_bar()" id="button-filter" value="BUSCAR >">
 		</div>
 	</div>
