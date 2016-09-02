@@ -11,7 +11,6 @@
 									<div class="htheme_title">
 										<h2>Guía de tallas</h2>
 									</div>
-									<input id="spinner">
 								</div>
 							</div>
 						</div>
