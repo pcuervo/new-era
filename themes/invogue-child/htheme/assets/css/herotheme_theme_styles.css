@@ -611,7 +611,6 @@ input.ui-button.ui-icon-notext .ui-icon {
 	height: 500px;
 	position: relative;
 }
-
 .nav{
 	background: #000;
 	width: 100%;
@@ -626,7 +625,6 @@ input.ui-button.ui-icon-notext .ui-icon {
     position: relative;
     left: 0px;
 }
-
 .search {
     border: 1px solid #ffde01;
     max-width: 320px;
@@ -640,12 +638,10 @@ input.ui-button.ui-icon-notext .ui-icon {
     font-size: 17px;
     padding: 3px 0;
 }
-
 #map{
 	width: 100%;
 	height: 100%;
 }
-
 .store-search{
 	border-right: 2px solid #ffde01;
     padding-top: 3px;
@@ -655,7 +651,6 @@ input.ui-button.ui-icon-notext .ui-icon {
     height: 28px;
     float: right;
 }
-
 .filter{
     padding-top: 3px;
     padding-left: 5px;
@@ -663,7 +658,6 @@ input.ui-button.ui-icon-notext .ui-icon {
     height: 27px;
     float: right;
 }
-
 .style-input {
     min-width: 120px;
     max-width: 200px;
@@ -680,20 +674,17 @@ input.ui-button.ui-icon-notext .ui-icon {
 	width: 100%;
 	height: 400px;
 }
-
 #pins-container{
 	max-height: 550px;
 	max-width: 320px;
 	overflow: scroll;
 	overflow-x: hidden;
 }
-
 .map{
     height: 100%;
     width: 100%;
     position: absolute
 }
-
 .banner-left{
 	left: -320px;
 	top:60px;
@@ -703,26 +694,22 @@ input.ui-button.ui-icon-notext .ui-icon {
 	padding-top: 27px;
 	position: absolute;
 }
-
 .padding-div{
 	padding-bottom: 10px;
 	padding-top: 21px;
 	max-height: 600px;
 }
-
 .arrow{
 	max-width: 40px;
     margin-left: 269px;
 	display: none;
 }
-
 .pin{
 	max-width: 33px;
 	padding-left: 10px;
     float: left;
     display: none;
 }
-
 .style-titles{
 	font-family: sans-serif;
 	font-size: 20px;
@@ -734,14 +721,12 @@ input.ui-button.ui-icon-notext .ui-icon {
     font-weight: bold;
 	cursor: pointer;
 }
-
 .style-subtitle{
 	font-family: sans-serif;
 	font-size: 17px;
 	color: #ffde01;
 	cursor: pointer;
 }
-
 .style-adress{
 	font-family: Arial;
 	font-size: 14px;
@@ -751,20 +736,14 @@ input.ui-button.ui-icon-notext .ui-icon {
     padding-left: 51px;
 
 }
-
 /************ TERMINA CONTENT ***************/
-
-
-
 /************* INICIA INDEX-2 ******************/
-
 .padding-div2{
 	padding-top: 45px;
 	padding-bottom: 30px;
     border-style: solid;
     border-bottom-color: #ffde01;
 }
-
 .store{
 	left: -320px;
 	top: 60px;
@@ -774,21 +753,18 @@ input.ui-button.ui-icon-notext .ui-icon {
 	padding-top: 27px;
 	position: absolute;
 }
-
 .style-place{
 	font-family: sans-serif;
 	font-size: 17px;
 	padding-left: 12px;
 	color: white;
 }
-
 .style-logo-store{
 	max-width: 120px;
     padding-top: 25px;
     padding-bottom: 20px;
 
 }
-
 .style-title{
 	font-family: sans-serif;
 	font-size: 20px;
@@ -800,7 +776,6 @@ input.ui-button.ui-icon-notext .ui-icon {
     font-weight: bold;
 	width: 100%;
 }
-
 .style-adress-State{
 	font-family: Arial;
 	font-size: 14px;
@@ -808,21 +783,17 @@ input.ui-button.ui-icon-notext .ui-icon {
 	opacity: 0.7;
 	width: 100%;
 }
-
 .style-adressState{
 	font-family: Arial;
     font-size: 17px;
     color: white;
     width: 100%;
 }
-
 .close-bar{
     max-width: 30px;
     margin-left: 280px;
 }
-
 /****** INICIA PANTALLA DE FILTROS *****/
-
 .barFilters{
 	top: -950px;
 	width: 320px;
@@ -847,7 +818,6 @@ input.ui-button.ui-icon-notext .ui-icon {
     color: white;
     /*padding: 14px 20px;*/
     border: 2px solid white;
-
 }
 .font-select{
 	font-family: sans-serif;
