@@ -102,6 +102,8 @@ function htheme_footer_script() {
 
 	#LOAD SCRIPT FUNCTIONS FILE
 	wp_enqueue_script( 'htheme-script', get_template_directory_uri().'/htheme/assets/js/functions.js', array( 'jquery' ) );
+
+	#User script
 	wp_enqueue_script( 'htheme-footer', get_template_directory_uri().'/htheme/assets/js/footer-fixed.js', array( 'jquery' ) );
 
 

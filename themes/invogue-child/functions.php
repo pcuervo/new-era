@@ -19,3 +19,16 @@ function htheme_child_enqueue_styles() {
 		array( $parent_style )
 	);
 }
+
+
+/*------------------------------------*\
+	#GENERAL FUNCTIONS
+\*------------------------------------*/
+/**
+* Enqueue frontend scripts and styles
+**/
+// add_action( 'wp_enqueue_scripts', function(){
+
+// 	// scripts
+// 	wp_enqueue_script( 'functions', JSPATH.'functions.js', array('jquery'), '1s.0', true );
+// });
