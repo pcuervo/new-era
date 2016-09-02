@@ -55,6 +55,12 @@ if(!$image_src_array[0]['image']){
 	$htheme_height_change = 'htheme_height_change';
 }
 
+#DATE
+$now = time(); // or your date as well
+$your_date = strtotime($post->post_date);
+$datediff = $now - $your_date;
+$days = floor($datediff/(60*60*24));
+
 ?>
 
 <div class="htheme_single_product_image_container htheme_gallery_container <?php echo esc_attr($htheme_height_change); ?>">
@@ -64,43 +70,66 @@ if(!$image_src_array[0]['image']){
 			<?php
 
 			#THUMBNAILS
-			$htheme_thumb = 1;
+			$htheme_thumb = 0;
 			$htmeme_small_thumb = '';
 			if(count($image_src_array) > 6){
 				$htmeme_small_thumb = 'htmeme_small_thumb';
 			}
 			foreach($image_src_array as $img){
 				$image = '';
+				$variation_style = '';
 				if($img['image']){
 					$image = 'style="background-image:url('.esc_url($img['image']).');"';
 				}
+				if($img['type'] == 'variation'){
+					$variation_style = 'htheme_hide_element';
+				}
+				if($img['image']){
+					$htheme_thumb++;
+				}
 				?>
-				<div class="htheme_single_product_thumb_item htheme_gallery_item <?php echo esc_attr($htmeme_small_thumb); ?>" <?php if($img['variation']){ echo 'data-variation-img-link="'.$img['variation'].'"'; } ?> data-id="<?php echo esc_attr($htheme_thumb); ?>" data-gallery-src="<?php echo esc_url($img['image']); ?>" <?php echo $image; ?>></div>
+				<div class="htheme_single_product_thumb_item htheme_gallery_item <?php echo esc_attr($variation_style); ?> <?php echo esc_attr($htmeme_small_thumb); ?>" <?php if($img['variation']){ echo 'data-variation-img-link="'.$img['variation'].'"'; } ?> data-id="<?php echo esc_attr($htheme_thumb); ?>" data-gallery-src="<?php echo esc_url($img['image']); ?>" <?php echo $image; ?>></div>
 				<?php
-				$htheme_thumb++;
+
 			}
 
 			?>
 		</div>
 
 		<div class="htheme_single_product_featured">
+			<!-- listones -->
+			<?php if ($days <= 20){ ?>
+				<div class="htheme_product_list_new [ inline-block ][ margin-right--small ]"><div></div>Nuevo</div>
+			<?php } ?>
+			<?php if (has_term( ( 'exclusivo-online' ), 'product_cat' )){ ?>
+				<div class="htheme_product_list_new htheme_product_list_exclusivo-online"><div></div>Exclusivo</div>
+			<?php } ?>
+			<?php if (has_term( ( 'mas-vendido' ), 'product_cat' )){ ?>
+				<div class="htheme_product_list_new htheme_product_list_mas-vendido"><div></div>Popular</div>
+			<?php } ?>
+			<?php if (has_term( ( 'edicion-limitada' ), 'product_cat' )){ ?>
+			<div class="htheme_product_list_new htheme_product_list_edicion-limitada"><div></div>Limitado</div>
+			<?php } ?>
+
 			<div class="htheme_icon_single_product_featured_zoom htheme_activate_zoom" data-zoom-id="1"></div>
 			<?php
 			#MAIN IMAGE
-			$htheme_main = 1;
+			$htheme_main = 0;
 			foreach($image_src_array as $img){
 				$image = '';
 				if($img['image']){
 					$image = 'style="background-image:url('.esc_url($img['image']).');"';
 					$htheme_no_img = '';
-				}
+					$htheme_main++;
 				?>
-				<div class="htheme_single_product_featured_item" data-gallery-id="<?php echo esc_attr($htheme_main); ?>" <?php echo $image; ?>></div>
+					<div class="htheme_single_product_featured_item" data-gallery-id="<?php echo esc_attr($htheme_main); ?>" <?php echo $image; ?>></div>
 				<?php
-				$htheme_main++;
+
+				}
 			}
 			?>
 		</div>
 	<?php } ?>
 
 </div>
+
