@@ -55,6 +55,12 @@ if(!$image_src_array[0]['image']){
 	$htheme_height_change = 'htheme_height_change';
 }
 
+#DATE
+$now = time(); // or your date as well
+$your_date = strtotime($post->post_date);
+$datediff = $now - $your_date;
+$days = floor($datediff/(60*60*24));
+
 ?>
 
 <div class="htheme_single_product_image_container htheme_gallery_container <?php echo esc_attr($htheme_height_change); ?>">
@@ -92,6 +98,9 @@ if(!$image_src_array[0]['image']){
 
 		<div class="htheme_single_product_featured">
 			<!-- listones -->
+			<?php if ($days <= 20){ ?>
+				<div class="htheme_product_list_new [ inline-block ][ margin-right--small ]"><div></div>Nuevo</div>
+			<?php } ?>
 			<?php if (has_term( ( 'exclusivo-online' ), 'product_cat' )){ ?>
 				<div class="htheme_product_list_new htheme_product_list_exclusivo-online"><div></div>Exclusivo</div>
 			<?php } ?>

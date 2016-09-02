@@ -63,6 +63,9 @@
 
 				<!-- listones -->
 				<div>
+					<?php if ($days <= 20){ ?>
+						<div class="htheme_product_list_new [ inline-block ][ margin-right--small ]"><div></div>Nuevo</div>
+					<?php } ?>
 					<?php if (has_term( ( 'exclusivo-online' ), 'product_cat' )){ ?>
 						<div class="htheme_product_list_new htheme_product_list_exclusivo-online [ inline-block ][ margin-right--small ]"><div></div>Exclusivo</div>
 					<?php } ?>
