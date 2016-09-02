@@ -106,14 +106,17 @@ function htheme_footer_script() {
 	#LOAD SCRIPT FUNCTIONS FILE
 	wp_enqueue_script( 'htheme-script', get_template_directory_uri().'/htheme/assets/js/functions.js', array( 'jquery' ) );
 
-	#User script
-	wp_enqueue_script( 'htheme-footer', get_template_directory_uri().'/htheme/assets/js/footer-fixed.js', array( 'jquery' ) );
-	wp_enqueue_script( 'htheme-input', get_template_directory_uri().'/htheme/assets/js/jquery-ui.js', array( 'jquery' ) );
+
+	#user functions
+	wp_enqueue_script( 'htheme-input', get_stylesheet_directory_uri().'/htheme/assets/js/input/jquery-ui.js', array( 'jquery' ) );
 	#Map
-	wp_enqueue_script( 'htheme-underscore', get_template_directory_uri().'/htheme/assets/js/map/underscore.js', array( 'jquery' ) );
-	wp_enqueue_script( 'htheme-main', get_template_directory_uri().'/htheme/assets/js/map/main.js', array( 'jquery' ) );
-	wp_enqueue_script( 'htheme-jscoord', get_template_directory_uri().'/htheme/assets/js/map/jscoord-1.1.1.js', array( 'jquery' ) );
-	wp_enqueue_script( 'htheme-google-map', get_template_directory_uri().'/htheme/assets/js/map/map-google.js', array( 'jquery' ) );
+	if(is_page('encuentra-una-tienda')){
+		wp_enqueue_script( 'htheme-underscore', get_stylesheet_directory_uri().'/htheme/assets/js/map/underscore.js', array( 'jquery' ) );
+		wp_enqueue_script( 'htheme-main', get_stylesheet_directory_uri().'/htheme/assets/js/map/main.js', array( 'jquery' ) );
+		wp_enqueue_script( 'htheme-jscoord', get_stylesheet_directory_uri().'/htheme/assets/js/map/jscoord-1.1.1.js', array( 'jquery' ) );
+		wp_enqueue_script( 'htheme-google-map', get_stylesheet_directory_uri().'/htheme/assets/js/map/map-google.js', array( 'jquery' ) );
+	}
+
 
 	#VARIABLES CUSTOM PAGE LOAD
 	$htheme_pageLoader = $GLOBALS['htheme_global_object']['settings']['general']['pageLoader'];
