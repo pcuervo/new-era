@@ -9,6 +9,7 @@ var $=jQuery.noConflict();
         \*------------------------------------*/
         $(window).ready(function(){
             footerBottom();
+            $( "#spinner" ).spinner();
         });
 
         $(window).on('resize', function(){
