@@ -1,0 +1,123 @@
+/*INPUT NUMBER*/
+
+span.ui-spinner {
+    padding-right: 24px;
+    width: 50px;
+}
+a.ui-button:active, .ui-button:active { background-color: #FBD915 !important; border-color:#FBD915 !important  }
+/*! jQuery UI - v1.12.0 - 2016-08-28
+* http://jqueryui.com
+* Includes: draggable.css, core.css, resizable.css, selectable.css, sortable.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, progressbar.css, selectmenu.css, slider.css, spinner.css, tabs.css, tooltip.css, theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?scope=&folderName=base&cornerRadiusShadow=8px&offsetLeftShadow=0px&offsetTopShadow=0px&thicknessShadow=5px&opacityShadow=30&bgImgOpacityShadow=0&bgTextureShadow=flat&bgColorShadow=666666&opacityOverlay=30&bgImgOpacityOverlay=0&bgTextureOverlay=flat&bgColorOverlay=aaaaaa&iconColorError=cc0000&fcError=5f3f3f&borderColorError=f1a899&bgTextureError=flat&bgColorError=fddfdf&iconColorHighlight=777620&fcHighlight=777620&borderColorHighlight=dad55e&bgTextureHighlight=flat&bgColorHighlight=fffa90&iconColorActive=ffffff&fcActive=ffffff&borderColorActive=003eff&bgTextureActive=flat&bgColorActive=007fff&iconColorHover=555555&fcHover=2b2b2b&borderColorHover=cccccc&bgTextureHover=flat&bgColorHover=ededed&iconColorDefault=777777&fcDefault=454545&borderColorDefault=c5c5c5&bgTextureDefault=flat&bgColorDefault=f6f6f6&iconColorContent=444444&fcContent=333333&borderColorContent=dddddd&bgTextureContent=flat&bgColorContent=ffffff&iconColorHeader=444444&fcHeader=333333&borderColorHeader=dddddd&bgTextureHeader=flat&bgColorHeader=e9e9e9&cornerRadius=3px&fwDefault=normal&fsDefault=1em&ffDefault=Arial%2CHelvetica%2Csans-serif
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
+.ui-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -.25em;
+    position: relative;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.ui-button {
+    padding: .4em 1em;
+    display: inline-block;
+    position: relative;
+    line-height: normal;
+    margin-right: .1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+}
+.ui-button-icon-only {
+    width: 2em;
+    box-sizing: border-box;
+    text-indent: -9999px;
+    white-space: nowrap;
+}
+.ui-button-icon-only .ui-icon {
+    position: absolute; top: 50%; left: 50%;
+    margin-top: -8px; margin-left: -8px;
+}
+
+.woocommerce-cart .ui-spinner input {
+    text-align: left!important;
+    width: 80px!important;
+}
+.woocommerce-cart  .ui-widget-content .ui-button { background-color: #FFF200; border: 1px solid #000000;  }
+.woocommerce-cart .ui-button-icon-only .ui-icon { top: 10%!important; left: 25%!important; }
+.woocommerce-cart a.ui-button:active, .ui-button:active { background-color: #FBD915 !important; border-color: #FBD915 !important; }
+
+.ui-button.ui-icon-notext .ui-icon {
+    padding: 0;
+    width: 2.1em;
+    height: 2.1em;
+    text-indent: -9999px;
+    white-space: nowrap;
+}
+input.ui-button.ui-icon-notext .ui-icon {
+    width: auto;
+    height: auto;
+    text-indent: 0;
+    white-space: normal;
+    padding: .4em 1em;
+}
+.ui-spinner {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+}
+.ui-spinner-input {
+    border: none;
+    background: none;
+    color: inherit;
+    padding: .222em 0;
+    margin: .2em 0;
+    vertical-align: middle;
+    margin-left: .4em;
+    margin-right: 2em;
+}
+.ui-spinner-button {
+    width: 1.6em;
+    height: 50%;
+    font-size: .5em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    cursor: default;
+    display: block;
+    overflow: hidden;
+    right: 0;
+}
+.ui-spinner-up { top: 0; }
+.ui-spinner-down { bottom: 0; }
+.ui-widget .ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button { font-size: 1em; }
+.ui-widget-content {
+    border: 1px solid transparent;
+    background: #ffffff;
+}
+/* Icons
+----------------------------------*/
+/* states and images */
+.ui-icon { width: 16px; height: 16px; }
+.ui-button .ui-icon { background-image: url("images/ui-icons_777777_256x240.png"); }
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon,
+.ui-state-default .ui-icon { background-image: url("images/ui-icons_555555_256x240.png"); }
+/* positioning */
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-s { background-position: -65px -16px; }

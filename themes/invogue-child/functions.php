@@ -21,6 +21,17 @@ function htheme_child_enqueue_styles() {
 		array( $parent_style )
 	);
 
+	#User Style
+	wp_enqueue_style( 'map-style', get_stylesheet_directory_uri() . '/htheme/assets/css/style-map.css');
+	wp_enqueue_style( 'number-style', get_stylesheet_directory_uri() . '/htheme/assets/css/style-input-number.css');
+
+	if(is_page('newletter')){
+		wp_enqueue_style( 'lightbox-externos-style', get_stylesheet_directory_uri() . '/htheme/assets/css/estilos-externos.css');
+		wp_enqueue_style( 'lightbox-externos2-style', get_stylesheet_directory_uri() . '/htheme/assets/css/estilos-externos2.css');
+		wp_enqueue_style( 'gracias-style', get_stylesheet_directory_uri() . '/htheme/assets/css/gracias.css');
+		wp_enqueue_style( 'lightbox-style', get_stylesheet_directory_uri() . '/htheme/assets/css/lightbox.css');
+	}
+
 	#user functions
 	wp_enqueue_script( 'htheme-footer', get_stylesheet_directory_uri().'/htheme/assets/js/footer-fixed.js', array( 'jquery' ) );
 	// wp_enqueue_script( 'htheme-input', get_stylesheet_directory_uri().'/htheme/assets/js/input/jquery-ui.js', array( 'jquery' ) );
