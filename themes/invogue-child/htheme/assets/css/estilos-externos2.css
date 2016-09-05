@@ -7,6 +7,11 @@
     border: 0;
 }
 
+.main-body h1{
+	color: #fff;
+}
+
+
 @media(max-width:767px){
     .computadora{
         display: none;
