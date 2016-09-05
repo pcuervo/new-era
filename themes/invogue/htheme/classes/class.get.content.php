@@ -775,7 +775,7 @@ class htheme_getcontent{
 
 		$args = array(
 			'post_type' => 'post',
-			'numberposts' => 2,
+			'numberposts' => 999,
 			'orderby' => 'date',
 			'taxonomy' => 'category',
 			'category' => $categories,

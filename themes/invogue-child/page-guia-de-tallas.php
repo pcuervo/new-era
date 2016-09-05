@@ -26,9 +26,10 @@
 					<div class="wpb_text_column wpb_content_element ">
 						<div class="wpb_wrapper">
 							<div class="htheme_inner_col htheme_default_content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								<p>En New Era estamos decididos a que nuestros clientes encuentren la gorra perfecta. Por eso, si estas buscando una gorra nueva que refresque tu estilo, has llegado el lugar correcto.  Esta Guía de Tallas te ayudará a saber tu talla exacta, pero el estilo lo pones tu. Si necesitas saber más sobre nuestos tipos de gorra, o siluetas, como nosotros las llamamos, visita nuestra Guía de Siluetas. </p>
+								<p>Para conocer tu talla de gorras New Era es necesario que sigas los siguientes pasos:</p>
+								<p>1. Toma una cinta métrica y mide la circunferencia de tu cabeza en el lugar donde usas tus gorras.</p>
+								<p>2. Con esa medida sigue la siguente guía, de acuerdo el tipo de gorra, o silueta,  que buscas.</p>
 							</div>
 						</div>
 					</div>
