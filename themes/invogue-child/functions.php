@@ -22,7 +22,10 @@ function htheme_child_enqueue_styles() {
 	);
 
 	#User Style
-	wp_enqueue_style( 'map-style', get_stylesheet_directory_uri() . '/htheme/assets/css/style-map.css');
+	if(is_page('encuentra-una-tienda')){
+		wp_enqueue_style( 'map-style', get_stylesheet_directory_uri() . '/htheme/assets/css/style-map.css');
+	}
+
 	wp_enqueue_style( 'number-style', get_stylesheet_directory_uri() . '/htheme/assets/css/style-input-number.css');
 
 	if(is_page('newletter')){
