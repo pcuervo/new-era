@@ -28,6 +28,7 @@ if ( ! $post->post_excerpt ) {
 global $product;
 $id = $product->id;
 ?>
+
 <div itemprop="description" class="htheme_single_product_excerpt htheme_default_content">
 	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
 </div>
