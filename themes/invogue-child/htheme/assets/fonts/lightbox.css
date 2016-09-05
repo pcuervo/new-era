@@ -67,27 +67,6 @@
                 url("../fonts/TradeGothic-Bold.ttf") format("truetype"),
                 url("../fonts/TradeGothic-Bold.svg#TradeGothic-Bold") format("svg");
 }
-.contenido{
-    width: 60%;
-    margin: 0 auto;
-}
-.header{
-    background-color: #000;
-    padding: 40px 20px;
-    margin-bottom: 50px;
-    text-align:center;
-}
-.computadora{
-    margin-bottom: -90px;
-}
-.lightbox-container{
-    width: 65%;
-    padding: 30px;
-    background-color: #000;
-    margin: 0 auto;
-    border: 1px solid #fff200;
-}
-
 h1{
     color: #fff;
     font-size: 30px;
@@ -97,20 +76,20 @@ h1{
 }
 .campo-texto{
     width: 45%;
-        float: left;
+    display: inline-block;
 }
 .campo-texto input{
     padding: 10px;
     width: 100%;
-    color: grey;
+    color: #239ddd;
 }
 .caja{
     margin-bottom: 20px;
 }
-::-webkit-input-placeholder { color:grey !important;font-style: italic !important;  }
-::-moz-placeholder { color:grey !important;font-style: italic !important; }
-:-ms-input-placeholder { color:grey !important;font-style: italic !important; }
-input:-moz-placeholder { color: grey !important;font-style: italic !important; }
+::-webkit-input-placeholder { color:#239ddd !important;font-style: italic !important;  }
+::-moz-placeholder { color:#239ddd !important;font-style: italic !important; }
+:-ms-input-placeholder { color:#239ddd !important;font-style: italic !important; }
+input:-moz-placeholder { color: #239ddd !important;font-style: italic !important; }
 
 .campo-texto input:placeholder-shown {
     color: #239ddd;
@@ -130,7 +109,7 @@ input:-moz-placeholder { color: grey !important;font-style: italic !important; }
 }
 .bloque1{
     width: 70%;
-    border-right: 2px solid #fff200;
+    border-right: 2px solid #ffde01;
     display: inline-block;
     vertical-align: top;
     margin-right: 4%;
@@ -153,27 +132,7 @@ input:-moz-placeholder { color: grey !important;font-style: italic !important; }
     margin: 0 auto;
     background-color: #000000;
     //padding: 2%;
-
-}
-.ui-widget-header {
-    border: 0 !important;
-}
-@-moz-document url-prefix() { 
-    .campo-nombre{
-        margin-right: 3.5%;
-    }
-    .ui-tabs-anchor {
-        padding: 3px 12px;
-    }
-    .tab-lmp a {
-        padding: 3px 22px !important;
-    }
-    .tab-fut a {
-        padding: 3px 17px 3px 18px !important;
-    }
-    .tab-fut a {
-        padding: 3px 11px !important;
-    }
+    
 }
 
 .grupo{
@@ -181,7 +140,7 @@ input:-moz-placeholder { color: grey !important;font-style: italic !important; }
     display: inline-block;
     vertical-align: top;
 }
-.grupo-nfl-5,.grupo-nfl-6,.grupo-nfl-7,.grupo-nfl-8,.grupo-nfl-9,.grupo-mlb-5,.grupo-mlb-6,.grupo-mlb-7,.grupo-nba-5,.grupo-nba-6,.grupo-nba-7,.grupo-nba-8,.grupo-nba-9{
+.grupo-nfl-5,.grupo-nfl-6,.grupo-nfl-7,.grupo-nfl-8,.grupo-nfl-9,.grupo-mlb-5,.grupo-mlb-6,.grupo-mlb-7{
     display: none ;
 }
 .ui-tabs-anchor{
@@ -192,7 +151,7 @@ input:-moz-placeholder { color: grey !important;font-style: italic !important; }
     color: black;
 }
 .amarillo{
-    color:#fff200; 
+    color:#ffde01; 
 }
 .elige{
     font-size: 17px;
@@ -208,13 +167,10 @@ label{
     color:#ffffff;
 }
 #tabs{
-    border: 1px solid #fff200 !important;
+    border: 0 !important; 
     padding: 0 !important;    
-    width: 100%;
-    border-radius: 0 !important;
+   width: 100%;
 }
-
-.ui-tabs .ui-tabs-nav li
 .ui-tabs-anchor img{
     vertical-align: middle;
     margin-right: 5px;
@@ -236,7 +192,7 @@ label{
     /* border-bottom: 10px solid #f0ad4e; */
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #fff200;
+    border-top: 10px solid #ffde01;
     padding-bottom: 30px;
     /* margin-bottom: -37px; */
     margin-left: auto;
@@ -250,7 +206,7 @@ label{
     color: #fff;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{
-    outline: none !important; 
+   outline: none !important; 
 }
 .estilo{
     width: 0;
@@ -264,7 +220,7 @@ label{
     height: 22px;
     margin: 5px 0;
 
-    background-color: #fff200;
+    background-color: #ffde01;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
     position: relative;
 }
@@ -280,7 +236,7 @@ input[type=checkbox] {
 .nombre{
     display: block;
     margin-left: 35px;
-    padding: 3px 0 5px 0;
+    padding: 5px 0;
     margin-top: -18px;
     width: 100px;
 }
@@ -338,16 +294,13 @@ input[type=checkbox] {
 .ui-tabs .ui-tabs-nav li{
     margin-right:0 !important;
     background-color: #000;
-    border-right: 1px solid #fff200 !important;
-    border-top: 0  !important;
-    border-left: 1px solid #fff200 !important;
-    border-bottom: 1px solid #fff200 !important;
+    border: 1px solid #ffde01 !important;
     color:#fff;
     margin-top: 0;
     padding: 0;
 }
 .ui-state-active{
-    background-color: #fff200  !important;   
+    background-color: #ffde01  !important;   
     color: #000;
 }
 
@@ -358,25 +311,17 @@ input[type=checkbox] {
     color: #000 !important;
 }
 .tab-fut a{
-    padding: 3px 9px !important;
+    padding: 3px 8px !important;
 }
 .tab-nfl a{
-    padding: 3px 12px !important;
+        padding: 3px 12px !important;
 }
 .tab-lmp a{
-    padding: 3px 14px !important;
-}
-.ui-widget-header {
-    border-top: 0 !important;
+        padding: 3px 14px !important;
 }
 .ui-tabs .ui-tabs-nav {
     margin: 0;
     padding: 0 !important;
-    border-radius: 0 !important;
-    border-top: 0 !important;
-}
-.ui-tabs-nav li{
-    border-radius: 0 !important;
 }
 .navegacion{
     margin-top:15px;
@@ -393,19 +338,19 @@ input[type=checkbox] {
 }
 .sig,.ant{
     text-decoration: none;
-
+   
     width: 35px;
     height: 30px;
     text-align: center;
     font-size: 28px;
     line-height: 24px;
-    background-color: #fff200;
+    background-color: #ffde01;
     font-weight: 000;
     /* font-family: 'ProximaNova-Bold'; */
     font-family: "Trade Gothic Bold" !important;
 }
 .sig{
-    display: block;
+     display: block;
 }
 .sig{
     float:left;
@@ -414,10 +359,10 @@ input[type=checkbox] {
     float:right;
 }
 .style{
- width: 550px !important;
+    width: 400px !important;
 }
 .campo-style{
-   margin-left: 50px !important;
+    margin-left: 80px !important;
 }
 .boton{
     text-align: center;
@@ -429,7 +374,7 @@ input[type=checkbox] {
     text-decoration: none;
     color: #000;
     padding: 10px 30px;
-    background-color: #fff200;
+    background-color: #ffde01;
     margin: 30px auto;
 }
 .politicas{
@@ -446,205 +391,65 @@ form{
     margin-bottom: 0 !important;
 }
 #error-nombre,#error-email,#error-equipos{
-    color: #FF0000;
+    color: #990000;
     font-size: 14px;
     font-style: italic;
     font-family: 'ProximaNova-Bold';
     text-align: center;
     margin: 5px 0;
 }
-.footer{
-    background-color: #000;
-    width: 100%;
-    height: 140px;
-    margin-top: -50px;
-    z-index: -1;
-    position: relative;
-}
-@media (max-width:550px){
+@media (max-width:600px){
     .lightbox, #tabs,.bloque1,.bloque2 {
         width: 100%  !important;
     }
     .lightbox{
-        margin-top: 20px;
+            margin-top: 20px;
     }
     .campo-nombre {
-        margin-right: 1%;
-    }
-    .style {
-        width: 250px !important;
-            font-size: 15px;
-    }
-    .ui-tabs-anchor{
-        width:80%;
-    }
-    /** .tab-lmp,.tab-lmb{
-         width: 49.5%;
-     }**/
-    #tabs li{
+    margin-right: 1%;
+}
+.style {
+    width: 250px !important;
+}
+.tab-fut,.tab-nfl{
+    width: 30%;
+}
+.tab-mlb{
+        width: 39%;
+}
+.ui-tabs-anchor{
+    width:80%;
+}
+.tab-lmp,.tab-lmb{
         width: 49.5%;
-    }
-    .bloque1{
-        border-right:0;
-    }
-    .grupo {
-        width: 49% !important;
-    }
-    .nombre {
-        width: 110px;
-    }
-   .campo .paloma{width: 22px;
-    height: 22px;}
-    .campo {
-    width: 26px;
-    height: 26px;
 }
-.campo .paloma:after{
-    top: 6px;
-    left: 4px;
+.bloque1{
+    border-right:0;
 }
-    h1 {
-        font-size: 19px;
-    }
-    .campo-style {
-        margin-left: 0px !important;
-    }
+.grupo {
+    width: 49% !important;
+}
+.nombre {
+    width: 110px;
+}
+h1 {
+    font-size: 19px;
+}
+.campo-style {
+    margin-left: 0px !important;
+}
 }
 
 @media (max-width:320px){
-
-    #tabs li{
-           width: 49.4%;
-    }
+  
+.tab-fut,.tab-nfl{
+       width: 49.6%;
 }
-
-@media(min-width:730px) and (max-width:1023px){
-    .tab-fut a {
-        padding: 3px 15px !important;
-    }
-    .tab-nfl a, .tab-nba a{
-        padding: 3px 20px !important;
-    }
+.tab-mlb{
+        width: 49.5%;
 }
-
-/** suscribete.html styles header **/
-/* ––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.lightbox-container iframe{
+.tab-lmp{
     width: 100%;
-    height: 590px;
-    border: 0;
-}
-
-@media(max-width:767px){
-    .computadora{
-        display: none;
-    }
-    h1 {
-        font-size: 25px;
-    }
-    h2 {
-
-        font-size: 19px;
-    }
-    .contenido {
-        width: 100%;
-    }
-    .lightbox-container {
-        width: 100%;
-        padding: 20px 0;
-    }
-}
-@media(min-width:800px) and (max-width:1024px){
-    .contenido {
-        width: 100%;
-
-    }
-}
-@media(min-width:730px) and (max-width:1023px){
-    @-moz-document url-prefix() {
-        .tab-fut a {
-            padding: 3px 9px !important;
-        }
-    }
-}
- @-moz-document url-prefix() {
-        .lightbox-container {
-            width: 66.1%;
-        }
-    }
-
-/** formulario lightbox.html styles header **/
-/* –––––––––––––––––––––––––––––––––––––––– */
-
-@-moz-document url-prefix() { 
-
-    .tab-fut a {
-        padding: 3px 8px !important;
-    }
-
-    .tab-lmp a {
-        padding: 3px 14.5px !important;
-    }
-}
-
-h1{
-    margin-bottom: 0;
-    font-size: 26px;
-}
-h2{
-    color: #fff;
-    font-size: 23px;
-    text-align: center;
-    margin: 0 auto 20px auto;
-    font-family:'ProximaNova-Regular' !important;
-}
-@-moz-document url-prefix() { 
-    .lightbox-container {
-        width: 67% !important;
-    }
 
 }
-
-.lightbox-container {
-    padding: 30px 30px 0px 30px !important;
-   
 }
-@media (max-width: 660px) and (min-width: 637px){
-    .tab-fut a {
-        padding: 3px 9px !important;
-    }
-    .tab-nfl a {
-        padding: 3px 9px !important;
-    }
-    .tab-lmp a {
-        padding: 3px 5px !important;
-    }
-    .tab-nfl a {
-        padding: 3px 9px !important;
-    }
-    .ui-tabs-anchor {
-        padding: 3px 8px !important;
-    }
-}
-@media (max-width: 651px) and (min-width: 600px){
-    .tab-fut a {
-        padding: 3px 9px !important;
-    }
-
-}
-@media (max-width: 320px){
-    #tabs li {
-        width: 49.3%;
-    }
-}
-@media (max-width: 1023px) and (min-width: 730px){
-	.tab-fut a {
-	    padding: 3px 15px !important;
-	}
-
-	.tab-lmp a {
-	      padding: 3px 14px !important;
-	}
-}
-
