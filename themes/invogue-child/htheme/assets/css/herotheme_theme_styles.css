@@ -21,9 +21,11 @@
 
 .htheme_small_navigation {
 	height: 45px!important;
-	display: table;
-	overflow: visible;
+	display: table!important;
+	overflow: visible!important;
 }
+
+@media (max-width:768px){ .htheme_small_navigation {display: none!important; }}
 
 	/*Header bottom*/
 
@@ -57,6 +59,19 @@
 .htheme_footer_social_wrap .htheme_footer_social_item { display: none!important; }
 
 @media(max-width:768px){.htheme_footer_holder .htheme_col_3 { margin-bottom: 20px; }}
+
+
+/*Footer móvil*/
+@media ( max-width: 910px ){
+	.htheme_main_footer { padding: 10px 0px!important; }
+	.htheme_sub_footer { height: 140px!important; }
+	.htheme_footer_nav_wrap,
+	.htheme_footer_social_wrap { width: 100%; }
+	.htheme_footer_nav_wrap { display: block!important; }
+	.htheme_footer_social_wrap { position: relative!important;}
+}
+
+@media ( max-width: 600px ){ .htheme_sub_footer { height: 210px!important; } }
 
 /*WOOCOMMERCE*/
 /*Elementos ocultos*/
@@ -181,6 +196,9 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 	width: 27px!important;
 	padding: 10px;
 }
+	/*Variation*/
+
+.variations_form.variations-product { display: block!important; }
 
 	/*Related products*/
 .woocommerce-page .htheme_product_list .woocommerce-Price-amount { color: #fff!important; }
@@ -346,6 +364,7 @@ body { height: 100%; }
   min-height: -webkit-calc(100% - 440px);
   min-height: calc(100% - 440px);
   position: relative;
+  /*overflow-x: hidden;*/
 }
 
 .htheme_footer_holder{
@@ -430,6 +449,7 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 .htheme_col_1.width--12p { width: 12.333333333333332% }
 .width--180 { width: 180px; }
 .line-height--48 { line-height: 48px!important; }
+.line-height--50 { line-height: 50px!important; }
 
 @media(max-width: 769px){
 	.top--0--xs { top: 0px!important; }
@@ -452,10 +472,10 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 /*Forms*/
 
 input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 8px;
-}
+ input[type=number]::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     margin: 8px;
+ }
 
 
 .select {

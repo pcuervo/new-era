@@ -268,7 +268,7 @@ class htheme_getcontent{
 		</script>
 
 		<?php wp_enqueue_script( 'herothememapapi', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDDt1Fm617cqcy8gfXMqN8_7JpyAz362F4&callback=htheme_initMap' ); ?>
-		
+
 		<?php
 
 	}
@@ -353,31 +353,33 @@ class htheme_getcontent{
 					$html .= '<div class="htheme_inner_col">';
 						$html .= '<div class="htheme_form_holder">';
 
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ border-bottom--dark ]">';
 								$html .= '<input type="text" name="user_name" id="user_name">';
 								$html .= '<label for="user_name" class="">';
 									$html .= esc_html__('First Name', 'invogue');
 								$html .= '</label>';
 							$html .= '</div>';
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ border-bottom--dark ]">';
 								$html .= '<input type="text" name="user_last" id="user_last">';
 								$html .= '<label for="user_last" class="">';
 									$html .= esc_html__('Last Name', 'invogue');
 								$html .= '</label>';
 							$html .= '</div>';
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ border-bottom--dark ]">';
 								$html .= '<input type="text" name="user_email" id="user_email">';
 								$html .= '<label for="user_email" class="">';
 									$html .= esc_html__('Email Address', 'invogue');
 								$html .= '</label>';
 							$html .= '</div>';
-							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item">';
-								$html .= '<input type="text" name="user_message_type" id="user_message_type">';
-								$html .= '<label for="user_message_type" class="">';
-									$html .= esc_html__('Message Type', 'invogue');
-								$html .= '</label>';
+							$html .= '<div class="'.esc_attr($col_style).' htheme_form_field_item [ select ][ margin-top--30 ]">';
+								$html .= '<select>';
+									$html .= '<option value="volvo">Asunto</option>';
+									$html .= '<option value="volvo">Sobre el envío</option>';
+									$html .= '<option value="volvo">Sobre mi producto</option>';
+									$html .= '<option value="volvo">Comentarios</option>';
+								$html .= '</select>';
 							$html .= '</div>';
-							$html .= '<div class="htheme_col_12 htheme_form_field_item htheme_form_textarea_item">';
+							$html .= '<div class="htheme_col_12 htheme_form_field_item htheme_form_textarea_item [ border-bottom--dark ]">';
 								$html .= '<textarea name="user_message" id="user_message"></textarea>';
 								$html .= '<label for="user_message" class="">';
 									$html .= esc_html__('Message', 'invogue');
@@ -803,7 +805,7 @@ class htheme_getcontent{
 								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item '.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
 									$html .= '<div class="htheme_blog_item_inner">';
 										$html .= '<h4>'.esc_html($post->post_title).'</h4>';
-										$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';										
+										$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';
 									$html .= '</div>';
 									$html .= '<div class="htheme_blog_image '.esc_attr($no_image).'" style="background-image:url('.esc_url($image_details[0]).')"></div>';
 								$html .= '</a>';
@@ -862,7 +864,7 @@ class htheme_getcontent{
 										$html .= '</div>';
 										$html .= '<div class="htheme_post_slider_heading">';
 											$html .= '<h4>'.esc_html($post->post_title).'</h4>';
-											$html .= '<div class="htheme_post_slider_category htheme_h4_sub">';												
+											$html .= '<div class="htheme_post_slider_category htheme_h4_sub">';
 												$html .= mysql2date(get_option( 'date_format' ), $post->post_date);
 											$html .= '</div>';
 										$html .= '</div>';
