@@ -23,6 +23,28 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 
+	<div class="htheme_content_holder ">
+		<div class="htheme_row_margin_top_bottom htheme_vc_row_contained">
+			<div class="wpb_column vc_column_container vc_col-sm-12">
+				<div class="vc_column-inner ">
+					<div class="wpb_wrapper"><!-- ROW -->
+						<div class="htheme_row">
+							<div class="htheme_container">
+								<div class="htheme_inner_col"><!-- TITLE DOUBLE TOP BOTTOM -->
+									<div class="htheme_title_container" data-title-type="top_bottom">
+										<div class="htheme_title">
+											<h2>Carrito</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- ROW -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
