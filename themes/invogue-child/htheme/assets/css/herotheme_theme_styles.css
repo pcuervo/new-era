@@ -25,6 +25,8 @@
 	overflow: visible!important;
 }
 
+@media (max-width:768px){ .htheme_small_navigation {display: none!important; }}
+
 	/*Header bottom*/
 
 .htheme_default_navigation,.htheme_inner_navigation { background-color: #000000!important; }
@@ -359,6 +361,7 @@ body { height: 100%; }
   min-height: -webkit-calc(100% - 440px);
   min-height: calc(100% - 440px);
   position: relative;
+  overflow-x: hidden;
 }
 
 .htheme_footer_holder{
@@ -443,6 +446,7 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 .htheme_col_1.width--12p { width: 12.333333333333332% }
 .width--180 { width: 180px; }
 .line-height--48 { line-height: 48px!important; }
+.line-height--50 { line-height: 50px!important; }
 
 @media(max-width: 769px){
 	.top--0--xs { top: 0px!important; }

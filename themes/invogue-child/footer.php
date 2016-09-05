@@ -51,9 +51,8 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 							NEWLETTER
 						</div>
 						<div class="htheme_footer_content">
-							<?php echo do_shortcode('[htheme_signup_slug]'); ?>
-							<a href="<?php echo esc_url(home_url( '/suscripcion' )); ?>" class="htheme_btn_style_1 btn-primary">SUSCRIBETE</a>
-							<p>Suscríbete a nuestro newsletter para recibir las últimas promociones y estar al tanto de nuestras novedades.</p>
+							<p class="[ margin-bottom ]">Suscríbete a nuestro newsletter para recibir las últimas promociones y estar al tanto de nuestras novedades.</p>
+							<a href="<?php echo esc_url(home_url( '/suscripcion' )); ?>" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">SUSCRIBETE</a>
 						</div>
 					</div>
 				</div>
