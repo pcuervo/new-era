@@ -91,6 +91,8 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 .margin-top--small { margin-top: 10px!important; }
 .margin-bottom--small { margin-bottom: 10px!important; }
 
+@media(max-width: 768px ){ .margin-left--33-xs { margin-left: 33.333333333%!important; } }
+
 /*Display*/
 .hidden { display: none; }
 .absolute { position: absolute; }

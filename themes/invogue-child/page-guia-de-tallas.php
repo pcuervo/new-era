@@ -35,7 +35,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="wpb_column vc_column_container vc_col-sm-4">
+		<div class="wpb_column vc_column_container vc_col-xs-4 [ margin-left--33-xs ]">
 			<div class="vc_column-inner ">
 				<div class="wpb_wrapper">
 					<div class="wpb_text_column wpb_content_element ">
