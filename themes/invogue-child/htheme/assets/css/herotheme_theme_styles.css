@@ -275,6 +275,7 @@ h2 { font-weight: bold!important }
 a { text-decoration: none!important; }
 
 .uppercase { text-transform: uppercase; }
+.transforme-none a { text-transform: none!important; }
 
 .text-left { text-align: left!important; }
 .text-center { text-align: center!important; }
@@ -502,6 +503,7 @@ input[type=number]::-webkit-inner-spin-button,
 }
 
 .variations select, .variations label { color: #000000!important; }
+.variations label { font-weight: 500!important; }
 table.variations { border-bottom: 1px solid #FFF200!important;}
 
 /*Size Guide*/
