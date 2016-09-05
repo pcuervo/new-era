@@ -207,7 +207,7 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 }
 	/*Variation*/
 
-.variations_form.variations-product { display: block!important; }
+.single form.variations_form.cart { display: block!important; }
 
 	/*Related products*/
 .woocommerce-page .htheme_product_list .woocommerce-Price-amount { color: #fff!important; }
