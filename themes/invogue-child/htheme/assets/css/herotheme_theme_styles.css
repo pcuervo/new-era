@@ -38,6 +38,13 @@
 .htheme_content_holder textarea { border: 1px solid #000000!important; }
 
 .htheme_default_navigation.htheme_sticky_nav { height: 70px!important; }
+
+	/*Header mobile*/
+	@media(max-width: 768px ){
+		.main-body { padding-top: 60px!important; }
+		.htheme_top_holder { position: absolute!important; }
+	}
+
 /*FOOTER*/
 .htheme_footer_holder .formas-pago {
     background-color: #fff;
