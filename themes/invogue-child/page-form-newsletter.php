@@ -294,7 +294,7 @@
                 <div class="boton">
                     <a href="javascript: validar();">CLIC AQUÍ ></a>
                 </div>
-                <div class="politicas"><a href="/page/politicas-de-privacidad" class="amarillo" target="_blank">Pol&iacute;ticas de privacidad</a></div>
+                <div class="politicas"><a href=" " class="amarillo" target="_blank">Pol&iacute;ticas de privacidad</a></div>
             </form>
     </div>
 

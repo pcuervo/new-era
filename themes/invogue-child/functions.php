@@ -25,10 +25,11 @@ function htheme_child_enqueue_styles() {
 	wp_enqueue_style( 'map-style', get_stylesheet_directory_uri() . '/htheme/assets/css/style-map.css');
 	wp_enqueue_style( 'number-style', get_stylesheet_directory_uri() . '/htheme/assets/css/style-input-number.css');
 
-	if(is_page( array('newsletter','form-lightbox'))){
+	if(is_page( array('newsletter','form-newsletter'))){
 		wp_enqueue_style( 'lightbox-externos-style', get_stylesheet_directory_uri() . '/htheme/assets/css/estilos-externos.css');
 		wp_enqueue_style( 'lightbox-externos2-style', get_stylesheet_directory_uri() . '/htheme/assets/css/estilos-externos2.css');
 		wp_enqueue_style( 'lightbox-style', get_stylesheet_directory_uri() . '/htheme/assets/css/lightbox.css');
+		wp_enqueue_style( 'jquery-style-ui-style', get_stylesheet_directory_uri() . '/htheme/assets/js/tabs/jquery-ui.min.css');
 		// wp_enqueue_style( 'gracias-style', get_stylesheet_directory_uri() . '/htheme/assets/css/gracias.css');	
 	}
 
