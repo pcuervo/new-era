@@ -1,0 +1,146 @@
+/**Fuentes**/
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Light.woff') format('woff'),
+        url('../fonts/ProximaNova-Light.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Black';
+    src: url('../fonts/ProximaNova-Black.eot');
+    src: local('☺'), url('../fonts/ProximaNova-Black.woff') format('woff'),
+        url('../fonts/ProximaNova-Black.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Extrabold';
+    src: url('../fonts/ProximaNova-Extrabold.eot');
+    src: local('☺'), url('../fonts/ProximaNova-Extrabold.woff') format('woff'),
+        url('../fonts/ProximaNova-Extrabold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Extrabold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {    
+    font-family: "Trade Gothic";
+    src: url("../fonts/TradeGothic.eot");
+    src: url("../fonts/TradeGothic.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/TradeGothic.woff2") format("woff2"),
+        url("../fonts/TradeGothic.woff") format("woff"),
+        url("../fonts/TradeGothic.ttf") format("truetype"),
+        url("../fonts/TradeGothic.svg#TradeGothic") format("svg");
+}
+@font-face {font-family: "Trade Gothic Bold";
+            src: url("../fonts/TradeGothic-Bold.eot");
+            src: url("../fonts/TradeGothic-Bold.eot?#iefix") format("embedded-opentype"),
+                url("../fonts/TradeGothic-Bold.woff2") format("woff2"),
+                url("../fonts/TradeGothic-Bold.woff") format("woff"),
+                url("../fonts/TradeGothic-Bold.ttf") format("truetype"),
+                url("../fonts/TradeGothic-Bold.svg#TradeGothic-Bold") format("svg");
+}
+h1{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto 30px auto;
+    font-family: "Trade Gothic Bold" !important;
+}
+.campo-texto{
+    width: 50%;
+    display: inline-block;
+}
+.ant-nfl,.ant-mlb{
+    display:none;
+}
+.bloque1{
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+}
+.bloque2{
+    width: 19%;
+    display: inline-block;
+}
+.lightbox{
+    width: 35%;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 2%;
+    border: 2px solid #ffde01;
+}
+
+.grupo{
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+}
+.grupo-nfl-5,.grupo-nfl-6,.grupo-nfl-7,.grupo-nfl-8,.grupo-nfl-9,.grupo-mlb-5,.grupo-mlb-6,.grupo-mlb-7{
+    display: none ;
+}
+.ui-tabs-anchor{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Trade Gothic Bold" !important;
+    text-align: center;
+    color: black;
+}
+label{
+    font-size: 16px;
+    font-family: 'ProximaNova-Regular';
+}
+.style{
+    font-size: 19px;
+    font-family: 'ProximaNova-Regular';
+    color:#ffffff;
+}
+.ui-tabs-anchor img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.ui-tabs-anchor{
+    padding: 3px 10px !important;
+
+}
+.ui-tabs .ui-tabs-nav li{
+    margin-right:0 !important;
+        background-color: #000 !important;
+}
+.ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: 0 !important;
+}
+@media (max-width:800px){
+    .lightbox{
+        width: 100%  !important;
+    }
+}
