@@ -45,6 +45,14 @@
 	<script src="https://use.typekit.net/fss2wri.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+
+		<script>
+			$(document).ready(function () {
+			    $("#tabs").tabs();
+			});
+		</script>
+
+
 </head>
 <?php
 
