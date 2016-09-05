@@ -451,11 +451,11 @@ form.htheme_signup_form .htheme_signup_field_item { width: 100%!important; }
 
 /*Forms*/
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 8px;
-}
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button {
+//     -webkit-appearance: none;
+//     margin: 8px;
+// }
 
 
 .select {
