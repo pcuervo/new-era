@@ -804,8 +804,10 @@ class htheme_getcontent{
 								}
 								$html .= '<a href="'.get_permalink($post->ID).'" class="htheme_blog_item '.esc_attr($blog_style).'" data-hover-type="hover_blog_split">';
 									$html .= '<div class="htheme_blog_item_inner">';
-										$html .= '<h4>'.esc_html($post->post_title).'</h4>';
-										$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';
+										$html .= '<h4 class="[ margin-bottom--small ]">'.esc_html($post->post_title).'</h4>';
+										$html .= '<p class="[ htheme_btn_style_1 btn-primary ][ margin-auto ]">ver más</p>';
+										/*$html .= '<span class="htheme_h4_sub">'.mysql2date(get_option( 'date_format' ), $post->post_date).'</span>';*/
+										/*$html .= '<a href="'.get_permalink($post->ID).'">VER MÁS</a>';*/
 									$html .= '</div>';
 									$html .= '<div class="htheme_blog_image '.esc_attr($no_image).'" style="background-image:url('.esc_url($image_details[0]).')"></div>';
 								$html .= '</a>';
