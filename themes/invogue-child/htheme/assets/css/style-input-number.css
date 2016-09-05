@@ -2,8 +2,10 @@
 
 span.ui-spinner {
     padding-right: 24px;
-    width: 50px;
+    width:100%!important;
 }
+@media (max-width: 768px ) { .quantity.relative { float: right!important; }  }
+
 a.ui-button:active, .ui-button:active { background-color: #FBD915 !important; border-color:#FBD915 !important  }
 /*! jQuery UI - v1.12.0 - 2016-08-28
 * http://jqueryui.com
