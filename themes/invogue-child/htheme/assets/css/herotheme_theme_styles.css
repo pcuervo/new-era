@@ -372,9 +372,7 @@ body { height: 100%; }
   position: absolute!important; bottom: 0;
 }
 
-.js-header{
-  width: 100%;
-}
+.js-header{ width: 100%; }
 
 /*Sidebar*/
 
