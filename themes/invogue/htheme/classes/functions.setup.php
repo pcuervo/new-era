@@ -117,7 +117,7 @@ function htheme_footer_script() {
 		wp_enqueue_script( 'htheme-google-map', get_stylesheet_directory_uri().'/htheme/assets/js/map/map-google.js', array( 'jquery' ) );
 	}
 	#Newsletter
-	if(is_page( array('newsletter','form-newsletter'))){
+	if(is_page( array('newsletter','form-newsletter','gracias'))){
 		wp_enqueue_script( 'htheme-underscore', get_stylesheet_directory_uri().'/htheme/assets/js/validacion/validacion-icontact.js', array( 'jquery' ) );
 		wp_enqueue_script( 'htheme-underscore', get_stylesheet_directory_uri().'/htheme/assets/js/validacion/validacion.js', array( 'jquery' ) );
 		wp_enqueue_script( 'htheme-underscore', get_stylesheet_directory_uri().'/htheme/assets/js/validacion/validacion2.js', array( 'jquery' ) );
