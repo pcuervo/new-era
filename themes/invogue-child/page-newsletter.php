@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 	<div class="contenido">
 		<div class="lightbox-container">
-			<div class="lightbox">
+<!-- 			<iframe id="destination-frame" src="<?php echo get_stylesheet_directory_uri(); ?>/newsletter-iframe/formulario-lightbox-sitio.html"></iframe>
+ -->			<div class="lightbox">
 				<h1>S&Eacute; EL PRIMERO EN CONOCER LAS NUEVAS GORRAS DE TUS EQUIPOS FAVORITOS</h1>
 				<form action="#" method="post" id="suscribirse">
 		                <!-- Name -->
