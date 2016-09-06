@@ -45,12 +45,14 @@ function htheme_child_enqueue_styles() {
 	wp_enqueue_script( 'htheme-footer', get_stylesheet_directory_uri().'/htheme/assets/js/footer-fixed.js', array( 'jquery' ) );
 	// wp_enqueue_script( 'htheme-input', get_stylesheet_directory_uri().'/htheme/assets/js/input/jquery-ui.js', array( 'jquery' ) );
 	#Map
-	// if(is_page('encuentra-una-tienda')){
-	// 	wp_enqueue_script( 'htheme-underscore', get_stylesheet_directory_uri().'/htheme/assets/js/map/underscore.js', array( 'jquery' ) );
-	// 	wp_enqueue_script( 'htheme-main', get_stylesheet_directory_uri().'/htheme/assets/js/map/main.js', array( 'jquery' ) );
-	// 	wp_enqueue_script( 'htheme-jscoord', get_stylesheet_directory_uri().'/htheme/assets/js/map/jscoord-1.1.1.js', array( 'jquery' ) );
-	// 	wp_enqueue_script( 'htheme-google-map', get_stylesheet_directory_uri().'/htheme/assets/js/map/map-google.js', array( 'jquery' ) );
-	// }
+	if(is_page('encuentra-una-tienda')){
+		wp_enqueue_script( 'htheme-underscore', get_stylesheet_directory_uri().'/htheme/assets/js/map/underscore.js', array( 'jquery' ) );
+		wp_enqueue_script( 'htheme-main', get_stylesheet_directory_uri().'/htheme/assets/js/map/main.js', array( 'jquery' ) );
+		wp_enqueue_script( 'htheme-jscoord', get_stylesheet_directory_uri().'/htheme/assets/js/map/jscoord-1.1.1.js', array( 'jquery' ) );
+		//wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyASkpUBqr32GggsqVbRwtU9YEez2-4kE6w', array( 'jquery' ) );
+		wp_enqueue_script( 'htheme-google-map', get_stylesheet_directory_uri().'/htheme/assets/js/map/map-google.js', array( 'jquery' ) );
+	}
+
 
 
 }

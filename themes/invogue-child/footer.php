@@ -58,7 +58,7 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 							<div id="theLightbox" class="the-lightbox">
 								<div class="content-lightbox">
 									<div class="[ width--100p inline-block ]"><span class="close-lightbox">×</span></div>
-									
+
 									<div class="[ text-center ]">
 										<iframe id="destination-frame" src="<?php echo get_stylesheet_directory_uri(); ?>/newsletter-iframe/formulario-lightbox-sitio.html"></iframe>
 									</div>

@@ -45,11 +45,6 @@
 	<script src="https://use.typekit.net/fss2wri.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-	<?php if (is_page( 'encuentra-una-tienda' ) ): ?>
-		<!-- API Google Maps -->
-		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASkpUBqr32GggsqVbRwtU9YEez2-4kE6w&callback=initMap" type="text/javascript"></script> -->
-	<?php endif; ?>
-
 </head>
 <?php
 
