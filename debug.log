@@ -120,3 +120,18 @@
 [06-Sep-2016 19:32:08 UTC] functions child
 [06-Sep-2016 19:32:08 UTC] functions child
 [06-Sep-2016 19:32:36 UTC] functions child
+[06-Sep-2016 19:34:04 UTC] functions child
+[06-Sep-2016 19:34:05 UTC] PHP Fatal error:  Call to a member function is_on_sale() on null in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/htheme/templateparts/bits/search-results.php on line 35
+[06-Sep-2016 19:34:08 UTC] functions child
+[06-Sep-2016 19:34:11 UTC] functions child
+[06-Sep-2016 19:34:11 UTC] functions child
+[06-Sep-2016 19:34:16 UTC] functions child
+[06-Sep-2016 19:34:18 UTC] functions child
+[06-Sep-2016 19:34:18 UTC] functions child
+[06-Sep-2016 19:34:37 UTC] functions child
+[06-Sep-2016 19:34:46 UTC] functions child
+[06-Sep-2016 19:34:48 UTC] functions child
+[06-Sep-2016 19:34:48 UTC] functions child
+[06-Sep-2016 19:35:22 UTC] functions child
+[06-Sep-2016 19:35:24 UTC] functions child
+[06-Sep-2016 19:35:25 UTC] functions child

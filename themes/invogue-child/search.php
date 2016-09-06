@@ -34,7 +34,7 @@ get_header(); ?>
 <div class="htheme_content_holder [ no-padding-top ]">
 
 	<!-- ROW -->
-	<div class="htheme_row htheme_padding_bottom [ header-category ][ padding-top--xlarge ]">
+	<div class="htheme_row htheme_padding_bottom [ padding-top--xlarge ]">
 		<div class="htheme_container">
 			<div class="htheme_inner_col">
 				<!-- TITLE DEFAULT -->
