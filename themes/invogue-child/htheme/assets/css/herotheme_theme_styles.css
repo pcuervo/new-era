@@ -542,8 +542,9 @@ table.variations { border-bottom: 1px solid #FFF200!important;}
 	-webkit-animation-name: animatetop;
 	-webkit-animation-duration: 0.4s;
 	animation-name: animatetop;
-	animation-duration: 0.4s
+	animation-duration: 0.4s;
 }
+.content-lightbox iframe html { overflow-x: hidden; }
 
 @media ( min-width: 700px ){
 	.content-lightbox { width: 80%}

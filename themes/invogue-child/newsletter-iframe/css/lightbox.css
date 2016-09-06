@@ -50,7 +50,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {    
+@font-face {
     font-family: "Trade Gothic";
     src: url("../fonts/TradeGothic.eot");
     src: url("../fonts/TradeGothic.eot?#iefix") format("embedded-opentype"),
@@ -158,7 +158,7 @@ input:-moz-placeholder { color: grey !important;font-style: italic !important; }
 .ui-widget-header {
     border: 0 !important;
 }
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
     .campo-nombre{
         margin-right: 3.5%;
     }
@@ -192,7 +192,7 @@ input:-moz-placeholder { color: grey !important;font-style: italic !important; }
     color: black;
 }
 .amarillo{
-    color:#fff200; 
+    color:#fff200;
 }
 .elige{
     font-size: 17px;
@@ -209,7 +209,7 @@ label{
 }
 #tabs{
     border: 1px solid #fff200 !important;
-    padding: 0 !important;    
+    padding: 0 !important;
     width: 100%;
     border-radius: 0 !important;
 }
@@ -224,11 +224,11 @@ label{
 
 }
 .ui-tabs-anchor:before{
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 100px solid #f0ad4e;
     border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent; 
+    border-bottom: 50px solid transparent;
 }
 .ui-state-active .flecha{
     width: 0;
@@ -250,7 +250,7 @@ label{
     color: #fff;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{
-    outline: none !important; 
+    outline: none !important;
 }
 .estilo{
     width: 0;
@@ -347,7 +347,7 @@ input[type=checkbox] {
     padding: 0;
 }
 .ui-state-active{
-    background-color: #fff200  !important;   
+    background-color: #fff200  !important;
     color: #000;
 }
 
@@ -526,3 +526,12 @@ form{
         padding: 3px 20px !important;
     }
 }
+
+
+::-webkit-scrollbar              { background-color: #000000; }
+/*::-webkit-scrollbar-button       { background-color: #000000; }
+::-webkit-scrollbar-track        { background-color: #000000; }
+::-webkit-scrollbar-track-piece  { background-color: #000000; }
+::-webkit-scrollbar-thumb        { background-color: #FFF200; }
+/*::-webkit-scrollbar-corner       { background-color: #000000; }
+::-webkit-resizer                { background-color: #000000; }*/
