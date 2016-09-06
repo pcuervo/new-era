@@ -1434,3 +1434,80 @@
 [06-Sep-2016 15:56:37 UTC] functions child
 [06-Sep-2016 15:56:38 UTC] functions child
 [06-Sep-2016 15:56:38 UTC] functions child
+[06-Sep-2016 15:58:31 UTC] functions child
+[06-Sep-2016 15:58:34 UTC] functions child
+[06-Sep-2016 15:58:34 UTC] functions child
+[06-Sep-2016 15:58:44 UTC] functions child
+[06-Sep-2016 15:58:47 UTC] functions child
+[06-Sep-2016 15:58:47 UTC] functions child
+[06-Sep-2016 16:00:54 UTC] functions child
+[06-Sep-2016 16:00:54 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 82
+[06-Sep-2016 16:00:54 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 85
+[06-Sep-2016 16:00:57 UTC] functions child
+[06-Sep-2016 16:00:57 UTC] functions child
+[06-Sep-2016 16:01:25 UTC] functions child
+[06-Sep-2016 16:01:26 UTC] PHP Notice:  Undefined variable: attributes in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 29
+[06-Sep-2016 16:01:26 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 29
+[06-Sep-2016 16:01:26 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 86
+[06-Sep-2016 16:01:26 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 89
+[06-Sep-2016 16:01:28 UTC] functions child
+[06-Sep-2016 16:01:28 UTC] functions child
+[06-Sep-2016 16:05:44 UTC] functions child
+[06-Sep-2016 16:05:45 UTC] functions child
+[06-Sep-2016 16:05:46 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 82
+[06-Sep-2016 16:05:46 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 85
+[06-Sep-2016 16:05:48 UTC] functions child
+[06-Sep-2016 16:05:48 UTC] functions child
+[06-Sep-2016 16:07:33 UTC] functions child
+[06-Sep-2016 16:07:35 UTC] functions child
+[06-Sep-2016 16:07:35 UTC] functions child
+[06-Sep-2016 16:07:46 UTC] functions child
+[06-Sep-2016 16:07:47 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 84
+[06-Sep-2016 16:07:47 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 87
+[06-Sep-2016 16:07:49 UTC] functions child
+[06-Sep-2016 16:07:49 UTC] functions child
+[06-Sep-2016 16:07:49 UTC] functions child
+[06-Sep-2016 16:08:24 UTC] functions child
+[06-Sep-2016 16:08:25 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 84
+[06-Sep-2016 16:08:25 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 87
+[06-Sep-2016 16:08:26 UTC] functions child
+[06-Sep-2016 16:08:26 UTC] functions child
+[06-Sep-2016 16:08:57 UTC] functions child
+[06-Sep-2016 16:08:58 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 84
+[06-Sep-2016 16:08:58 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 87
+[06-Sep-2016 16:08:59 UTC] functions child
+[06-Sep-2016 16:09:00 UTC] functions child
+[06-Sep-2016 16:09:05 UTC] functions child
+[06-Sep-2016 16:09:07 UTC] functions child
+[06-Sep-2016 16:09:08 UTC] functions child
+[06-Sep-2016 16:09:33 UTC] functions child
+[06-Sep-2016 16:09:36 UTC] functions child
+[06-Sep-2016 16:09:36 UTC] functions child
+[06-Sep-2016 16:10:06 UTC] functions child
+[06-Sep-2016 16:10:09 UTC] functions child
+[06-Sep-2016 16:10:09 UTC] functions child
+[06-Sep-2016 16:10:46 UTC] functions child
+[06-Sep-2016 16:10:47 UTC] PHP Notice:  Undefined variable: attributes in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 174
+[06-Sep-2016 16:10:47 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 174
+[06-Sep-2016 16:10:47 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 183
+[06-Sep-2016 16:10:47 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 186
+[06-Sep-2016 16:10:49 UTC] functions child
+[06-Sep-2016 16:10:49 UTC] functions child
+[06-Sep-2016 16:11:38 UTC] functions child
+[06-Sep-2016 16:11:40 UTC] functions child
+[06-Sep-2016 16:11:41 UTC] functions child
+[06-Sep-2016 16:11:50 UTC] functions child
+[06-Sep-2016 16:11:51 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 85
+[06-Sep-2016 16:11:51 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 88
+[06-Sep-2016 16:11:52 UTC] functions child
+[06-Sep-2016 16:11:52 UTC] functions child
+[06-Sep-2016 16:12:59 UTC] functions child
+[06-Sep-2016 16:12:59 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 85
+[06-Sep-2016 16:12:59 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 88
+[06-Sep-2016 16:13:01 UTC] functions child
+[06-Sep-2016 16:13:01 UTC] functions child
+[06-Sep-2016 16:13:06 UTC] functions child
+[06-Sep-2016 16:13:07 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 85
+[06-Sep-2016 16:13:07 UTC] PHP Notice:  Undefined variable: available_variations in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue-child/woocommerce/single-product/price.php on line 88
+[06-Sep-2016 16:13:08 UTC] functions child
+[06-Sep-2016 16:13:08 UTC] functions child
