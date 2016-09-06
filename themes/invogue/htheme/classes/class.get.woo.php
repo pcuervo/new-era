@@ -585,7 +585,7 @@ class htheme_getwoo{
 				$html .= '<div class="htheme_product_list_content">';
 					$html .= '<div class="htheme_inner_col">';
 						$html .= '<a class="htheme_product_list_title" title="'.esc_attr($data['title']).'" href="'.esc_url($data['url']).'">'.esc_html($data['title']).'</a>';
-						$html .= '<div class="htheme_product_list_price">'.$this->htheme_return_price_html($data['id']).'</div>';
+						$html .= '<a class="[ height-auto ] htheme_product_list_title" title="'.esc_attr($data['title']).'" href="'.esc_url($data['url']).'"><div class="htheme_product_list_price">'.$this->htheme_return_price_html($data['id']).'</div></a>';
 					$html .= '</div>';
 					$html .= '<div class="htheme_product_list_options">';
 						#CHECK LOGIN STATUS
