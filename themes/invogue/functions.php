@@ -263,7 +263,7 @@
 	add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating',25);
 
 	#ADD ADDITIONAL WOO TEMPLATES
-	add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_social_htheme', 4 ); #SINGLE PRODUCT SOCIAL ROW
+	//add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_social_htheme', 4 ); #SINGLE PRODUCT SOCIAL ROW
 	add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_info_htheme', 11 ); #PRODUCT INFO
 
 	if ( ! function_exists( 'woocommerce_template_social_htheme' ) ) {
