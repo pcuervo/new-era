@@ -342,8 +342,9 @@ input { text-transform: none!important;}
 .banner-position-button .htheme_banner_inner_button { top: 70%!important; }
 
 .htheme_inner_col .htheme_btn_style_1.btn-primary{ color: #000 !important;}
-
 .htheme_cart_button_light { width: 240px!important; }
+
+button.htheme_btn_style_1{ display: inline-block; border: none;}
 
 /*Checkout*/
 
@@ -509,5 +510,69 @@ table.variations { border-bottom: 1px solid #FFF200!important;}
 /*Size Guide*/
 .content-guide-size table td { padding: 5px; }
 
-
 .htheme_single_product_add_button { height: 54px!important; }
+
+
+/* The Lightbox (background) */
+.the-lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Content Lightbox */
+.content-lightbox {
+    position: relative;
+    background-color: #000000;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border: 1px solid #fff200;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.content-lightbox iframe {
+	width: 100%;
+	border: none;
+}
+
+/* Animation Lightbox */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* Close lightbox */
+.close-lightbox {
+	color: #000;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	background-color: #fff200;
+	padding: 0 10px;
+}
+.close-lightbox:hover,
+.close-lightbox:focus {
+    color: #fff200;
+    text-decoration: none;
+    cursor: pointer;
+}

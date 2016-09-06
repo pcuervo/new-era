@@ -52,7 +52,17 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 						</div>
 						<div class="htheme_footer_content">
 							<p class="[ margin-bottom ]">Suscríbete a nuestro newsletter para recibir las últimas promociones y estar al tanto de nuestras novedades.</p>
-							<a href="<?php echo esc_url(home_url( '/newsletter' )); ?>" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">SUSCRIBETE</a>
+							<!-- Trigger/Open Lightbox -->
+							<button id="openLightbox" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">SUSCRIBETE</button>
+							<!-- Lightbox Newsletter -->
+							<div id="theLightbox" class="the-lightbox">
+								<div class="content-lightbox">
+									<span class="close-lightbox">×</span>
+									<div class="lightbox-container">
+										<iframe id="destination-frame" src="<?php echo get_stylesheet_directory_uri(); ?>/newsletter-iframe/formulario-lightbox-sitio.html"></iframe>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
