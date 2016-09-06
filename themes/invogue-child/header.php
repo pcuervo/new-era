@@ -11,7 +11,7 @@
 	<!-- META -->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- Facebook, Twitter metas -->
 	<meta property="og:title" content="New era">
 	<meta property="og:type" content="article" />
@@ -45,13 +45,9 @@
 	<script src="https://use.typekit.net/fss2wri.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+	<!-- API Google Maps -->
 
-		<script>
-			$(document).ready(function () {
-			    $("#tabs").tabs();
-			});
-		</script>
-
+	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASkpUBqr32GggsqVbRwtU9YEez2-4kE6w&callback=initMap" type="text/javascript"></script> -->
 
 </head>
 <?php
