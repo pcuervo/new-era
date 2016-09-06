@@ -55,8 +55,8 @@
 	<div class="htheme_box_toggle htheme_cart_box" data-toggle="open">
 		<span class="vc_icon_element-icon fa fa-shopping-bag"></span>
 		<a class="htheme_icon_nav_cart">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/icons/shop.png" alt="icono carrito">
-			<span><!-- LOAD CART COUNT --></span>
+			<img class="[ middle inline-block ]" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/icons/shop.png" alt="icono carrito">
+			<span class="[ middle inline-block ]"><!-- LOAD CART COUNT --></span>
 		</a>
 		<div class="htheme_large_white_box htheme_white_box">
 			<div class="htheme_box_inner">
