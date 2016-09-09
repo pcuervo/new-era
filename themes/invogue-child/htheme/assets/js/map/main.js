@@ -55,7 +55,7 @@ function initMap() {
 	jQuery.ajax({
 		headers: { "cache-control": "no-cache" },
 		type: "GET",
-		url: "http://localhost:8888/new-era/wp-content/themes/invogue-child/ws/stores_info.php",
+		url: "https://www.socialpro.mx/apps/facebook/ws/stores_info.php",
 		dataType: 'json',
 		success: function(data){
 			jsonResult = data;
@@ -160,7 +160,7 @@ function states(){
 	jQuery.ajax({
 		headers: { "cache-control": "no-cache" },
 		type: "GET",
-		url: "http://localhost:8888/new-era/wp-content/themes/invogue-child/ws/estados.php",
+		url: "https://www.socialpro.mx/apps/facebook/ws/estados.php",
 		dataType: 'json',
 		success: function(data){
 			stats = data;
@@ -182,7 +182,7 @@ function stores_type() {
 	jQuery.ajax({
 		headers: { "cache-control": "no-cache" },
 		type: "GET",
-		url: "http://localhost:8888/new-era/wp-content/themes/invogue-child/ws/store_type.php",
+		url: "https://www.socialpro.mx/apps/facebook/ws/store_type.php",
 		dataType: 'json',
 		success: function(data){
 
@@ -207,7 +207,7 @@ function cambiar(id) {
 			jQuery.ajax({
 			headers: { "cache-control": "no-cache" },
 			type: "GET",
-			url: "http://localhost:8888/new-era/wp-content/themes/invogue-child/ws/city.php?id_es="+id,
+			url: "https://www.socialpro.mx/apps/facebook/ws/city.php?id_es="+id,
 			dataType: 'json',
 			success: function(data){
 				stats = data;
@@ -246,7 +246,7 @@ function ini() {
 	jQuery.ajax({
 		headers: { "cache-control": "no-cache" },
 		type: "GET",
-		url: "http://localhost:8888/new-era/wp-content/themes/invogue-child/ws/stores_info.php",
+		url: "https://www.socialpro.mx/apps/facebook/ws/stores_info.php",
 		dataType: 'json',
 		success: function(data){
 			direcciones = data;
@@ -399,7 +399,7 @@ function filters() {
 	jQuery.ajax({
 		headers: { "cache-control": "no-cache" },
 		type: "GET",
-		url: "http://localhost:8888/new-era/wp-content/themes/invogue-child/ws/stores_info.php",
+		url: "https://www.socialpro.mx/apps/facebook/ws/stores_info.php",
 		dataType: 'json',
 		success: function(data){
 			direcciones = data;
@@ -472,9 +472,9 @@ function add_list(x){
 
         	var cadena='';
         	if(x[i]['direccion_2']==""){
-	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_1'] +'<br>'+  x[i]['estado'] + x[i]['municipio'] + '<br> C.P. '+ x[i]['codigo_postal']+' </p></div>';
+	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="https://www.socialpro.mx/apps/facebook/img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_1'] +'<br>'+  x[i]['estado'] + x[i]['municipio'] + '<br> C.P. '+ x[i]['codigo_postal']+' </p></div>';
         	}else{
-	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_2'] +'<br>'+ x[i]['direccion_1'] +', <br>'+ x[i]['estado']+ x[i]['municipio']+'<br> C.P. '+x[i]['codigo_postal']+' </p></div>';
+	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="https://www.socialpro.mx/apps/facebook/img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_2'] +'<br>'+ x[i]['direccion_1'] +', <br>'+ x[i]['estado']+ x[i]['municipio']+'<br> C.P. '+x[i]['codigo_postal']+' </p></div>';
         	}
 
 			$("#pins-container").append(cadena.replace("\r" , " "));
@@ -505,9 +505,9 @@ function add_li(x){
 
         	var cadena='';
         	if(x[i]['direccion_2']==""){
-	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_1'] +'<br>'+  x[i]['estado'] + x[i]['municipio'] + '<br> C.P. '+ x[i]['codigo_postal']+' </p></div>';
+	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="https://www.socialpro.mx/apps/facebook/img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_1'] +'<br>'+  x[i]['estado'] + x[i]['municipio'] + '<br> C.P. '+ x[i]['codigo_postal']+' </p></div>';
         	}else{
-	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_2'] +'<br>'+ x[i]['direccion_1'] +', <br>'+ x[i]['estado']+ x[i]['municipio']+'<br> C.P. '+x[i]['codigo_postal']+' </p></div>';
+	        	cadena='<div class="padding-div" id="store-'+x[i]["id_tienda"]+'"><img class="pin" src="https://www.socialpro.mx/apps/facebook/img/Pin.png"><span class="style-titles">'+x[i]['retailer']+'- <span class="style-subtitle" ">'+x[i]['tipo']+'</span></span><br><p class="style-adress">'+ x[i]['direccion_2'] +'<br>'+ x[i]['direccion_1'] +', <br>'+ x[i]['estado']+ x[i]['municipio']+'<br> C.P. '+x[i]['codigo_postal']+' </p></div>';
         	}
 
 			$("#pins-container").append(cadena.replace("\r" , " "));
@@ -536,7 +536,7 @@ function showTienda(idTienda){
 	jQuery.ajax({
 	headers: { "cache-control": "no-cache" },
 	type: "GET",
-	url: "http://localhost:8888/new-era/wp-content/themes/invogue-child/ws/info.php?id_l=" + idTienda,
+	url: "https://www.socialpro.mx/apps/facebook/ws/info.php?id_l=" + idTienda,
 	dataType: 'json',
 	success: function(data){
 
