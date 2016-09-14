@@ -11,7 +11,7 @@
 			<div class="htheme_inner_col">
 				<!-- TITLE DEFAULT -->
 					<div class="[ header-category ]" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/bg-image1.png)">
-						<div class="[ bg-primary ]">
+						<div class="[ bg-light--opacity ]">
 							<h1><?php single_term_title() ?></h1>
 						</div>
 					</div>

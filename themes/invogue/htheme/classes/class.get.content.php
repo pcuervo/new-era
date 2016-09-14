@@ -779,7 +779,7 @@ class htheme_getcontent{
 			'orderby' => 'date',
 			'taxonomy' => 'category',
 			'category' => $categories,
-			'order' => 'DESC'
+			'order' => 'ASC'
 		);
 
 		$the_posts = get_posts($args);

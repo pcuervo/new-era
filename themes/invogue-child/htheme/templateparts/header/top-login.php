@@ -33,7 +33,7 @@
 </div>
 
 <div class="htheme_account_holder">
-	<a href="<?php echo site_url('blog'); ?>">Blog</a>
+	<a href="https://blog.newera.mx/" target="_blank">Blog</a>
 </div>
 <div class="htheme_account_holder">
 	<a href="<?php echo site_url('contactanos'); ?>">Contáctanos</a>
