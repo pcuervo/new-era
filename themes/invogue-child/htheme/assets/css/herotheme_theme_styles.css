@@ -751,3 +751,9 @@ table.variations { border-bottom: 1px solid #FFF200!important;}
 /*Home*/
 
 .banner-initial.vc_custom_1473879627239 { background-position: bottom right!important; }
+
+/*Video*/
+.user-video iframe { height: 450px; }
+@media(max-width: 1200px){ .user-video iframe { height: 400px; } }
+@media(max-width: 620px){ .user-video iframe { height: 300px; } }
+@media(max-width: 480px){ .user-video iframe { height: 200px; } }
