@@ -1,6 +1,20 @@
 /* inVogue Child Theme - Stylesheet - Custom Developer Styles */
 
 /*HEADER*/
+@media(max-width:910px){.htheme_main_navigation.htheme_default { min-width: 590px;}}
+@media(min-width:911px){
+	.htheme_main_navigation.htheme_default { min-width: 700px;}
+	.htheme_nav ul { max-width: 700px!important;}
+}
+@media(min-width:992px){
+	.htheme_main_navigation.htheme_default { min-width: 800px;}
+	.htheme_nav ul { max-width: 800px!important;}
+}
+@media(min-width:1200px){
+	.htheme_main_navigation.htheme_default { min-width: 940px;}
+	.htheme_nav ul { max-width: 940px!important;}
+}
+
 	/*Header top*/
 .htheme_small_navigation { background-color: #fff!important; }
 .htheme_small_navigation a { color: #000000!important; font-weight: bold!important; }
