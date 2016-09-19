@@ -55,7 +55,11 @@
 
 .htheme_inner_navigation li a:hover,
 .sub-menu a:hover,
-.htheme_sticky_nav .htheme_nav ul li:hover > a { color:#FFF200!important; }
+.htheme_sticky_nav .htheme_nav ul li:hover > a,
+li.current-menu-item a,
+.htheme_nav ul .current-menu-parent > a,
+.htheme_nav ul li > ul li:hover > a{ color:#FFF200!important; }
+
 
 	/*Header mobile*/
 	@media(max-width: 768px ){
@@ -135,7 +139,7 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 .bg-primary { background-color: rgba(255, 242, 0, 0.85); }
 .bg-light--opacity { background-color: rgba(255, 255, 255, 0.70); }
 .archive .header-category { padding: 0px!important; }
-.archive .header-category .bg-light--opacity { padding: 90px 0 70px; margin-top: 50px; }
+.archive .header-category .bg-light--opacity { padding: 80px 0; margin-top: 50px; }
 
 /*PRODUCTS*/
 	/*Etiqueta*/
@@ -210,11 +214,23 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 /*Artículos destacados*/
 /*@media(max-width: 909px){.best-selling-product .htheme_col_4 { width: 50%; } }*/
 
+.best-selling-product li .htheme_product_list_item,
+.product-new li .htheme_product_list_item { margin-bottom: 30px; }
+.best-selling-product .htheme_product_list_item .htheme_inner_col,
+.product-new .htheme_product_list_item .htheme_inner_col{ margin-left: 20px!important; margin-right: 20px!important; }
+
 	/*Preview*/
 
 .htheme_popup_preview h2 { margin-bottom: 20px; }
 .htheme_popup_preview .htheme_single_product_price { margin: 20px 0; }
 .htheme_popup_preview .htheme_single_product_category { color: #000000!important; }
+
+.htheme_product_list_options,
+.htheme_product_list_options .htheme_icon_list_product_preview,
+.htheme_product_list_options .htheme_icon_list_product_add,
+.htheme_product_list_options .added_to_cart { background-color: #FFF200!important }
+
+.htheme_product_list_options { bottom: 0px!important;  }
 
 	/*Single*/
 
@@ -757,3 +773,10 @@ table.variations { border-bottom: 1px solid #FFF200!important;}
 @media(max-width: 1200px){ .user-video iframe { height: 400px; } }
 @media(max-width: 620px){ .user-video iframe { height: 300px; } }
 @media(max-width: 480px){ .user-video iframe { height: 200px; } }
+
+/*Title*/
+/*.woocommerce > .htheme_content_holder { padding-top: 0px!important; }
+.woocommerce > .htheme_content_holder .htheme_row { margin-top: 10px!important; margin-bottom: 40px!important;}*/
+.main-body > .htheme_content_holder > .htheme_row { padding: 70px 0!important; }
+.main-body > .htheme_content_holder,
+.woocommerce > .htheme_content_holder { padding-top: 0px!important; }

@@ -1,39 +1,56 @@
 <?php get_header(); ?>
-<div class="htheme_content_holder [ content-guide-size ]">
-	<div class="htheme_row_margin_top_bottom htheme_vc_row_contained">
-		<div class="wpb_column vc_column_container vc_col-sm-12">
-			<div class="vc_column-inner ">
-				<div class="wpb_wrapper"><!-- ROW -->
-					<div class="htheme_row">
-						<div class="htheme_container">
-							<div class="htheme_inner_col"><!-- TITLE DOUBLE TOP BOTTOM -->
-								<div class="htheme_title_container" data-title-type="top_bottom">
-									<div class="htheme_title">
-										<h2>Guía de tallas</h2>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- ROW -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="htheme_vc_row_contained">
-		<div class="wpb_column vc_column_container vc_col-m-12">
-			<div class="vc_column-inner ">
-				<div class="wpb_wrapper">
-					<div class="wpb_text_column wpb_content_element ">
-						<div class="wpb_wrapper">
-							<div class="htheme_inner_col htheme_default_content">
-								<?php echo do_shortcode('[responsive_vimeo https://vimeo.com/29506088]'); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<section class="[ container ][ text-center ][ product-menu ]">
+	<?php
+	$taxonomy     = 'product_cat';
+	$orderby      = 'name';
+	$show_count   = 0;      // 1 for yes, 0 for no
+	$pad_counts   = 0;      // 1 for yes, 0 for no
+	$hierarchical = 1;      // 1 for yes, 0 for no
+	$title        = '';
+	$empty        = 1;
+
+	$args = array(
+		'taxonomy'     => $taxonomy,
+		'orderby'      => $orderby,
+		'show_count'   => $show_count,
+		'pad_counts'   => $pad_counts,
+		'hierarchical' => $hierarchical,
+		'title_li'     => $title,
+		'hide_empty'   => $empty
+	);
+	$all_categories = get_categories( $args );
+	foreach ($all_categories as $cat) {
+		$hasChildren = get_term_children($cat->term_id, $taxonomy);
+		if($cat->category_parent == 0) {
+			$category_id = $cat->term_id;
+			if( $hasChildren ) {
+				echo '<a class="[ dropdown-button btn ]" href="#" data-activates="'.$cat->slug.'">'. $cat->name .'</a>';
+			} else {
+				echo '<a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>';
+			}
+
+			$args2 = array(
+			    'taxonomy'     => $taxonomy,
+			    'child_of'     => 0,
+			    'parent'       => $category_id,
+			    'orderby'      => $orderby,
+			    'show_count'   => $show_count,
+			    'pad_counts'   => $pad_counts,
+			    'hierarchical' => $hierarchical,
+			    'title_li'     => $title,
+			    'hide_empty'   => $empty
+	        );
+	        $sub_cats = get_categories( $args2 );
+	        if($sub_cats) { ?>
+	        	<ul id="<?php echo $cat->slug; ?>" class="dropdown-content">
+	            <?php foreach($sub_cats as $sub_category) {
+					echo '<li><a href="'. get_term_link($sub_category->slug, 'product_cat') .'">'. $sub_category->name .'</a></li>';
+	            } ?>
+	            </ul>
+	        <?php }
+	    }
+	}
+	?>
+</section>
 
 <?php get_footer(); ?>
