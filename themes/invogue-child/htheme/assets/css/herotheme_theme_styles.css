@@ -60,6 +60,8 @@ li.current-menu-item a,
 .htheme_nav ul .current-menu-parent > a,
 .htheme_nav ul li > ul li:hover > a{ color:#FFF200!important; }
 
+.single-product .htheme_nav ul .current-menu-parent > a { color: #fff!important; }
+
 
 	/*Header mobile*/
 	@media(max-width: 768px ){
@@ -780,3 +782,5 @@ table.variations { border-bottom: 1px solid #FFF200!important;}
 .main-body > .htheme_content_holder > .htheme_row { padding: 70px 0!important; }
 .main-body > .htheme_content_holder,
 .woocommerce > .htheme_content_holder { padding-top: 0px!important; }
+
+.single-product .main-body > .htheme_content_holder > .product > .htheme_row:nth-child(1) { padding-top: 110px!important; }
