@@ -215,7 +215,7 @@
 										<td class="[ background-color--gray--light ]">54.9</td>
 										<td class="[ background-color--gray--light ]" rowspan="6">Small - Medium</td>
 										<td class="[ background-color--gray--dark ]" rowspan="2"></td>
-										<td class="[ background-color--gray--dark ]" rowspan="8">Unitalla</td>
+										<td class="[ background-color--gray--dark ]" rowspan="8">Unitalla (OSFM)</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>55.8</td>
@@ -262,7 +262,7 @@
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>55.8</td>
-										<td rowspan="9">Unitalla</td>
+										<td rowspan="9">Unitalla (OSFM)</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>56.8</td>

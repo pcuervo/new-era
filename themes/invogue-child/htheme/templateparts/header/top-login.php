@@ -33,6 +33,12 @@
 </div>
 
 <div class="htheme_account_holder">
+	<a href="https://blog.newera.mx/" class="[ line-height--30 ][ font-size--10 ] htheme_btn_style_1 btn-primary " target="_blank">Siluetas</a>
+</div>
+<div class="htheme_account_holder">
+	<a href="https://blog.newera.mx/" class="[ line-height--30 ][ font-size--10 ] htheme_btn_style_1 btn-primary " target="_blank">Tallas</a>
+</div>
+<div class="htheme_account_holder">
 	<a href="https://blog.newera.mx/" target="_blank">Blog</a>
 </div>
 <div class="htheme_account_holder">

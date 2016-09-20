@@ -23,7 +23,7 @@ global $product;
 
 ?>
 <!-- ROW -->
-<div class="htheme_row htheme_single_product_options htheme_no_padding">
+<div class="htheme_row htheme_single_product_options htheme_no_padding [ hidden ]">
 	<div class="htheme_container">
 		<div class="htheme_inner_col">
 			<div class="htheme_single_product_options_inner">
