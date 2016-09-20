@@ -273,6 +273,10 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 
 .single .sku_wrapper { color: #000; }
 
+	/*Simple*/
+
+.product-type-simple .htheme_single_product_price + .stock.in-stock { display: none; }
+
 	/*Variation*/
 
 .single form.variations_form.cart { display: block!important; }
