@@ -54,12 +54,14 @@ if($sidebar == 'no_sidebar'){
 				</div>
 			</div>
 		</div>
+
 		<?php } ?>
 		<div class="htheme_col_<?php echo esc_attr($col_layout); ?>">
 
 			<?php if($col_layout == '12'){ ?>
 			<!-- PRODUCT FILTER -->
 			<div class="htheme_inner_col">
+
 				<div class="htheme_filter_holder">
 					<div class="htheme_filter_left">
 						<!--<div class="htheme_icon_filter_block" data-tooltip="true" data-tooltip-text="Column layout"></div>
