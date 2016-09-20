@@ -35,4 +35,7 @@ $id = $product->id;
 <div class="[ margin-bottom--large ]">
 	<?php echo $product->get_categories( ', ', '<span class="htheme_single_product_category htheme_h2_sub ">' . _n( 'Category:', '', 'woocommerce' ) . ' ', '</span>' ); ?>
 </div>
-<p>ID: <?php echo $id; ?></p>
+<!--<p>ID: <?php echo $id; ?></p>-->
+<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
+		<span class="sku_wrapper [ font-weight--200 ][ block margin-bottom ]"><?php esc_html_e( 'ID:', 'woocommerce' ); ?> <span class="sku" itemprop="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
+<?php endif; ?>
