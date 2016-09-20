@@ -51,9 +51,9 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 							NEWLETTER
 						</div>
 						<div class="htheme_footer_content">
-							<p class="[ margin-bottom ]">Suscríbete a nuestro newsletter para recibir las últimas promociones y estar al tanto de nuestras novedades.</p>
+							<p class="[ margin-bottom ]">Subscríbete a nuestro newsletter para recibir las últimas promociones y estar al tanto de nuestras novedades.</p>
 							<!-- Trigger/Open Lightbox -->
-							<button id="openLightbox" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">SUSCRIBETE</button>
+							<button id="openLightbox" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">SUBSCRIBETE</button>
 							<!-- Lightbox Newsletter -->
 							<div id="theLightbox" class="the-lightbox">
 								<div class="content-lightbox">

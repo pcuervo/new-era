@@ -95,7 +95,7 @@
 									<tr class="[ background-color--gray--light ]">
 										<td>55.8</td>
 										<td>7</td>
-										<td rowspan="11">Adult</td>
+										<td rowspan="11">Adulto</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>56.8</td>
@@ -150,12 +150,12 @@
 									</tr>
 									<tr>
 										<td class="[ background-color--gray--light ]">53.9</td>
-										<td class="[ background-color--gray--light ]">Extra Chica - Chica</td>
+										<td class="[ background-color--gray--light ]">XSmall - Small</td>
 									</tr>
 									<tr>
 										<td class="[ background-color--gray--dark ]">54.9</td>
 										<td class="[ background-color--gray--dark ]"></td>
-										<td class="[ background-color--gray--medium ]" colspan="2" rowspan="4">Chica - Mediana</td>
+										<td class="[ background-color--gray--medium ]" colspan="2" rowspan="4">Small - Medium</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td class="[ background-color--gray--medium ]">55.8</td>
@@ -170,7 +170,7 @@
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>58.7</td>
-										<td rowspan="2">Mediana - Grande</td>
+										<td rowspan="2">Medium - Large</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>59.6</td>
@@ -178,7 +178,7 @@
 									<tr>
 										<td class="[ background-color--gray--dark ]">60.6</td>
 										<td class="[ background-color--gray--dark ]"></td>
-										<td class="[ background-color--gray--medium ]" colspan="2" rowspan="4">Grande - Extra grande</td>
+										<td class="[ background-color--gray--medium ]" colspan="2" rowspan="4">Large - XLarge</td>
 									</tr>
 									<tr class="[ background-color--gray--medium ]">
 										<td>61.5</td>
@@ -213,7 +213,7 @@
 									</tr>
 									<tr>
 										<td class="[ background-color--gray--light ]">54.9</td>
-										<td class="[ background-color--gray--light ]" rowspan="6">Chica - Mediana</td>
+										<td class="[ background-color--gray--light ]" rowspan="6">Small - Medium</td>
 										<td class="[ background-color--gray--dark ]" rowspan="2"></td>
 										<td class="[ background-color--gray--dark ]" rowspan="8">Unitalla</td>
 									</tr>
@@ -222,7 +222,7 @@
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>56.8</td>
-										<td class="[ background-color--gray--medium ]" rowspan="6">Mediana - Grande</td>
+										<td class="[ background-color--gray--medium ]" rowspan="6">Medium - Large</td>
 									</tr>
 									<tr>
 										<td class="[ background-color--gray--light ]">57.7</td>
@@ -303,7 +303,7 @@
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>54.9</td>
-										<td rowspan="3">Extra CH o CH/M</td>
+										<td rowspan="3">XSmall - Small</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>55.8</td>
@@ -313,23 +313,23 @@
 									</tr>
 									<tr class="[ background-color--gray--medium ]">
 										<td>57.7</td>
-										<td>CH</td>
+										<td>Small</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>58.7</td>
-										<td>M O M/G</td>
+										<td>Medium - Large</td>
 									</tr>
 									<tr class="[ background-color--gray--medium ]">
 										<td>59.6</td>
-										<td>G</td>
+										<td>Large</td>
 									</tr>
 									<tr class="[ background-color--gray--light ]">
 										<td>60.6</td>
-										<td>Extra G o G/Extra G</td>
+										<td>Large - XLarge</td>
 									</tr>
 									<tr class="[ background-color--gray--medium ]">
 										<td>61.5</td>
-										<td rowspan="3">Extra Extra G</td>
+										<td rowspan="3">XLarge</td>
 									</tr>
 									<tr class="[ background-color--gray--medium ]">
 										<td>62.5</td>

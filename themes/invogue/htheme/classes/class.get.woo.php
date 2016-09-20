@@ -101,7 +101,7 @@ class htheme_getwoo{
 						#GET TEMPLATE PART - RATING
 						$html .= $rating;
 						$html .= '<a href="'.esc_url($obj['url']).'" class="htheme_btn_style_1">';
-							$html .= esc_html__('VIEW NOW', 'invogue');
+							$html .= esc_html__('Ver ahora', 'invogue');
 						$html .= '</a>';
 					$html .= '</div>';
 				$html .= '</div>';
@@ -892,21 +892,22 @@ class htheme_getwoo{
 					$no_image = 'htheme_no_category_img';
 				}
 				$term_link = get_term_link(intval($id), 'product_cat');
-				$html .= '<a href="' . esc_url($term_link) . '" class="htheme_col_2 htheme_product_category_item htheme_horz_slide_item" data-hover-type="hover_categories">';
+				$html .= '<div class="htheme_col_2 htheme_product_category_item htheme_horz_slide_item" data-hover-type="hover_categories">';
 				$html .= '<div class="htheme_inner_col ' . esc_attr($no_image) . '" style="background-image:url(' . esc_url($image) . ')">';
 				$html .= '<div class="htheme_product_category_content">';
 				$html .= '<div class="htheme_product_category_title">';
 				$html .= '<h4>' . $term->name . '</h4>';
 				$html .= '<div class="htheme_product_category_hidden">';
-				$html .= '<span class="htheme_h4_sub">'.$term->count . ' ' . esc_html__('ITEMS', 'invogue').'</span>';
-				$html .= '<span class="htheme_h4_sub">'.esc_html__('VIEW NOW', 'invogue').'</span>';
+				//$html .= '<span class="htheme_h4_sub">'.$term->count . ' ' . esc_html__('ITEMS', 'invogue').'</span>';
+				//$html .= '<span class="htheme_h4_sub">'.esc_html__('VIEW NOW', 'invogue').'</span>';
+				$html .= '<p>' . $term->description . '</p>';
 				$html .= '</div>';
 				$html .= '<div class="htheme_cross_one"></div>';
 				$html .= '<div class="htheme_cross_two"></div>';
 				$html .= '</div>';
 				$html .= '</div>';
 				$html .= '</div>';
-				$html .= '</a>';
+				$html .= '</div>';
 			}
 			$html .= '</div>';
 			$html .= '</div>';
