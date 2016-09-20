@@ -21,9 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post;
 
-if ( ! $post->post_excerpt ) {
-	return;
-}
+//if ( ! $post->post_excerpt ) {
+//	return;
+//}
 
 global $product;
 $id = $product->id;

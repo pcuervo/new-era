@@ -13727,3 +13727,60 @@
 [20-Sep-2016 21:52:24 UTC] functions child
 [20-Sep-2016 21:54:24 UTC] functions child
 [20-Sep-2016 21:55:25 UTC] functions child
+[20-Sep-2016 21:56:23 UTC] functions child
+[20-Sep-2016 21:57:26 UTC] functions child
+[20-Sep-2016 21:57:27 UTC] functions child
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:28 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:29 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:29 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:29 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:29 UTC] PHP Notice:  Undefined index: sidebar in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[20-Sep-2016 21:57:29 UTC] PHP Notice:  Undefined index: htheme_banner_excerpt in /Users/chiragsharma/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.content.php on line 457
+[20-Sep-2016 21:57:30 UTC] functions child
+[20-Sep-2016 21:57:31 UTC] functions child
+[20-Sep-2016 21:57:31 UTC] functions child
+[20-Sep-2016 21:57:32 UTC] functions child
+[20-Sep-2016 21:57:36 UTC] functions child
+[20-Sep-2016 21:57:38 UTC] functions child
+[20-Sep-2016 21:57:38 UTC] functions child
+[20-Sep-2016 21:57:41 UTC] functions child
+[20-Sep-2016 21:57:44 UTC] functions child
+[20-Sep-2016 21:57:44 UTC] functions child
+[20-Sep-2016 21:57:44 UTC] functions child
+[20-Sep-2016 21:57:49 UTC] functions child
+[20-Sep-2016 21:57:51 UTC] functions child
+[20-Sep-2016 21:57:51 UTC] functions child
+[20-Sep-2016 21:57:54 UTC] functions child
+[20-Sep-2016 21:57:54 UTC] functions child
+[20-Sep-2016 21:57:54 UTC] functions child
+[20-Sep-2016 21:57:54 UTC] functions child
+[20-Sep-2016 21:57:55 UTC] functions child
+[20-Sep-2016 21:57:55 UTC] functions child
+[20-Sep-2016 21:58:08 UTC] functions child
+[20-Sep-2016 21:58:10 UTC] functions child
+[20-Sep-2016 21:58:10 UTC] functions child
+[20-Sep-2016 21:58:14 UTC] functions child
+[20-Sep-2016 21:58:16 UTC] functions child
+[20-Sep-2016 21:58:16 UTC] functions child
+[20-Sep-2016 21:58:54 UTC] functions child
