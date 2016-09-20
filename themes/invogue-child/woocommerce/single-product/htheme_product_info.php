@@ -31,10 +31,10 @@ global $product;
 					<span><?php echo $product->get_categories( ', ', '' . _n( 'Category:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
 				<?php } ?>
 				<?php if($product->get_sku()){ ?>
-				<span> Product SKU: <a> <?php echo esc_html($product->get_sku()); ?> </a> </span>
+				<span class="[ hidden ]"> Product SKU: <a> <?php echo esc_html($product->get_sku()); ?> </a> </span>
 				<?php } ?>
 				<?php if($product->get_tags()){ ?>
-					<span> Tags: <?php echo $product->get_tags( ', ', '' . _n( 'Tags:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
+					<span class="[ hidden ]"> Tags: <?php echo $product->get_tags( ', ', '' . _n( 'Tags:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
 				<?php } ?>
 			</div>
 		</div>
