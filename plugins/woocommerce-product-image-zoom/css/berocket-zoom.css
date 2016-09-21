@@ -1,0 +1,98 @@
+.berocket-zoom-lens {
+	border: 4px solid #888;
+	margin:-4px;
+	background-color:#fff;	
+	cursor:move;		
+}
+
+.berocket-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+}
+
+.berocket-zoom-big {
+	border:4px solid #ccc;
+	overflow:hidden;
+}
+
+.berocket-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+}
+
+span.onsale,#fancybox-wrap{
+	z-index:9999999;
+}
+#fancybox-overlay{
+	z-index:99999;
+}
+
+@media only screen and (max-width: 600px) {
+	.woocommerce .container .product .images{
+		margin-bottom:70px;
+	}
+}
+
+.mousetrap{
+    z-index:1999;
+    position:absolute;
+    cursor: pointer;
+}
+
+.mousetrap.active{
+    position: fixed !important;
+    cursor: move;
+    border: 2px solid transparent;
+}
+
+#berocket-zoom-big{
+    background-repeat: no-repeat;
+    background-color: white;
+    display:none;
+    position:fixed;
+    z-index:1998;
+    border: 2px solid #000000;
+}
+
+.mousetrap.is_mobile{
+    border: 0 none!important;
+}
+#berocket-zoom-big.is_mobile{
+    border: 0 none!important;
+}
+
+.woocommerce-main-image, .berocket-zoom{
+    display: inline-block!important;
+}
+
+.submousetrap{
+    z-index:1990;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.fancybox-close {
+    cursor: pointer;
+    height: 36px;
+    position: absolute;
+    right: -18px;
+    top: -18px;
+    width: 36px;
+    z-index: 8040;
+    background-image: url("../images/fancybox_sprite.png");
+}

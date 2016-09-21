@@ -59,17 +59,17 @@ global $product;
 		<!-- PRODUCT LIST -->
 		<div class="htheme_product_list" data-type="htheme_contained_loader"> <!-- htheme_contained_loader, htheme_contained_carousel, htheme_full_carousel -->
 			<div class="htheme_product_list_inner">
-				<div class="htheme_col_4  htheme_product_list_item" data-hover-type="hover_product_list">
+				<div class="htheme_col_4  htheme_product_list_item [ no-margin-bottom ]" data-hover-type="hover_product_list">
 					<img src="http://localhost:8888/new-era/wp-content/uploads/2016/08/11360335-left.jpg" alt="silueta de producto">
 					<h5>INTRODUCING THE 59FIFTY.</h5>
 					<p>Contemporary and structured. The true fitted.</p>
 				</div>
-				<div class="htheme_col_4  htheme_product_list_item" data-hover-type="hover_product_list">
+				<div class="htheme_col_4  htheme_product_list_item [ no-margin-bottom ]" data-hover-type="hover_product_list">
 					<img src="http://localhost:8888/new-era/wp-content/uploads/2016/08/11360335-left.jpg" alt="silueta de producto">
 					<h5>ORIGINATORS OF THE TRUE FITTED.</h5>
 					<p>There are those that PLAY THE GAME, and then there are those that REDEFINE IT. No copies. No substitutes.</p>
 				</div>
-				<div class="htheme_col_4  htheme_product_list_item" data-hover-type="hover_product_list">
+				<div class="htheme_col_4  htheme_product_list_item [ no-margin-bottom ]" data-hover-type="hover_product_list">
 					<img src="http://localhost:8888/new-era/wp-content/uploads/2016/08/11360335-left.jpg" alt="silueta de producto">
 					<h5>THE PINNACLE SILHOUETTE.</h5>
 					<p>To the naked eye, the fitted cap has remained largely unchanged throughout the years. It's an enduring silhouette. A testament to the cap itself.</p>

@@ -1,0 +1,4414 @@
+.image-ultimate-container{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.image-ultimate-row{
+    width: 100%;
+}
+
+* { -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.image-ultimate-map{
+    text-align: center;
+    width: 100%;
+    margin:  0 auto;
+}
+
+
+.image-ultimate-responsive-4, .image-ultimate-responsive-3, .image-ultimate-responsive-2, .image-ultimate-responsive-1 {
+
+    display: inline-block;
+    margin:  20px auto;
+
+}
+.image-ultimate-responsive-4{
+    width: 24%;
+}
+.image-ultimate-responsive-3{
+    width: 33%;
+}
+.image-ultimate-responsive-2{
+    width: 49%;
+}
+.image-ultimate-responsive-1{
+    width: 99%
+}
+@media (max-width: 600px) {
+    .image-ultimate-responsive-1, .image-ultimate-responsive-2, .image-ultimate-responsive-3, .image-ultimate-responsive-4{
+        width: 99%;
+        min-width: 300px;
+    }
+    .image-ultimate-hover{
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+
+}
+@media (max-width: 900px) {
+    .image-ultimate-responsive-1 {
+        width: 99%;
+    }
+    .image-ultimate-responsive-2, .image-ultimate-responsive-3, .image-ultimate-responsive-4{
+        width: 50%;
+        min-width: 300px;
+    }
+
+}
+@media (max-width: 1200px) {
+    .image-ultimate-responsive-1 {
+        width: 99%;
+    }
+    .image-ultimate-responsive-2{
+        width: 50%;
+        min-width: 300px;
+    }
+    .image-ultimate-responsive-3{
+        width: 33%;
+        min-width: 300px;
+    }
+    .image-ultimate-responsive-4{
+        width: 24.5%;
+        min-width: 300px;
+    }
+
+}
+
+
+.image-ultimate-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.image-ultimate-circle img{
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.hover-img-shadow:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.hover-img-shadow-squre:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-hover img{
+    position: initial;
+}
+.image-ultimate-hover img{
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.image-ultimate-hover.image-ultimate-circle .hover-img img {
+    border-radius: 50%;
+}
+.image-ultimate-hover.image-ultimate-circle .hover-img,  .image-ultimate-hover.image-ultimate-circle .hover-img-2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.image-ultimate-info-circle a:hover, .image-ultimate-info-circle:hover{
+    text-decoration: none;
+    visibility: visible;
+    opacity: 1;
+}
+a .image-ultimate-info-circle, p.image-ultimate-info-circle{
+    color: #ccc;
+
+}
+.hover-img {
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index:1;
+    height:100%
+}
+.image-ultimate-item img {
+    width: 100%;
+    height: 100%;
+}
+.image-ultimate-circle-effect-4.image-ultimate-right-to-left:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-4.image-ultimate-left-to-right:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-4.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-4.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-9.image-ultimate-right-to-left:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-9.image-ultimate-left-to-right:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-9.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-9.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-16:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-16:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-16:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-16:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-17.image-ultimate-right-to-left:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-17.image-ultimate-left-to-right:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-17.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-17.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-18:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-18:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-18:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-18:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-20:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-20:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-20:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-20:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-21:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-21:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-21:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-21:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-22.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-22.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-23:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-23:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-23:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-23:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-28:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-28:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-28:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-28:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-30:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-30:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-30:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-30:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-31:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-31:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-31:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-31:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-33:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-33:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-33:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-33:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-34:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-34:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-34:hover .image-ultimate-info-circle,
+.image-ultimate-circle-effect-34:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-19.image-ultimate-right-to-left:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-19.image-ultimate-left-to-right:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-19.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-19.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-20.image-ultimate-right-to-left:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-20.image-ultimate-left-to-right:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-20.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle,
+.image-ultimate-square-effect-20.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle{
+    text-decoration: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+a.image-ultimate-button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF !important;
+    border: 1px solid #FFF;
+}
+.image-ultimate-button-div{
+    text-align: right;
+    padding: 2% 5%;
+    margin: 0 10%;
+        
+}
+a:hover.image-ultimate-button{
+   color: #FFF !important;
+   background-color:rgba(0,128,128, .5);
+   
+}
+/* ------------------------------------------------------------------CIRCLE COMMON EFFECTS END------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------SQUARE COMMON EFFECTS STARTS------------------------------------------------ */
+
+
+
+.image-ultimate-square {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-info-square {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.image-ultimate-hover.image-ultimate-square {
+    overflow: hidden;
+}
+.image-ultimate-sqr-hover {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-ultimate-sqr-hover img{
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.image-ultimate-sqr-hover.image-ultimate-square {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hover-img-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%
+}
+.hover-img-1:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+/*---------------------------------------------------------------------------- SQUARE COMMON EFFECTS ENDS------------------------------------------------ */
+
+/* --------------------------------------------------------------------HOVER H3 || P  EFFECTS START ----------------------------------------------*/
+
+.image-ultimate-info-circle{
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: rgba(198, 170, 130, 0.49);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.image-ultimate-info-circle h3 , .image-ultimate-spin-circle h3 , .image-ultimate-info-square h3{
+    color: #fff;
+    position: relative;
+    margin: 0 10%;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-info-circle p , .image-ultimate-spin-circle p , .image-ultimate-info-square P{
+    color: #fff;
+    padding: 5%;
+    margin: 0 10%;
+    line-height: 150%;
+    overflow:hidden;
+}
+
+
+
+/*--------------------------------------------------------------------- HOVER H3 || P  EFFECTS ENDS-------------------------------------------------- */
+
+
+
+
+
+/*--------------------------------------------------------------------- BACKGROUND COLOR START -----------------------------------------------------------*/
+
+
+
+.bg-1-1{
+    background-color:rgba(80,240,60, .5)!important;
+}
+.bg-1-2{
+    background-color:rgba(190,190,190, .5)!important;
+}
+.bg-1-3{
+    background-color:rgba(128,0,128, .5)!important;
+}
+.bg-1-4{
+    background-color:rgba(0,128,128, .5)!important;
+}
+
+
+/*---------------------------------------------------------------------- BACKGROUND COLOR END-------------------------------------------------------------- */
+
+
+
+/*--------------------------------------------------------------------- COMMON EFFECTS END--------------------------------------------------------------- */
+
+/*---------------------------------------------------------------- ALL CIRCLE EFFECTS STARTS ------------------------------------------------------*/
+
+/*-------------------------------------------------------------- EFFECTS-1 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-1 a:hover .hover-img, .image-ultimate-circle-effect-1:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-1 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-1:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-1.hover-img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.image-ultimate-circle-effect-1 a:hover .hover-img, .image-ultimate-circle-effect-1:hover .hover-img {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+
+
+/*-------------------------------- EFFECTS -1 ENDS ---------------------------------*/
+
+
+/* -------------------------------EFFECTS-2 STARTS ------------------------------------*/
+
+
+.image-ultimate-border-nk {  
+    border: 13px solid #ecab18;
+    border-right-color: #1ad280;
+    border-bottom-color: #1ad280;
+    border-radius: 50%;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;	
+}
+.image-ultimate-circle-effect-2 .image-ultimate-info-circle {
+    position:absolute; 
+    display: inline-block;
+    opacity: 0;
+
+}
+.image-ultimate-circle-effect-2 a:hover .hover-img, .image-ultimate-circle-effect-2:hover .hover-img {
+    opacity: 0;
+    content:'';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 10%;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    transition: all 2s ease;
+}
+.image-ultimate-circle-effect-2 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-2:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* -----------------------------EFFECTS-2 ENDS ----------------------------------*/
+
+
+
+/*-------------------------------------------------------------- EFFECTS-1 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-3 a:hover .hover-img, .image-ultimate-circle-effect-3:hover .hover-img  {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-3 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-3:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-3.hover-img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.image-ultimate-circle-effect-3 a:hover .hover-img, .image-ultimate-circle-effect-3:hover .hover-img {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+
+/*-------------------------------- EFFECTS -3 ENDS ---------------------------------*/
+
+/* ------------------------------EFFECTS-4 STARTS ------------------------ */
+
+
+.image-ultimate-circle-effect-4.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.image-ultimate-circle-effect-4.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-circle-effect-4.image-ultimate-bottom-to-top:hover .hover-img  {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+    -moz-transform: rotate3d(1, 0, 0, 180deg);
+    -ms-transform: rotate3d(1, 0, 0, 180deg);
+    -o-transform: rotate3d(1, 0, 0, 180deg);
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+
+.image-ultimate-circle-effect-4.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.image-ultimate-circle-effect-4.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-circle-effect-4.image-ultimate-top-to-bottom:hover .hover-img {
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+    -moz-transform: rotate3d(1, 0, 0, -180deg);
+    -ms-transform: rotate3d(1, 0, 0, -180deg);
+    -o-transform: rotate3d(1, 0, 0, -180deg);
+    transform: rotate3d(1, 0, 0, -180deg);
+}
+
+.image-ultimate-circle-effect-4.image-ultimate-left-to-right .hover-img {
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.image-ultimate-circle-effect-4.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-4.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.image-ultimate-circle-effect-4.image-ultimate-right-to-left .hover-img {
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.image-ultimate-circle-effect-4.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-4.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+
+
+/* ------------------------------EFFECTS-4 ENDS ------------------------ */
+
+
+/*-------------------------------------------------------------- EFFECTS-5 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-5 a:hover .hover-img, .image-ultimate-circle-effect-5:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-5 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-5:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-5.hover-img {
+    margin-top: 0px;
+    -webkit-transition: margin 1s ease;
+    -moz-transition: margin 1s ease;
+    -o-transition: margin 1s ease;
+    -ms-transition: margin 1s ease;
+    transition: margin 1s ease;
+}
+.image-ultimate-circle-effect-5 a:hover .hover-img {
+    margin-top: -25%;
+}
+
+
+
+/*-------------------------------- EFFECTS -5 ENDS ---------------------------------*/
+
+
+/*-------------------------------------------------------------- EFFECTS-6 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-6 a:hover .hover-img, .image-ultimate-circle-effect-6:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-6 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-6:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-6.hover-img {
+    background-color:#336699;
+    color:#fff;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -o-border-radius:3px;
+    -webkit-box-shadow: 0 3px 0 #0f3963, 3px 5px 3px #333;
+    -moz-box-shadow: 0 3px 0 #0f3963, 3px 5px 3px #333;
+    box-shadow: 0 3px 0 #0f3963, 3px 5px 3px #333;
+    -o-box-shadow: 0 3px 0 #0f3963, 3px 5px 3px #333;
+    text-shadow:0 1px 1px #000;
+}
+.image-ultimate-circle-effect-6 a:hover .hover-img, .image-ultimate-circle-effect-6:hover .hover-img {
+    background-color:#f2f2f2;
+    color:#336699 !important;
+    text-shadow:0 1px 1px #ccc;
+    -webkit-box-shadow: 0 3px 0 #ccc, 3px 5px 3px #333;
+    -moz-box-shadow: 0 3px 0 #ccc, 3px 5px 3px #333;
+    box-shadow: 0 3px 0 #ccc, 3px 5px 3px #333;
+    -o-box-shadow: 0 3px 0 #ccc, 3px 5px 3px #333;
+}
+
+
+
+/*-------------------------------- EFFECTS -6 ENDS ---------------------------------*/
+
+
+/*-------------------------------------------------------------- EFFECTS-7 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-7 a:hover .hover-img, .image-ultimate-circle-effect-7:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-7 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-7:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-7.hover-img {
+    opacity: 1;
+    transform: translateY(-50%) translateX(-50%) scale(1);
+}
+.image-ultimate-circle-effect-7 a:hover .hover-img, .image-ultimate-circle-effect-7:hover .hover-img {
+    top: 50%;
+    left: 50%;
+    border: 3px solid #fff;
+    background: transparent;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+
+
+/*-------------------------------- EFFECTS -7 ENDS ---------------------------------*/
+
+/*-------------------------------------------------------------- EFFECTS-8 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-8 a:hover .hover-img, .image-ultimate-circle-effect-8:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-8 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-8:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-8.hover-img {
+    background-color:#f2f2f2;
+    color:#336699 !important;
+    text-shadow:0 1px 1px #ccc;
+}
+.image-ultimate-circle-effect-8 a:hover .hover-img, .image-ultimate-circle-effect-8:hover .hover-img {
+    position: absolute;
+    top: 50%; left: 50%;
+    margin: -30% 0 0 -30%;
+    background: #777;      
+    animation: rotation ease-in-out 2s infinite;
+    border-radius: 50%;  
+}
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+/*-------------------------------- EFFECTS -8 ENDS ---------------------------------*/
+
+/* ----------------------------EFFECTS-9 STARTS ----------------------------------*/
+
+
+
+/* -----------------------------SCALE EFFECTS ------------------------------------*/
+
+.image-ultimate-circle-effect-9.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: scale(1) translateX(0);
+    -moz-transform: scale(1) translateX(0);
+    -ms-transform: scale(1) translateX(0);
+    -o-transform: scale(1) translateX(0);
+    transform: scale(1) translateX(0);
+}
+
+.image-ultimate-circle-effect-9.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-9.image-ultimate-left-to-right:hover .hover-img  {
+    -webkit-transform: scale(0.5) translateX(100%);
+    -moz-transform: scale(0.5) translateX(100%);
+    -ms-transform: scale(0.5) translateX(100%);
+    -o-transform: scale(0.5) translateX(100%);
+    transform: scale(0.5) translateX(100%);
+}
+
+.image-ultimate-circle-effect-9.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: scale(1) translateX(0);
+    -moz-transform: scale(1) translateX(0);
+    -ms-transform: scale(1) translateX(0);
+    -o-transform: scale(1) translateX(0);
+    transform: scale(1) translateX(0);
+}
+.image-ultimate-circle-effect-9.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-9.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: scale(0.5) translateX(-100%);
+    -moz-transform: scale(0.5) translateX(-100%);
+    -ms-transform: scale(0.5) translateX(-100%);
+    -o-transform: scale(0.5) translateX(-100%);
+    transform: scale(0.5) translateX(-100%);
+}
+
+.image-ultimate-circle-effect-9 .image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    -o-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+.image-ultimate-circle-effect-9.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-circle-effect-9.image-ultimate-top-to-bottom:hover .hover-img {
+    -webkit-transform: scale(0.5) translateY(100%);
+    -moz-transform: scale(0.5) translateY(100%);
+    -ms-transform: scale(0.5) translateY(100%);
+    -o-transform: scale(0.5) translateY(100%);
+    transform: scale(0.5) translateY(100%);
+}
+
+.image-ultimate-circle-effect-9.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform: scale(1) translateY(0);
+    -moz-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    -o-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+.image-ultimate-circle-effect-9.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-circle-effect-9.image-ultimate-bottom-to-top:hover .hover-img {
+    -webkit-transform: scale(0.5) translateY(-100%);
+    -moz-transform: scale(0.5) translateY(-100%);
+    -ms-transform: scale(0.5) translateY(-100%);
+    -o-transform: scale(0.5) translateY(-100%);
+    transform: scale(0.5) translateY(-100%);
+}
+
+/*-------------------------------- SCALE EFFECTS ---------------------------*/
+
+
+
+/*---------------------------------- EFFECTS-9 ENDS------------------------ */
+
+
+
+/*-------------------------------------------------------------- EFFECTS-10 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-10 a:hover .hover-img, .image-ultimate-circle-effect-10:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-10 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-10:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-10.hover-img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+}
+.image-ultimate-circle-effect-10 a:hover .hover-img, .image-ultimate-circle-effect-10:hover .hover-img {
+    box-shadow: 0 0 5px #000;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
+
+/*-------------------------------- EFFECTS -10 ENDS ---------------------------------*/
+
+
+
+/*-------------------------------------------------------------- EFFECTS-11 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-11 a:hover .hover-img, .image-ultimate-circle-effect-11:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-11 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-11:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-11.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.image-ultimate-circle-effect-11.image-ultimate-left-to-right .image-ultimate-info-circle {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.image-ultimate-circle-effect-11.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-11.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.image-ultimate-circle-effect-11.image-ultimate-left-to-right a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-11.image-ultimate-left-to-right:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.image-ultimate-circle-effect-11.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.image-ultimate-circle-effect-11.image-ultimate-right-to-left .image-ultimate-info-circle {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.image-ultimate-circle-effect-11.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-11.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.image-ultimate-circle-effect-11.image-ultimate-right-to-left a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-11.image-ultimate-right-to-left:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.image-ultimate-circle-effect-11.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.image-ultimate-circle-effect-11.image-ultimate-top-to-bottom .image-ultimate-info-circle {
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.image-ultimate-circle-effect-11.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-circle-effect-11.image-ultimate-top-to-bottom:hover .hover-img {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.image-ultimate-circle-effect-11.image-ultimate-top-to-bottom a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-11.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+.image-ultimate-circle-effect-11.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.image-ultimate-circle-effect-11.image-ultimate-bottom-to-top .image-ultimate-info-circle {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.image-ultimate-circle-effect-11.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-circle-effect-11.image-ultimate-bottom-to-top:hover .hover-img {
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+.image-ultimate-circle-effect-11.image-ultimate-bottom-to-top a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-11.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+
+
+/*-------------------------------- EFFECTS -11 ENDS ---------------------------------*/
+
+/*-------------------------------------------------------------- EFFECTS-12 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-12 a:hover .hover-img, .image-ultimate-circle-effect-12:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-12 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-12:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-12.hover-img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.image-ultimate-circle-effect-12 a:hover .hover-img, .image-ultimate-circle-effect-12:hover .hover-img {
+    border: 70px solid #000;
+    border-radius: 50%;
+}
+
+
+
+/*-------------------------------- EFFECTS -12 ENDS ---------------------------------*/
+
+
+/* ------------------------------EFFECTS-13 STARTS------------------------ */
+
+
+.image-ultimate-circle-effect-13 .image-ultimate-info-circle h3 {
+    color: #fff;
+    position: relative;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-circle-effect-13 .image-ultimate-info-circle p {
+    color: #fff;
+    overflow:hidden;
+}
+.image-ultimate-circle-effect-13 a:hover .hover-img, .image-ultimate-circle-effect-13:hover .hover-img {
+    opacity: 0;
+}
+.image-ultimate-circle-effect-13 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-13:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+}
+
+.image-ultimate-circle-effect-13.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+.image-ultimate-circle-effect-13.image-ultimate-left-to-right .image-ultimate-info-circle {
+    -webkit-transform: translateZ(-1000px) rotateY(-180deg);
+    -moz-transform: translateZ(-1000px) rotateY(-180deg);
+    -ms-transform: translateZ(-1000px) rotateY(-180deg);
+    -o-transform: translateZ(-1000px) rotateY(-180deg);
+    transform: translateZ(-1000px) rotateY(-180deg);
+}
+.image-ultimate-circle-effect-13.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-13.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: translateZ(-1000px) rotateY(180deg);
+    -moz-transform: translateZ(-1000px) rotateY(180deg);
+    -ms-transform: translateZ(-1000px) rotateY(180deg);
+    -o-transform: translateZ(-1000px) rotateY(180deg);
+    transform: translateZ(-1000px) rotateY(180deg);
+}
+.image-ultimate-circle-effect-13.image-ultimate-left-to-right a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-13.image-ultimate-left-to-right:hover .image-ultimate-info-circle {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+
+.image-ultimate-circle-effect-13.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+.image-ultimate-circle-effect-13.image-ultimate-right-to-left .image-ultimate-info-circle {
+    -webkit-transform: translateZ(-1000px) rotateY(90deg);
+    -moz-transform: translateZ(-1000px) rotateY(90deg);
+    -ms-transform: translateZ(-1000px) rotateY(90deg);
+    -o-transform: translateZ(-1000px) rotateY(90deg);
+    transform: translateZ(-1000px) rotateY(90deg);
+}
+.image-ultimate-circle-effect-13.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-13.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: translateZ(-1000px) rotateY(-180deg);
+    -moz-transform: translateZ(-1000px) rotateY(-180deg);
+    -ms-transform: translateZ(-1000px) rotateY(-180deg);
+    -o-transform: translateZ(-1000px) rotateY(-180deg);
+    transform: translateZ(-1000px) rotateY(-180deg);
+}
+.image-ultimate-circle-effect-13.image-ultimate-right-to-left a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-13.image-ultimate-right-to-left:hover .image-ultimate-info-circle {
+    -webkit-transform: translateZ(0) rotateY(0);
+    -moz-transform: translateZ(0) rotateY(0);
+    -ms-transform: translateZ(0) rotateY(0);
+    -o-transform: translateZ(0) rotateY(0);
+    transform: translateZ(0) rotateY(0);
+}
+
+
+
+
+/* ------------------------------EFFECTS-13 ENDS------------------------ */
+
+
+/* ------------------------------EFFECTS-14 STARTS------------------------ */
+
+
+
+.image-ultimate-circle-effect-14 .image-ultimate-info-circle {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    -o-transition: all 0.35s ease-in-out 0.3s;
+    -ms-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+.image-ultimate-circle-effect-14 a:hover .hover-img, .image-ultimate-circle-effect-14:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+}
+.image-ultimate-circle-effect-14 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-14:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+}
+
+.image-ultimate-circle-effect-14.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.image-ultimate-circle-effect-14.image-ultimate-left-to-right .image-ultimate-info-circle {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.image-ultimate-circle-effect-14.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-14.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+}
+.image-ultimate-circle-effect-14.image-ultimate-left-to-right a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-14.image-ultimate-left-to-right:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.image-ultimate-circle-effect-14.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.image-ultimate-circle-effect-14.image-ultimate-right-to-left .image-ultimate-info-circle {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.image-ultimate-circle-effect-14.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-14.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+.image-ultimate-circle-effect-14.image-ultimate-right-to-left a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-14.image-ultimate-right-to-left:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.image-ultimate-circle-effect-14.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.image-ultimate-circle-effect-14.image-ultimate-top-to-bottom .image-ultimate-info-circle {
+    -webkit-transform: rotateX(-360deg);
+    -moz-transform: rotateX(-360deg);
+    -ms-transform: rotateX(-360deg);
+    -o-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.image-ultimate-circle-effect-14.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-circle-effect-14.image-ultimate-top-to-bottom:hover .hover-img  {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+.image-ultimate-circle-effect-14.image-ultimate-top-to-bottom a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-14.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+.image-ultimate-circle-effect-14.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.image-ultimate-circle-effect-14.image-ultimate-bottom-to-top .image-ultimate-info-circle {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.image-ultimate-circle-effect-14.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-circle-effect-14.image-ultimate-bottom-to-top:hover .hover-img {
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+.image-ultimate-circle-effect-14.image-ultimate-bottom-to-top a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-14.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+
+
+
+
+/* ------------------------------EFFECTS-14 ENDS ------------------------ */
+
+/*-------------------------------------------------------------- EFFECTS-15 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-circle-effect-15 a:hover .hover-img, .image-ultimate-circle-effect-15:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-circle-effect-15 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-15:hover .image-ultimate-info-circle  {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-circle-effect-15.hover-img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.image-ultimate-circle-effect-15 a:hover .hover-img, .image-ultimate-circle-effect-15:hover .hover-img {
+    -webkit-transform: rotateX(-100deg);
+    -moz-transform: rotateX(-100deg);
+    -o-transform: rotateX(-100deg);
+    -ms-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+}
+
+
+
+/*-------------------------------- EFFECTS -15 ENDS ---------------------------------*/
+
+/*-------------------------------------------------------------- EFFECTS-16 STARTS ------------------------------------------------------------------*/
+
+.image-ultimate-circle-effect-16 .image-ultimate-info-circle {
+    position:absolute; 
+    display: inline-block;
+    opacity: 0;
+
+}
+
+.image-ultimate-circle-effect-16 a:hover .hover-img, .image-ultimate-circle-effect-16:hover .hover-img { 
+
+    opacity:0.7;   
+    transform:translateY(-125px);
+    transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
+    overflow:visible;
+    border-color:rgba(0,0,0,0.7) transparent transparent transparent;
+    border-style:solid;
+    border-width:150px;
+}
+
+
+
+/*-------------------------------- EFFECTS -16 ENDS ---------------------------------*/
+
+
+
+/*-------------------------------- EFFECTS 17 STARTS ---------------------------------*/
+
+
+.image-ultimate-circle-effect-17 .image-ultimate-info-circle h3 {
+    color: #fff;
+    position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-circle-effect-17 .image-ultimate-info-circle p {
+    color: #fff;
+    margin: 0 10%;
+    overflow:hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.image-ultimate-circle-effect-17.image-ultimate-left-to-right .hover-img {
+    -webkit-transform-origin: 95% 40%;
+    -moz-transform-origin: 95% 40%;
+    -ms-transform-origin: 95% 40%;
+    -o-transform-origin: 95% 40%;
+    transform-origin: 95% 40%;
+}
+.image-ultimate-circle-effect-17.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-17.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: rotate(-220deg);
+    -moz-transform: rotate(-220deg);
+    -ms-transform: rotate(-220deg);
+    -o-transform: rotate(-220deg);
+    transform: rotate(-220deg);
+}
+.image-ultimate-circle-effect-17.image-ultimate-right-to-left .hover-img {
+    -webkit-transform-origin: 5% 40%;
+    -moz-transform-origin: 5% 40%;
+    -ms-transform-origin: 5% 40%;
+    -o-transform-origin: 5% 40%;
+    transform-origin: 5% 40%;
+}
+
+.image-ultimate-circle-effect-17.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-17.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: rotate(220deg);
+    -moz-transform: rotate(220deg);
+    -ms-transform: rotate(220deg);
+    -o-transform: rotate(220deg);
+    transform: rotate(220deg);
+}
+
+
+/*-------------------------------- EFFECTS 17 ENDS ---------------------------------*/
+
+/*---------------------------------- EFFECTS-18 START------------------------ */
+
+/*------------------------------- TRANSLATE ROTATE EFFECTS------------------------ */
+.image-ultimate-circle-effect-18 a:hover .hover-img, .image-ultimate-circle-effect-18:hover .hover-img {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.image-ultimate-info-circle {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.image-ultimate-circle-effect-1 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-1:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* ------------------------------EFFECTS-18 ENDS -------------------------*/
+
+
+/* ------------------------------EFFECTS-19 STARTS ------------------------ */
+
+.image-ultimate-circle-effect-19 .hover-img {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+.image-ultimate-circle-effect-19 .image-ultimate-info-circle h3 {
+    position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-circle-effect-19 .image-ultimate-info-circle p {
+    margin: 0 10%;
+    overflow:hidden;
+}
+.image-ultimate-circle-effect-19 a:hover .hover-img, .image-ultimate-circle-effect-19:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1) rotate(1440deg);
+    -moz-transform: scale(1) rotate(1440deg);
+    -ms-transform: scale(1) rotate(1440deg);
+    -o-transform: scale(1) rotate(1440deg);
+    transform: scale(1) rotate(1440deg);
+}
+.image-ultimate-circle-effect-19 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-19:hover .image-ultimate-info-circle  {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+}
+
+
+
+
+/* ------------------------------EFFECTS-19 ENDS ------------------------ */
+
+
+/* ------------------------------EFFECTS-20 ENDS ------------------------ */
+
+.image-ultimate-circle-effect-20 .image-ultimate-info-circle{
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #0000FF;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+}
+
+.image-ultimate-circle-effect-20:hover img {
+    opacity:0;
+    transform:scale(1,1);
+}
+
+.image-ultimate-circle-effect-20:hover .image-ultimate-info-circle{
+    background-color: #FFCCCC;
+    width: 100%;
+    height: 100%;
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    overflow: hidden;
+}
+
+/* ------------------------------EFFECTS-20 ENDS ------------------------ */
+
+/* ------------------------------EFFECTS-21 ENDS ------------------------ */
+
+.image-ultimate-circle-effect-21 .image-ultimate-info-circle{
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -o-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+}
+
+.image-ultimate-circle-effect-21:hover img {
+    opacity:0;
+}
+
+.image-ultimate-circle-effect-21:hover .image-ultimate-info-circle{
+    transform: translate(20px, 20px);
+    -webkit-transform: translate(20px, 20px);
+    -o-transform: translate(20px, 20px);
+    -moz-transform: translate(20px, 20px);
+    -ms-transform: translate(20px, 20px);
+}
+
+/* ------------------------------EFFECTS-21 ENDS ------------------------ */
+
+/* ------------------------------EFFECTS-22 ENDS ------------------------ */
+.image-ultimate-circle-effect-22.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0)
+}
+.image-ultimate-circle-effect-22.image-ultimate-left-to-right .image-ultimate-info-circle {
+    -webkit-transform: translateX(100%) rotate(0deg);
+    -moz-transform: translateX(100%) rotate(0deg);
+    -ms-transform: translateX(100%) rotate(0deg);
+    -o-transform: translateX(100%) rotate(0deg);
+    transform: translateX(100%) rotate(0deg);
+}
+.image-ultimate-circle-effect-22.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-22.image-ultimate-left-to-right:hover .hover-img  {
+    -webkit-transform: translateX(100%) rotate(0deg);
+    -moz-transform: translateX(100%) rotate(0deg);
+    -ms-transform: translateX(100%) rotate(0deg);
+    -o-transform: translateX(100%) rotate(0deg);
+    transform: translateX(100%) rotate(0deg);
+
+}
+.image-ultimate-circle-effect-22.image-ultimate-left-to-right a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-22.image-ultimate-left-to-right:hover .image-ultimate-info-circle {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.image-ultimate-circle-effect-22.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+}
+.image-ultimate-circle-effect-22.image-ultimate-right-to-left .image-ultimate-info-circle {
+    -webkit-transform: translateX(-100%) rotate(0deg);
+    -moz-transform: translateX(-100%) rotate(0deg);
+    -ms-transform: translateX(-100%) rotate(0deg);
+    -o-transform: translateX(-100%) rotate(0deg);
+    transform: translateX(-100%) rotate(0deg);
+}
+.image-ultimate-circle-effect-22.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-22.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: translateX(-100%) rotate(0deg);
+    -moz-transform: translateX(-100%) rotate(0deg);
+    -ms-transform: translateX(-100%) rotate(0deg);
+    -o-transform: translateX(-100%) rotate(0deg);
+    transform: translateX(-100%) rotate(0deg);
+}
+.image-ultimate-circle-effect-22.image-ultimate-right-to-left a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-22.image-ultimate-right-to-left:hover .image-ultimate-info-circle {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.image-ultimate-circle-effect-22.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+}
+.image-ultimate-circle-effect-22.image-ultimate-top-to-bottom .image-ultimate-info-circle {
+    -webkit-transform: translateY(-100%) rotate(0deg);
+    -moz-transform: translateY(-100%) rotate(0deg);
+    -ms-transform: translateY(-100%) rotate(0deg);
+    -o-transform: translateY(-100%) rotate(0deg);
+    transform: translateY(-100%) rotate(0deg);
+}
+.image-ultimate-circle-effect-22.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-circle-effect-22.image-ultimate-top-to-bottom:hover .hover-img {
+    -webkit-transform: translateY(-100%) rotate(0deg);
+    -moz-transform: translateY(-100%) rotate(0deg);
+    -ms-transform: translateY(-100%) rotate(0deg);
+    -o-transform: translateY(-100%) rotate(0deg);
+    transform: translateY(-100%) rotate(0deg);
+}
+.image-ultimate-circle-effect-22.image-ultimate-top-to-bottom a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-22.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.image-ultimate-circle-effect-22.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+}
+.image-ultimate-circle-effect-22.image-ultimate-bottom-to-top .image-ultimate-info-circle {
+    -webkit-transform: translateY(100%) rotate(0deg);
+    -moz-transform: translateY(100%) rotate(0deg);
+    -ms-transform: translateY(100%) rotate(0deg);
+    -o-transform: translateY(100%) rotate(0deg);
+    transform: translateY(100%) rotate(0deg);
+}
+.image-ultimate-circle-effect-22.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-circle-effect-22.image-ultimate-bottom-to-top:hover .hover-img {
+    -webkit-transform: translateY(100%) rotate(0deg);
+    -moz-transform: translateY(100%) rotate(0deg);
+    -ms-transform: translateY(100%) rotate(0deg);
+    -o-transform: translateY(100%) rotate(0deg);
+    transform: translateY(100%) rotate(0deg);
+}
+.image-ultimate-circle-effect-22.image-ultimate-bottom-to-top a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-22.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+.image-ultimate-circle-effect-22 a:hover .hover-img, .image-ultimate-circle-effect-22:hover .hover-img {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* ------------------------------EFFECTS-22 ENDS ------------------------ */
+
+
+/* ------------------------------EFFECTS-23 start ------------------------ */
+.image-ultimate-circle-effect-23 .image-ultimate-info-circle {
+    position:absolute; 
+    display: inline-block;
+    opacity: 0;
+
+}
+.image-ultimate-circle-effect-23 a:hover .hover-img, .image-ultimate-circle-effect-23:hover .hover-img {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    transition-delay: 0;
+    -o-transition-delay: 0
+}
+.image-ultimate-circle-effect-23 a:hover, .image-ultimate-circle-effect-23:hover {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+/* ------------------------------EFFECTS-23 ENDS ------------------------ */
+
+
+/* ------------------------------EFFECTS-24 STARTS------------------------ */
+
+.image-ultimate-info-circle-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.image-ultimate-circle-effect-24 .image-ultimate-info-circle-2 h3 {
+    visibility: hidden;
+    position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.image-ultimate-circle-effect-24 .image-ultimate-info-circle-2 p {
+    color: #fff;
+    margin: 0 10%;
+    overflow:hidden;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.image-ultimate-circle-effect-24 a:hover .image-ultimate-info-circle-2, .image-ultimate-circle-effect-24:hover .image-ultimate-info-circle-2 {
+    opacity: 1;
+}
+.image-ultimate-circle-effect-24 a:hover h3, .image-ultimate-circle-effect-24:hover h3 {
+    visibility: visible;
+}
+.image-ultimate-circle-effect-24 a:hover p, .image-ultimate-circle-effect-24:hover p {
+    visibility: visible;
+}
+
+.image-ultimate-circle-effect-24.from_left_and_right .image-ultimate-info-circle-2 h3 {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.image-ultimate-circle-effect-24.from_left_and_right .image-ultimate-info-circle-2 p {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.image-ultimate-circle-effect-24.from_left_and_right a:hover h3, .image-ultimate-circle-effect-24.from_left_and_right:hover h3 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.image-ultimate-circle-effect-24.from_left_and_right a:hover p, .image-ultimate-circle-effect-24.from_left_and_right:hover p {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.image-ultimate-circle-effect-24.image-ultimate-top-to-bottom .image-ultimate-info-circle-2 h3 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.image-ultimate-circle-effect-24.image-ultimate-top-to-bottom .image-ultimate-info-circle-2 p {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.image-ultimate-circle-effect-24.image-ultimate-top-to-bottom a:hover h3, .image-ultimate-circle-effect-24.image-ultimate-top-to-bottom:hover h3 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.image-ultimate-circle-effect-24.image-ultimate-top-to-bottom a:hover p, .image-ultimate-circle-effect-24.image-ultimate-top-to-bottom:hover p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.image-ultimate-circle-effect-24.image-ultimate-bottom-to-top .image-ultimate-info-circle-2 h3 {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.image-ultimate-circle-effect-24.image-ultimate-bottom-to-top .image-ultimate-info-circle-2 p {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.image-ultimate-circle-effect-24.image-ultimate-bottom-to-top a:hover h3, .image-ultimate-circle-effect-24.image-ultimate-bottom-to-top:hover h3 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.image-ultimate-circle-effect-24.image-ultimate-bottom-to-top a:hover p, .image-ultimate-circle-effect-24.image-ultimate-bottom-to-top:hover p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+
+/* ------------------------------EFFECTS-24 ENDS------------------------ */
+
+/*------------------------------- EFFECTS 25 STARTS  -----------------------------*/
+
+
+
+.image-ultimate-circle-effect-25 .image-ultimate-info-circle {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.5) rotate(-720deg);
+    -moz-transform: scale(0.5) rotate(-720deg);
+    -ms-transform: scale(0.5) rotate(-720deg);
+    -o-transform: scale(0.5) rotate(-720deg);
+    transform: scale(0.5) rotate(-720deg);
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+.image-ultimate-circle-effect-25 .image-ultimate-info-circle h3 {
+    color: #fff;
+    position: relative;
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-circle-effect-25 .image-ultimate-info-circle p {
+    color: #fff;
+    padding: 5%;
+    font-style: italic;
+    margin: 0 10%;
+    font-size: 14px;
+    height: 70%;
+    line-height: 15px;
+    overflow:hidden;
+}
+.image-ultimate-circle-effect-25 a:hover .hover-img, .image-ultimate-circle-effect-25:hover .hover-img  {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.5) rotate(720deg);
+    -moz-transform: scale(0.5) rotate(720deg);
+    -ms-transform: scale(0.5) rotate(720deg);
+    -o-transform: scale(0.5) rotate(720deg);
+    transform: scale(0.5) rotate(720deg);
+}
+.image-ultimate-circle-effect-25 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-25:hover .image-ultimate-info-circle {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+}
+
+
+/*------------------------------- EFFECTS 25 ENDS -----------------------------*/
+
+
+
+/* -------------------------------EFFECTS-26 STARTS ------------------------------------*/
+
+.image-ultimate-circle-effect-26 .image-ultimate-info-circle {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+.image-ultimate-circle-effect-26 .image-ultimate-info-circle .image-ultimate-info-circle-back {
+    visibility: hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: rotate3d(0, 1, 0, 90deg);
+    -moz-transform: rotate3d(0, 1, 0, 90deg);
+    -ms-transform: rotate3d(0, 1, 0, 90deg);
+    -o-transform: rotate3d(0, 1, 0, 90deg);
+    transform: rotate3d(1, 1, 0, 90deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border:5px #CCCCCC solid;
+    border-radius:50%
+}
+.image-ultimate-circle-effect-26 .image-ultimate-info-circle h3 {
+    position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-circle-effect-26 .image-ultimate-info-circle p {
+    margin: 0 10%;
+    overflow:hidden;
+}
+.image-ultimate-circle-effect-26 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-26:hover .image-ultimate-info-circle {
+    -webkit-transform: rotate3d(0, 1, 0, -90deg);
+    -moz-transform: rotate3d(0, 1, 0, -90deg);
+    -ms-transform: rotate3d(0, 1, 0, -90deg);
+    -o-transform: rotate3d(0, 1, 0, -90deg);
+    transform: rotate3d(1, 1, 0, -90deg);
+}
+.image-ultimate-circle-effect-26 a:hover .image-ultimate-info-circle , .image-ultimate-circle-effect-26:hover .image-ultimate-info-circle .image-ultimate-info-circle-back {
+    visibility: visible;
+}
+
+
+
+/* -----------------------------EFFECTS-26 ENDS ----------------------------------*/
+
+
+/* -------------------------------EFFECTS-27 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-circle-effect-27 .image-ultimate-info-circle {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    border-radius: 125px;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.image-ultimate-circle-effect-27 a:hover .hover-img, .image-ultimate-circle-effect-27:hover .hover-img {
+    opacity: 0;   
+    border:100px solid rgba(0,0,0,0.7);
+    -webkit-transform:scale(2.0);
+    -moz-transform:scale(2.0);
+    -ms-transform:scale(2.0);
+    -o-transform:scale(2.0);
+    transform:scale(2.0);
+
+
+}
+.image-ultimate-circle-effect-27 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-27:hover .image-ultimate-info-circle {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: rotateZ(0);
+    -moz-transform: rotateZ(0);
+    -ms-transform: rotateZ(0);
+    -o-transform: rotateZ(0);
+    transform: rotateZ(0);
+
+}
+
+
+/* -------------------------------EFFECTS-27 ends ------------------------------------*/
+
+
+/* -------------------------------EFFECTS-28 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-circle-effect-28 .image-ultimate-info-circle {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #f6f6f6;
+    position: absolute;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.image-ultimate-circle-effect-28 a:hover .hover-img, .image-ultimate-circle-effect-28:hover .hover-img {
+    opacity: 0;  
+}
+.image-ultimate-circle-effect-28 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-28:hover .image-ultimate-info-circle {
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 45px 60px -50px #000000;
+}
+
+
+/* -------------------------------EFFECTS-28 ends ------------------------------------*/
+
+
+/* -------------------------------EFFECTS-29 STARTS ------------------------------------*/
+
+
+.image-ultimate-circle-effect-29 .image-ultimate-info-circle h3 {
+     position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.image-ultimate-circle-effect-29 .image-ultimate-info-circle p {
+    margin: 0 10%;
+    overflow:hidden;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.image-ultimate-circle-effect-29 a:hover .hover-img, .image-ultimate-circle-effect-29:hover .hover-img {
+    opacity: 0;
+    pointer-events: none;
+}
+.image-ultimate-circle-effect-29 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-29:hover .image-ultimate-info-circle {
+    visibility: visible;
+    opacity: 1;
+}
+
+.image-ultimate-circle-effect-29.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.image-ultimate-circle-effect-29.image-ultimate-left-to-right .image-ultimate-info-circle {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-29.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-left-to-right a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-29.image-ultimate-left-to-right:hover .image-ultimate-info-circle {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.image-ultimate-circle-effect-29.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+.image-ultimate-circle-effect-29.image-ultimate-right-to-left .image-ultimate-info-circle {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-29.image-ultimate-right-to-left:hover .hover-img  {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-right-to-left a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-29.image-ultimate-right-to-left:hover .image-ultimate-info-circle {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.image-ultimate-circle-effect-29.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.image-ultimate-circle-effect-29.image-ultimate-top-to-bottom .image-ultimate-info-circle {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-circle-effect-29.image-ultimate-top-to-bottom:hover .hover-img {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-top-to-bottom a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-29.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.image-ultimate-circle-effect-29.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.image-ultimate-circle-effect-29.image-ultimate-bottom-to-top .image-ultimate-info-circle {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-circle-effect-29.image-ultimate-bottom-to-top:hover .hover-img {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.image-ultimate-circle-effect-29.image-ultimate-bottom-to-top a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-29.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+/* -------------------------------EFFECTS-29 ends ------------------------------------*/
+
+
+/* -------------------------------EFFECTS-30 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-circle-effect-30 .image-ultimate-info-circle {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #f6f6f6;
+    position: absolute;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.image-ultimate-circle-effect-30 a:hover .hover-img, .image-ultimate-circle-effect-30:hover .hover-img {
+    opacity: 0;  
+}
+.image-ultimate-circle-effect-30 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-30:hover .image-ultimate-info-circle {
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotate(1440deg);
+    -moz-transform: rotate(1440deg);
+    -o-transform: rotate(1440deg);
+    -ms-transform: rotate(1440deg);
+    transform: rotate(1440deg);
+    box-shadow: 0 45px 60px -50px #000000;
+}
+
+
+/* -------------------------------EFFECTS-30 ends ------------------------------------*/
+
+/* -------------------------------EFFECTS-31 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-circle-effect-31 .image-ultimate-info-circle {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #f6f6f6;
+    position: absolute;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.image-ultimate-circle-effect-31 a:hover .hover-img, .image-ultimate-circle-effect-31:hover .hover-img {
+    opacity: 0;  
+}
+.image-ultimate-circle-effect-31 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-31:hover .image-ultimate-info-circle {
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotateY(-1440deg);
+    -moz-transform: rotateY(-1440deg);
+    -o-transform: rotateY(-1440deg);
+    -ms-transform: rotateY(-1440deg);
+    transform: rotateY(-1440deg);
+    box-shadow: 0 45px 60px -50px #000000;
+
+    -webkit-transition: all .5s ease-in-out 1s;
+    -moz-transition: all .5s ease-in-out 1s;
+    transition: all .5s ease-in-out 1s;
+}
+
+
+/* -------------------------------EFFECTS-31 ends ------------------------------------*/
+
+
+/*------------------------------- EFFECTS 32 STARTS  -----------------------------*/
+
+.image-ultimate-circle-effect-32 a:hover .hover-img, .image-ultimate-circle-effect-32:hover .hover-img {
+    opacity: 0;
+    pointer-events: none
+}
+.image-ultimate-circle-effect-32 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-32:hover .image-ultimate-info-circle {
+    opacity: 1;
+    visibility: visible
+}
+.image-ultimate-circle-effect-32.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0)
+}
+.image-ultimate-circle-effect-32.image-ultimate-left-to-right .image-ultimate-info-circle {
+    -webkit-transform: translateX(100%) rotate(180deg);
+    -moz-transform: translateX(100%) rotate(180deg);
+    -ms-transform: translateX(100%) rotate(180deg);
+    -o-transform: translateX(100%) rotate(180deg);
+    transform: translateX(100%) rotate(180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-circle-effect-32.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: translateX(100%) rotate(180deg);
+    -moz-transform: translateX(100%) rotate(180deg);
+    -ms-transform: translateX(100%) rotate(180deg);
+    -o-transform: translateX(100%) rotate(180deg);
+    transform: translateX(100%) rotate(180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-left-to-right a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-32.image-ultimate-left-to-right:hover .image-ultimate-info-circle {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -ms-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+.image-ultimate-circle-effect-32.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0)
+}
+.image-ultimate-circle-effect-32.image-ultimate-right-to-left .image-ultimate-info-circle {
+     -webkit-transform: translateX(-100%) rotate(-180deg);
+    -moz-transform: translateX(-100%) rotate(-180deg);
+    -ms-transform: translateX(-100%) rotate(-180deg);
+    -o-transform: translateX(-100%) rotate(-180deg);
+    transform: translateX(-100%) rotate(-180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-circle-effect-32.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: translateX(-100%) rotate(-180deg);
+    -moz-transform: translateX(-100%) rotate(-180deg);
+    -ms-transform: translateX(-100%) rotate(-180deg);
+    -o-transform: translateX(-100%) rotate(-180deg);
+    transform: translateX(-100%) rotate(-180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-right-to-left a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-32.image-ultimate-right-to-left:hover .image-ultimate-info-circle {
+    -webkit-transform: translateX(0) rotate(0);
+    -moz-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    -o-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    transition-delay: .4s
+}
+.image-ultimate-circle-effect-32.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0)
+}
+.image-ultimate-circle-effect-32.image-ultimate-top-to-bottom .image-ultimate-info-circle {
+    -webkit-transform: translateY(-100%) rotate(-180deg);
+    -moz-transform: translateY(-100%) rotate(-180deg);
+    -ms-transform: translateY(-100%) rotate(-180deg);
+    -o-transform: translateY(-100%) rotate(-180deg);
+    transform: translateY(-100%) rotate(-180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-circle-effect-32.image-ultimate-top-to-bottom:hover .hover-img {
+    -webkit-transform: translateY(-100%) rotate(-180deg);
+    -moz-transform: translateY(-100%) rotate(-180deg);
+    -ms-transform: translateY(-100%) rotate(-180deg);
+    -o-transform: translateY(-100%) rotate(-180deg);
+    transform: translateY(-100%) rotate(-180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-top-to-bottom a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-32.image-ultimate-top-to-bottom:hover .image-ultimate-info-circle {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    transition-delay: .4s
+}
+.image-ultimate-circle-effect-32.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0)
+}
+.image-ultimate-circle-effect-32.image-ultimate-bottom-to-top .image-ultimate-info-circle {
+    -webkit-transform: translateY(100%) rotate(180deg);
+    -moz-transform: translateY(100%) rotate(180deg);
+    -ms-transform: translateY(100%) rotate(180deg);
+    -o-transform: translateY(100%) rotate(180deg);
+    transform: translateY(100%) rotate(180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-circle-effect-32.image-ultimate-bottom-to-top:hover .hover-img {
+    -webkit-transform: translateY(100%) rotate(180deg);
+    -moz-transform: translateY(100%) rotate(180deg);
+    -ms-transform: translateY(100%) rotate(180deg);
+    -o-transform: translateY(100%) rotate(180deg);
+    transform: translateY(100%) rotate(180deg)
+}
+.image-ultimate-circle-effect-32.image-ultimate-bottom-to-top a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-32.image-ultimate-bottom-to-top:hover .image-ultimate-info-circle {
+    -webkit-transform: translateY(0) rotate(0);
+    -moz-transform: translateY(0) rotate(0);
+    -ms-transform: translateY(0) rotate(0);
+    -o-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    transition-delay: .4s
+}
+
+/*------------------------------- EFFECTS 32 ENDS  -----------------------------*/
+
+
+/* -------------------------------EFFECTS-33 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-circle-effect-33 .image-ultimate-info-circle {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #f6f6f6;
+    position: absolute;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.image-ultimate-circle-effect-33 a:hover .hover-img, .image-ultimate-circle-effect-33:hover .hover-img {
+    opacity: 0;  
+}
+.image-ultimate-circle-effect-33 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-33:hover .image-ultimate-info-circle {
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotateZ(-1440deg);
+    -moz-transform: rotateZ(-1440deg);
+    -o-transform: rotateZ(-1440deg);
+    -ms-transform: rotateZ(-1440deg);
+    transform: rotateZ(-1440deg);
+    box-shadow: 0 45px 60px -50px #000000;
+    -webkit-transition: all .5s ease-in-out .5s;
+    -moz-transition: all .5s ease-in-out .5s;
+    transition: all .5s ease-in-out .5s;
+}
+
+
+/* -------------------------------EFFECTS-33 ends ------------------------------------*/
+
+
+
+/* -------------------------------EFFECTS-34 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-circle-effect-34 .image-ultimate-info-circle {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #f6f6f6;
+    position: absolute;
+    float:left;
+    background: #fff;
+    margin-right: 4px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.image-ultimate-circle-effect-34 a:hover .hover-img, .image-ultimate-circle-effect-34:hover .hover-img {
+    opacity: 0;  
+}
+.image-ultimate-circle-effect-34 a:hover .image-ultimate-info-circle, .image-ultimate-circle-effect-34:hover .image-ultimate-info-circle {
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotateX(-1440deg);
+    -moz-transform: rotateX(-1440deg);
+    -o-transform: rotateX(-1440deg);
+    -ms-transform: rotateX(-1440deg);
+    transform: rotateX(-1440deg);
+    box-shadow: 0 45px 60px -50px #000000;
+    -webkit-transition: all .5s ease-in-out .5s;
+    -moz-transition: all .5s ease-in-out .5s;
+    transition: all .5s ease-in-out .5s;
+}
+
+
+/* -------------------------------EFFECTS-34 ends ------------------------------------*/
+
+
+
+/* -------------------------------EFFECTS-35 STARTS ------------------------------------*/
+
+.image-ultimate-circle-effect-35 .image-ultimate-info-circle-2 h3 {
+    -webkit-transform: scale(100);
+    -moz-transform: scale(100);
+    -ms-transform: scale(100);
+    -o-transform: scale(100);
+    transform: scale(100);
+    -webkit-transition: all 1s 0.1s ease-in-out;
+    -moz-transition: all 1s 0.1s ease-in-out;
+    transition: all 1s 0.1s ease-in-out;
+}
+.image-ultimate-circle-effect-35 .image-ultimate-info-circle-2 p {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    margin: 0 10%;
+}
+.image-ultimate-circle-effect-35 a:hover .image-ultimate-info-circle-2, .image-ultimate-circle-effect-35:hover .image-ultimate-info-circle-2 {
+    opacity: 1;
+}
+.image-ultimate-circle-effect-35 a:hover h3, .image-ultimate-circle-effect-35:hover h3 {
+    visibility: visible;
+}
+.image-ultimate-circle-effect-35 a:hover p, .image-ultimate-circle-effect-35:hover p {
+    visibility: visible;
+}
+
+
+.image-ultimate-circle-effect-35 .image-ultimate-info-circle-2 {
+    visibility: hidden;
+    opacity: 0
+}
+.image-ultimate-circle-effect-35 .image-ultimate-info-circle-2  h3 {
+    -webkit-transform: scale(10);
+    -moz-transform: scale(10);
+    -ms-transform: scale(10);
+    -o-transform: scale(10);
+    transform: scale(10);
+    -webkit-transition: all 1s 0.1s ease-in-out;
+    -moz-transition: all 1s 0.1s ease-in-out;
+    transition: all 1s 0.1s ease-in-out;
+}
+
+.image-ultimate-circle-effect-35 a:hover .image-ultimate-info-circle-2, .image-ultimate-circle-effect-35:hover .image-ultimate-info-circle-2 {
+    visibility: visible;
+    opacity: 1;
+}
+.image-ultimate-circle-effect-35 a:hover .image-ultimate-info-circle-2 h3,
+.image-ultimate-circle-effect-35 a:hover .image-ultimate-info-circle-2 p,
+.image-ultimate-circle-effect-35:hover .image-ultimate-info-circle-2 h3,
+.image-ultimate-circle-effect-35:hover .image-ultimate-info-circle-2 p
+{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 1s 0.1s ease-in-out;
+    -moz-transition: all 1s 0.1s ease-in-out;
+    transition: all 1s 0.1s ease-in-out;
+}
+/* -----------------------------EFFECTS-35 ENDS ----------------------------------*/
+
+
+/* ------------------------------------------------------------------ALL CIRCLE EFFECTS END ------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ALL SQUARE EFFECTS STARTS ------------------------------------------------ */
+
+/* ------------------------------EFFECTS-1 START------------------------ */
+
+.image-ultimate-square-effect-1 .image-ultimate-info-square {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.5) rotate(-90deg);
+    -moz-transform: scale(0.5) rotate(-90deg);
+    -ms-transform: scale(0.5) rotate(-90deg);
+    -o-transform: scale(0.5) rotate(-90deg);
+    transform: scale(0.5) rotate(-90deg);
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+
+.image-ultimate-square-effect-1 a:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.5) rotate(90deg);
+    -moz-transform: scale(0.5) rotate(90deg);
+    -ms-transform: scale(0.5) rotate(90deg);
+    -o-transform: scale(0.5) rotate(90deg);
+    transform: scale(0.5) rotate(90deg);
+}
+.image-ultimate-square-effect-1 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-1:hover .image-ultimate-info-square {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotate(0);
+    -moz-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+}
+
+
+/* ------------------------------EFFECTS-1 ENDS----------------------------- */
+
+
+/*----------------------------- EFFECTS-2 STARTS---------------------------- */
+
+
+.image-ultimate-square-effect-2 .image-ultimate-info-square {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.image-ultimate-info-square h3 {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s 0.1s ease-in-out;
+    -moz-transition: all 0.35s 0.1s ease-in-out;
+    transition: all 0.35s 0.1s ease-in-out;
+}
+.image-ultimate-info-square p {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.35s 0.3s linear;
+    -moz-transition: all 0.35s 0.3s linear;
+    transition: all 0.35s 0.3s linear;
+}
+
+.image-ultimate-square-effect-2 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-2:hover .image-ultimate-info-square {
+    visibility: visible;
+    opacity: 1;
+}
+.image-ultimate-square-effect-2 a:hover .image-ultimate-info-square h3,
+.image-ultimate-square-effect-2 a:hover .image-ultimate-info-square p,
+.image-ultimate-square-effect-2:hover .image-ultimate-info-square h3,
+.image-ultimate-square-effect-2:hover .image-ultimate-info-square p{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* ---------------------------------------EFFECTS 2 ENDS---------------------------- */
+
+
+/* -------------------------- EFFECTS 3 START ----------------- */
+.image-ultimate-square-effect-3 .image-ultimate-info-square {
+    position:absolute; 
+    display: inline-block;
+    opacity: 0;
+
+}
+.image-ultimate-square-effect-3:hover .image-ultimate-info-square {
+    opacity: 1;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    opacity:1;
+    visibility:visible;
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1);
+    -moz-transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+/* ------------------------ EFFECTS 3 ENDS ----------------- */
+
+
+/* -------------------------------EFFECTS-4 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-square-effect-4 .image-ultimate-info-square {
+    visibility: hidden;
+}
+
+.image-ultimate-square-effect-4 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-4:hover .image-ultimate-info-square {
+    visibility: visible;
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    box-shadow: 0 45px 60px -50px #000000;
+}
+
+
+/* -------------------------------EFFECTS-4 ends ------------------------------------*/
+
+
+/* ------------------------------EFFECTS-5 START------------------------ */
+
+.image-ultimate-square-effect-5 .image-ultimate-info-square {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.7) rotateZ(-360deg);
+    -moz-transform: scale(0.7) rotateZ(-360deg);
+    -ms-transform: scale(0.7) rotateZ(-360deg);
+    -o-transform: scale(0.7) rotateZ(-360deg);
+    transform: scale(0.7) rotateZ(-360deg);
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+
+.image-ultimate-square-effect-5 a:hover .hover-img, .image-ultimate-square-effect-5:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.7) rotateZ(360deg);
+    -moz-transform: scale(0.7) rotateZ(360deg);
+    -ms-transform: scale(0.7) rotateZ(360deg);
+    -o-transform: scale(0.7) rotateZ(360deg);
+    transform: scale(0.7) rotateZ(360deg);
+}
+.image-ultimate-square-effect-5 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-5:hover .image-ultimate-info-square {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotateZ(0);
+    -moz-transform: scale(1) rotateZ(0);
+    -ms-transform: scale(1) rotateZ(0);
+    -o-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+}
+
+
+/* ------------------------------EFFECTS-5 ENDS----------------------------- */
+
+/*------------------------------- EFFECTS 6 ENDS  -----------------------------*/
+
+.image-ultimate-square-effect-6 .image-ultimate-info-square {
+    background: rgba(14, 139, 203, 1);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .35s ease-in-out .3s;
+    -moz-transition: all .35s ease-in-out .3s;
+    transition: all .35s ease-in-out .3s
+}
+.image-ultimate-square-effect-6 a:hover .hover-img, .image-ultimate-square-effect-6:hover .hover-img {
+    opacity: 0;
+    visibility: hidden
+}
+.image-ultimate-square-effect-6 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-6:hover .image-ultimate-info-square {
+    visibility: visible;
+    opacity: 1
+}
+.image-ultimate-square-effect-6.image-ultimate-left-to-right .hover-img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%
+}
+.image-ultimate-square-effect-6.image-ultimate-left-to-right .image-ultimate-info-square {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%
+}
+.image-ultimate-square-effect-6.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-square-effect-6.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg)
+}
+.image-ultimate-square-effect-6.image-ultimate-left-to-right a:hover .image-ultimate-info-square, .image-ultimate-square-effect-6.image-ultimate-left-to-right:hover .image-ultimate-info-square {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0)
+}
+.image-ultimate-hover.image-ultimate-square.image-ultimate-square-effect-6.image-ultimate-right-to-left .hover-img {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%
+}
+.image-ultimate-square-effect-6.image-ultimate-right-to-left .image-ultimate-info-square {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%
+}
+.image-ultimate-square-effect-6.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-square-effect-6.image-ultimate-right-to-left:hover .hover-img {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg)
+}
+.image-ultimate-square-effect-6.image-ultimate-right-to-left a:hover .image-ultimate-info-square, .image-ultimate-square-effect-6.image-ultimate-right-to-left:hover .image-ultimate-info-square {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0)
+}
+.image-ultimate-square-effect-6.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%
+}
+.image-ultimate-square-effect-6.image-ultimate-top-to-bottom .image-ultimate-info-square {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0
+}
+.image-ultimate-square-effect-6.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-square-effect-6.image-ultimate-top-to-bottom:hover .hover-img {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg)
+}
+.image-ultimate-square-effect-6.image-ultimate-top-to-bottom a:hover .image-ultimate-info-square, .image-ultimate-square-effect-6.image-ultimate-top-to-bottom:hover .image-ultimate-info-square {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0)
+}
+.image-ultimate-square-effect-6.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0
+}
+.image-ultimate-square-effect-6.image-ultimate-bottom-to-top .image-ultimate-info-square {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%
+}
+.image-ultimate-square-effect-6.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-square-effect-6.image-ultimate-bottom-to-top:hover .hover-img {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg)
+}
+.image-ultimate-square-effect-6.image-ultimate-bottom-to-top a:hover .image-ultimate-info-square, .image-ultimate-square-effect-6.image-ultimate-bottom-to-top:hover .image-ultimate-info-square {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+    transform: rotateX(0)
+}
+
+
+
+
+/*------------------------------- EFFECTS 6 ENDS  -----------------------------*/
+
+
+/* ------------------------------EFFECTS-7 START------------------------ */
+
+.image-ultimate-square-effect-7 .image-ultimate-info-square {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.7) rotateX(-360deg);
+    -moz-transform: scale(0.7) rotateX(-360deg);
+    -ms-transform: scale(0.7) rotateX(-360deg);
+    -o-transform: scale(0.7) rotateX(-360deg);
+    transform: scale(0.7) rotateX(-360deg);
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+
+.image-ultimate-square-effect-7 a:hover .hover-img, .image-ultimate-square-effect-7:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.7) rotateX(360deg);
+    -moz-transform: scale(0.7) rotateX(360deg);
+    -ms-transform: scale(0.7) rotateX(360deg);
+    -o-transform: scale(0.7) rotateX(360deg);
+    transform: scale(0.7) rotateX(360deg);
+}
+.image-ultimate-square-effect-7 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-7:hover .image-ultimate-info-square {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotateX(0);
+    -moz-transform: scale(1) rotateX(0);
+    -ms-transform: scale(1) rotateX(0);
+    -o-transform: scale(1) rotateX(0);
+    transform: scale(1) rotateX(0);
+}
+
+
+/* ------------------------------EFFECTS-7 ENDS----------------------------- */
+
+
+/*-------------------------------------------------------------- EFFECTS-8 STARTS ------------------------------------------------------------------*/
+
+
+.image-ultimate-square-effect-8 a:hover .hover-img, .image-ultimate-square-effect-8:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+
+}
+.image-ultimate-square-effect-8 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-8:hover .image-ultimate-info-square {
+    visibility: visible;
+    opacity: 1;
+    transition:2s
+}
+
+.image-ultimate-square-effect-8.hover-img { 
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.image-ultimate-square-effect-8 a:hover .hover-img, .image-ultimate-square-effect-8:hover .hover-img  {
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+}
+
+.image-ultimate-square-effect-8 .image-ultimate-info-square {
+    visibility: hidden;
+}
+
+/*-------------------------------- EFFECTS -8 ENDS ---------------------------------*/
+
+
+/* ------------------------------EFFECTS-9 START------------------------ */
+
+.image-ultimate-square-effect-9 .image-ultimate-info-square {
+    background: #333333;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.7) rotateY(-360deg);
+    -moz-transform: scale(0.7) rotateY(-360deg);
+    -ms-transform: scale(0.7) rotateY(-360deg);
+    -o-transform: scale(0.7) rotateY(-360deg);
+    transform: scale(0.7) rotateY(-360deg);
+    -webkit-transition: all 0.35s ease-in-out 0.3s;
+    -moz-transition: all 0.35s ease-in-out 0.3s;
+    transition: all 0.35s ease-in-out 0.3s;
+}
+
+.image-ultimate-square-effect-9 a:hover .hover-img, .image-ultimate-square-effect-9:hover .hover-img {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.7) rotateY(360deg);
+    -moz-transform: scale(0.7) rotateY(360deg);
+    -ms-transform: scale(0.7) rotateY(360deg);
+    -o-transform: scale(0.7) rotateY(360deg);
+    transform: scale(0.7) rotateY(360deg);
+}
+.image-ultimate-square-effect-9 a:hover .image-ultimate-info-square,.image-ultimate-square-effect-9:hover .image-ultimate-info-square {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1) rotateY(0);
+    -moz-transform: scale(1) rotateY(0);
+    -ms-transform: scale(1) rotateY(0);
+    -o-transform: scale(1) rotateY(0);
+    transform: scale(1) rotateY(0);
+}
+
+
+/* ------------------------------EFFECTS-9 ENDS----------------------------- */
+
+/*------------------------------- EFFECTS 10 STARTS -----------------------------*/
+
+
+.image-ultimate-main-sqr-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #333333;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.image-ultimate-square-effect-10 a:hover .hover-img, .image-ultimate-square-effect-10:hover .hover-img  {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    transition-delay: 0
+}
+.image-ultimate-square-effect-10 a:hover .image-ultimate-main-sqr-2, .image-ultimate-square-effect-10:hover .image-ultimate-main-sqr-2 {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+
+/*------------------------------- EFFECTS 10 ENDS -----------------------------*/
+
+/*------------------------------- EFFECTS 11 STARTS -----------------------------*/
+
+
+.image-ultimate-main-sqr-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #333333;
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.image-ultimate-square-effect-11 a:hover .hover-img, .image-ultimate-square-effect-11:hover .hover-img {
+    visibility: hidden;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    transition-delay: 0;
+    -webkit-transform: scale(0.7) rotateZ(180deg);
+    -moz-transform: scale(0.7) rotateZY(180deg);
+    -ms-transform: scale(0.7) rotateZ(180deg);
+    -o-transform: scale(0.7) rotateZ(180deg);
+    transform: scale(0.7) rotateZ(180deg);
+}
+.image-ultimate-square-effect-11 a:hover .image-ultimate-main-sqr-2, .image-ultimate-square-effect-11:hover .image-ultimate-main-sqr-2 {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+
+/*------------------------------- EFFECTS 11 ENDS -----------------------------*/
+
+/*------------------------------- EFFECTS 12 STARTS  -----------------------------*/
+
+
+.image-ultimate-square-effect-12 .hover-img-1 {
+    height: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+.image-ultimate-square-effect-12 .hover-img-1 .hover-img-1 {
+    opacity: 1;
+    -webkit-transition: all .3s ease-in-out .3s;
+    -moz-transition: all .3s ease-in-out .3s;
+    transition: all .3s ease-in-out .3s
+}
+.image-ultimate-square-effect-12 .image-ultimate-main-sqr-4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 0%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all .3s ease-in-out .3s;
+    -moz-transition: all .3s ease-in-out .3s;
+    transition: all .3s ease-in-out .3s
+}
+.image-ultimate-square-effect-12 .image-ultimate-part-sqr-4 {
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 139, 203, 1);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.6) inset, 0 1px 2px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all .35s ease-in-out .6s;
+    -moz-transition: all .35s ease-in-out .6s;
+    transition: all .35s ease-in-out .6s
+}
+.image-ultimate-square-effect-12 .image-ultimate-part-sqr-4 h3 {
+    color: #fff;
+    margin: 0 10%;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0,0,0,0.3)
+}
+.image-ultimate-square-effect-12 .image-ultimate-part-sqr-4 p {
+    color: #fff;
+    padding: 5%;
+    margin: 0 10%;
+    overflow:hidden;
+}
+.image-ultimate-square-effect-12 a:hover .hover-img-1, .image-ultimate-square-effect-12:hover .hover-img-1 {
+    pointer-events: none;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5)
+}
+.image-ultimate-square-effect-12 a:hover .hover-img-1 .hover-img-1, image-ultimate-square-effect-12:hover .hover-img-1 .hover-img-1 {
+    opacity: 0;
+    pointer-events: none
+}
+.image-ultimate-square-effect-12 a:hover .image-ultimate-main-sqr-4, .image-ultimate-square-effect-12:hover .image-ultimate-main-sqr-4 {
+    opacity: 1
+}
+.image-ultimate-square-effect-12 a:hover .image-ultimate-main-sqr-4 .image-ultimate-part-sqr-4, .image-ultimate-square-effect-12:hover .image-ultimate-main-sqr-4 .image-ultimate-part-sqr-4 {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1)
+}
+.image-ultimate-square-effect-12.image-ultimate-left-to-right .hover-img-1 .hover-img-1 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-12.image-ultimate-left-to-right .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-left-to-right a:hover .hover-img-1 .hover-img-1, .image-ultimate-square-effect-12.image-ultimate-left-to-right:hover .hover-img-1 .hover-img-1 {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-left-to-right a:hover .image-ultimate-main-sqr-4, .image-ultimate-square-effect-12.image-ultimate-left-to-right:hover .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-12.image-ultimate-right-to-left .hover-img-1 .hover-img-1 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-12.image-ultimate-right-to-left .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-right-to-left a:hover .hover-img-1 .hover-img-1, .image-ultimate-square-effect-12.image-ultimate-right-to-left:hover .hover-img-1 .hover-img-1  {
+ 
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-right-to-left a:hover .image-ultimate-main-sqr-4, .image-ultimate-square-effect-12.image-ultimate-right-to-left:hover .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-12.image-ultimate-top-to-bottom .hover-img-1 .hover-img-1 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+.image-ultimate-square-effect-12.image-ultimate-top-to-bottom .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-top-to-bottom a:hover .hover-img-1 .hover-img-1, .image-ultimate-square-effect-12.image-ultimate-top-to-bottom:hover .hover-img-1 .hover-img-1 {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-top-to-bottom a:hover .image-ultimate-main-sqr-4, .image-ultimate-square-effect-12.image-ultimate-top-to-bottom:hover .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+.image-ultimate-square-effect-12.image-ultimate-bottom-to-top .hover-img-1 .hover-img-1 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+.image-ultimate-square-effect-12.image-ultimate-bottom-to-top .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-bottom-to-top a:hover .hover-img-1 .hover-img-1, .image-ultimate-square-effect-12.image-ultimate-bottom-to-top:hover .hover-img-1 .hover-img-1 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+.image-ultimate-square-effect-12.image-ultimate-bottom-to-top a:hover .image-ultimate-main-sqr-4, .image-ultimate-square-effect-12.image-ultimate-bottom-to-top:hover .image-ultimate-main-sqr-4 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+
+
+
+
+/*------------------------------- EFFECTS 12 ENDS  -----------------------------*/
+
+
+/* -------------------------------EFFECTS-13 STARTS ------------------------------------*/
+
+.image-ultimate-square-effect-13 .image-ultimate-info-square {
+    position:absolute; 
+    display: inline-block;
+    opacity: 0;
+
+}
+.image-ultimate-square-effect-13:hover .image-ultimate-info-square h3 {
+    visibility:visible;
+}
+.image-ultimate-square-effect-13 .image-ultimate-info-square h3 {
+    visibility: hidden;
+    color: #fff;
+    position: relative;
+}
+.image-ultimate-square-effect-13 a:hover .hover-img, .image-ultimate-square-effect-13:hover .hover-img {
+    opacity: 0;
+    content:'';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 10%;
+}
+.image-ultimate-square-effect-13 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-13:hover .image-ultimate-info-square {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: rotateX(720deg);
+    -moz-transform: rotateX(720deg);
+    -o-transform: rotateX(720deg);
+    -ms-transform: rotateX(720deg);
+    transform: rotateX(720deg);
+    box-shadow: 0 45px 60px -50px #000000;
+
+    -webkit-transition: all .5s ease-in-out .5s;
+    -moz-transition: all .5s ease-in-out .5s;
+    transition: all .5s ease-in-out .5s;
+}
+
+
+/* -----------------------------EFFECTS-13 ENDS ----------------------------------*/
+
+
+/* -------------------------------EFFECTS-14 STARTS ------------------------------------*/
+.image-ultimate-square-effect-14  img { 	
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.image-ultimate-square-effect-14 h3 {
+    -webkit-transform: translate(0px, 0px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transform: translate(0px, 0px);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transform: translate(0px, 0px);
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transform: translate(0px, 0px);
+    -moz-transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    transform: translate(0px, 0px);
+    transition: all 0.2s ease-in-out;
+}
+.image-ultimate-square-effect-14 p { 
+    -webkit-transform: translate(0px, 0px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transform: translate(0px, 0px);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transform: translate(0px, 0px);
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transform: translate(0px, 0px);
+    -moz-transition: all 0.2s ease-in-out;
+    transform: translate(0px, 0px);
+    transition: all 0.2s ease-in-out;
+}
+.image-ultimate-square-effect-14 a.image-ultimate-info-square, .image-ultimate-square-effect-14.image-ultimate-info-square { 
+    -webkit-transform: translate(0px, 100px);
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
+    -o-transform: translate(0px, 100px);
+    -o-transition: all 0.2s 0.1s ease-in-out;
+    -ms-transform: translate(0px, 100px);
+    -ms-transition: all 0.2s 0.1s ease-in-out;
+    -moz-transform: translate(0px, 100px);
+    -moz-transition: all 0.2s 0.1s ease-in-out;
+    transform: translate(0px, 100px);
+    transition: all 0.2s 0.1s ease-in-out;
+} 
+
+.image-ultimate-square-effect-14 .image-ultimate-info-square {
+    background-color: rgba(115,146,184, 0.7); 
+     opacity: 0;
+    -webkit-transform: translate(265px, 145px) rotate(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transform: translate(265px, 145px) rotate(45deg);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transform: translate(265px, 145px) rotate(45deg);
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transform: translate(265px, 145px) rotate(45deg);
+    -moz-transition: all 0.2s ease-in-out;
+    transform: translate(265px, 145px) rotate(45deg);
+    transition: all 0.2s ease-in-out;
+
+}
+.image-ultimate-square-effect-14:hover .image-ultimate-info-square { 
+    opacity:1; 
+    -webkit-transform: translate(-80px, -125px) rotate(45deg);
+    -o-transform: translate(-80px, -125px) rotate(45deg);
+    -ms-transform: translate(-80px, -125px) rotate(45deg);
+    -moz-transform: translate(-80px, -125px) rotate(45deg);
+    transform: translate(-80px, -125px) rotate(45deg);
+}							  
+.image-ultimate-square-effect-14:hover h3 { 
+    -webkit-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition-delay: 0.3s; 
+    -o-transition-delay: 0.3s; 
+    -ms-transition-delay: 0.3s; 
+    -moz-transition-delay: 0.3s; 
+    transition-delay: 0.3s; 
+}
+.image-ultimate-square-effect-14:hover p { 
+    -webkit-transform: translate(0px,0px); 
+    -webkit-transition-delay: 0.4s;
+    -o-transform: translate(0px,0px); 
+    -o-transition-delay: 0.4s;
+    -ms-transform: translate(0px,0px); 
+    -ms-transition-delay: 0.4s;
+    -moz-transform: translate(0px,0px); 
+    -moz-transition-delay: 0.4s;
+    transform: translate(0px,0px); 
+    transition-delay: 0.4s;
+}
+.image-ultimate-square-effect-14 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-14:hover .image-ultimate-info-square {
+    -webkit-transform: translate(0px,0px); 
+    -webkit-transition-delay: 0.5s;
+    -o-transform: translate(0px,0px); 
+    -o-transition-delay: 0.5s;
+    -ms-transform: translate(0px,0px); 
+    -ms-transition-delay: 0.5s;
+    -moz-transform: translate(0px,0px); 
+    -moz-transition-delay: 0.5s;
+    transform: translate(0px,0px); 
+    transition-delay: 0.5s;
+}
+
+
+/* -----------------------------EFFECTS-14 ENDS ----------------------------------*/
+
+
+/*------------------------------- EFFECTS 15 STARTS  -----------------------------*/
+
+
+.image-ultimate-square-effect-15 .image-ultimate-info-square {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0
+}
+.image-ultimate-square-effect-15 .image-ultimate-info-square  h3 {
+    -webkit-transform: scale(100);
+    -moz-transform: scale(100);
+    -ms-transform: scale(100);
+    -o-transform: scale(100);
+    transform: scale(100);
+    -webkit-transition: all 1s 0.1s ease-in-out;
+    -moz-transition: all 1s 0.1s ease-in-out;
+    transition: all 1s 0.1s ease-in-out;
+}
+.image-ultimate-square-effect-15 .image-ultimate-info-square  p {
+    -webkit-transform: scale(50);
+    -moz-transform: scale(50);
+    -ms-transform: scale(50);
+    -o-transform: scale(50);
+    transform: scale(50);
+
+}
+
+.image-ultimate-square-effect-15 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-15:hover .image-ultimate-info-square {
+    visibility: visible;
+    opacity: 1;
+}
+.image-ultimate-square-effect-15 a:hover .image-ultimate-info-square h3,
+.image-ultimate-square-effect-15 a:hover .image-ultimate-info-square p,
+.image-ultimate-square-effect-15:hover .image-ultimate-info-square h3,
+.image-ultimate-square-effect-15:hover .image-ultimate-info-square p{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/*------------------------------- EFFECTS 15 ENDS  -----------------------------*/
+
+
+/* -------------------------------EFFECTS-16 STARTS ------------------------------------*/
+.image-ultimate-square-effect-16 .image-ultimate-info-square {
+    opacity: 0;
+    position: absolute;
+    filter: alpha(opacity=0);
+    border-radius: 80%;
+    border: 2px solid #FFF;
+    -ms-transition: opacity 0.35s;
+    -o-transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(50%,50%,0);
+    -ms-transform: translate3d(50%,50%,0);
+    -o-transform: translate3d(50%,50%,0);
+    transform: translate3d(50%,50%,0);
+}
+.image-ultimate-square-effect-16:hover .image-ultimate-info-square h3 {
+    visibility:visible;
+}
+.image-ultimate-square-effect-16 .image-ultimate-info-square h3 {
+    visibility: hidden;
+    color: #fff;
+    position: relative;
+    padding: 20% 0 10% 0 !important;
+}
+.image-ultimate-square-effect-16:hover .image-ultimate-info-square {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.image-ultimate-square-effect-16 img {
+    opacity: 1;
+    -ms-transition: all 0.35s;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.image-ultimate-square-effect-16:hover img {
+    -o-filter: brightness(1.4);
+    -moz-filter: brightness(1.4);
+    filter: brightness(1.4);
+    -webkit-filter: brightness(1.4);
+    -ms-filter: brightness(1.4);
+}
+
+.image-ultimate-square-effect-16 a{
+
+    color: #FFF;
+    padding: 1em 0;
+    filter: alpha(opacity=0);
+    -ms-transition: opacity 0.35s;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-150%,-400%,0);
+    -ms-transform: translate3d(-150%,-400%,0);
+    transform: translate3d(-150%,-400%,0);
+    -moz-transition:all .2s ease-in-out;
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+}
+
+.image-ultimate-square-effect-16:hover a, .image-ultimate-square-effect-16:hover .image-ultimate-info-square {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+}
+
+/* -----------------------------EFFECTS-16 ENDS ----------------------------------*/
+
+/* -------------------------------EFFECTS-17 STARTS ------------------------------------*/
+.image-ultimate-square-effect-17  img { 	
+    -webkit-transition: all 0.4s ease-in-out 0.2s;
+    -o-transition: all 0.4s ease-in-out 0.2s;
+    -mox-transition: all 0.4s ease-in-out 0.2s;
+    -ms-transition: all 0.4s ease-in-out 0.2s;
+    transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;
+}
+
+.image-ultimate-square-effect-17 h3 {
+    opacity: 0;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+.image-ultimate-square-effect-17 p { 
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.image-ultimate-square-effect-17 a.image-ultimate-info-square, .image-ultimate-square-effect-17.image-ultimate-info-square { 
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+} 
+
+.image-ultimate-square-effect-17 .image-ultimate-info-square {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(-180deg);
+    -webkit-transition: all 0.4s ease-in;
+    -o-transform: scale(0) rotate(-180deg);
+    -o-transition: all 0.4s ease-in;
+    -ms-transform: scale(0) rotate(-180deg);
+    -ms-transition: all 0.4s ease-in;
+    -moz-transform: scale(0) rotate(-180deg);
+    -moz-transition: all 0.4s ease-in;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.4s ease-in;
+    border-radius: 0px;
+}
+.image-ultimate-square-effect-17:hover .image-ultimate-info-square { 
+    opacity: 1; 
+    -moz-transform: scale(1) rotate(0deg);
+    -moz-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    transition-delay: 0.2s;
+}							  
+.image-ultimate-square-effect-17:hover h3,.image-ultimate-square-effect-17:hover p ,.image-ultimate-square-effect-17 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-17:hover .image-ultimate-info-square { 
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+/* -----------------------------EFFECTS-17 ENDS ----------------------------------*/
+
+/* -------------------------------EFFECTS-18 STARTS ------------------------------------*/
+
+.image-ultimate-square-effect-18 h3 {
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out 0.1s;
+}
+.image-ultimate-square-effect-18 p { 
+    color: #333;
+    -webkit-transition: all 0.2s ease-in-out 0.1s;
+    -o-transition: all 0.2s ease-in-out 0.1s;
+    -ms-transition: all 0.2s ease-in-out 0.1s;
+    -moz-transition: all 0.2s ease-in-out 0.1s;
+    -webkit-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out 0.1s;
+}
+.image-ultimate-square-effect-18 a.image-ultimate-info-square, .image-ultimate-square-effect-18.image-ultimate-info-square { 
+    -webkit-transition: all 0.2s ease-in-out 0.3s;
+    -o-transition: all 0.2s ease-in-out 0.3s;
+    -ms-transition: all 0.2s ease-in-out 0.3s;
+    -moz-transition: all 0.2s ease-in-out 0.3s;
+    -webkit-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    transform: translateY(-200px);
+    transition:  all 0.2s ease-in-out 0.3s;
+} 
+
+.image-ultimate-square-effect-18 .image-ultimate-info-square {
+    -webkit-transition: all 0.3s ease-out 0.5s;
+    -o-transition: all 0.3s ease-out 0.5s;
+    -ms-transition: all 0.3s ease-out 0.5s;
+    -moz-transition: all 0.3s ease-out 0.5s;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: -200px;
+    opacity: 0;
+    transition: all 0.3s ease-out 0.5s;
+}
+.image-ultimate-square-effect-18:hover .image-ultimate-info-square { 
+    top: 0px; 
+    transition-delay: 0s; 
+    animation: bounceY 0.9s linear;
+    opacity: 1; 
+    -moz-transition-delay: 0s; 
+    -moz-animation: bounceY 0.9s linear;
+    -o-transition-delay: 0s; 
+    -o-animation: bounceY 0.9s linear;
+    -ms-transition-delay: 0s; 
+    -ms-animation: bounceY 0.9s linear;
+    -webkit-transition-delay: 0s; 
+    -webkit-animation: bounceY 0.9s linear;
+}							  
+.image-ultimate-square-effect-18:hover h3{
+    -webkit-transform: translateY(0px);
+    -webkit-transition-delay: 0.4s;
+    -o-transform: translateY(0px);
+    -o-transition-delay: 0.4s;
+    -ms-transform: translateY(0px);
+    -ms-transition-delay: 0.4s;
+    -moz-transform: translateY(0px);
+    -moz-transition-delay: 0.4s;
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+
+}
+.image-ultimate-square-effect-18:hover p {
+    -webkit-transform: translateY(0px);
+    -webkit-transition-delay: 0.2s;
+    -o-transform: translateY(0px);
+    -o-transition-delay: 0.2s;
+    -ms-transform: translateY(0px);
+    -ms-transition-delay: 0.2s;
+    -moz-transform: translateY(0px);
+    -moz-transition-delay: 0.2s;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+
+}
+.image-ultimate-square-effect-18 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-18:hover .image-ultimate-info-square { 
+    -webkit-transform: translateY(0px);
+    -webkit-transition-delay: 0s;
+    -o-transform: translateY(0px);
+    -o-transition-delay: 0s;
+    -ms-transform: translateY(0px);
+    -ms-transition-delay: 0s;
+    -moz-transform: translateY(0px);
+    -moz-transition-delay: 0s;
+    transform: translateY(0px);
+    transition-delay: 0s;
+}
+
+@keyframes bounceY {
+    0% { transform: translateY(-205px);}
+    40% { transform: translateY(-100px);}
+    65% { transform: translateY(-52px);}
+    82% { transform: translateY(-25px);}
+    92% { transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+}
+
+/* -----------------------------EFFECTS-18 ENDS ----------------------------------*/
+
+/* -------------------------------EFFECTS-19 STARTS ------------------------------------*/
+
+
+.image-ultimate-square-effect-19 .image-ultimate-info-square h3 {
+    letter-spacing: 2px;
+    font-size: 14px;
+    overflow: hidden;
+    line-height: 5px;
+    margin: 0 2%;
+    height: 20%;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.image-ultimate-square-effect-19 .image-ultimate-info-square p {
+    padding: 10px 5px;
+        font-style: italic;
+    margin: 0 3%;
+    font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    height: 80%;
+    overflow: hidden;
+    line-height: 5px;
+
+}
+.image-ultimate-square-effect-19 a:hover .hover-img, .image-ultimate-square-effect-19:hover .hover-img { 
+
+    opacity:0.7;  
+    -webkit-transform:translateY(-125px);
+    -ms-transform:translateY(-125px);
+    -o-transform:translateY(-125px);
+    -mos-transform:translateY(-125px);
+    transform:translateY(-125px);
+    -ms-transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
+    -mos-transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
+    -o-transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
+    transition: transform 0.3s ease-in, opacity 0.1s ease-in-out;
+    overflow:visible;
+    border-color:rgba(0,0,0,0.7) transparent transparent transparent;
+    border-style:solid;
+    border-width: 150px;
+}
+
+
+/* -----------------------------EFFECTS-19 ENDS ----------------------------------*/
+
+
+/* --------------------------- EFFECTS- 20 STARTS ----------------- */
+.image-ultimate-square-effect-20.image-ultimate-left-to-right .hover-img {
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+.image-ultimate-square-effect-20.image-ultimate-right-to-left .hover-img {
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+.image-ultimate-square-effect-20.image-ultimate-top-to-bottom .hover-img {
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.image-ultimate-square-effect-20.image-ultimate-bottom-to-top .hover-img {
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+
+.image-ultimate-square-effect-20.image-ultimate-left-to-right a:hover .hover-img, .image-ultimate-square-effect-20.image-ultimate-left-to-right:hover .hover-img {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+.image-ultimate-square-effect-20.image-ultimate-right-to-left a:hover .hover-img, .image-ultimate-square-effect-20.image-ultimate-right-to-left:hover .hover-img{
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    -o-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+.image-ultimate-square-effect-20.image-ultimate-bottom-to-top a:hover .hover-img, .image-ultimate-square-effect-20.image-ultimate-bottom-to-top:hover .hover-img{
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+    -moz-transform: rotate3d(1, 0, 0, 180deg);
+    -ms-transform: rotate3d(1, 0, 0, 180deg);
+    -o-transform: rotate3d(1, 0, 0, 180deg);
+    transform: rotate3d(1, 0, 0, 180deg);
+}
+.image-ultimate-square-effect-20.image-ultimate-top-to-bottom a:hover .hover-img, .image-ultimate-square-effect-20.image-ultimate-top-to-bottom:hover .hover-img{
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+    -moz-transform: rotate3d(1, 0, 0, -180deg);
+    -ms-transform: rotate3d(1, 0, 0, -180deg);
+    -o-transform: rotate3d(1, 0, 0, -180deg);
+    transform: rotate3d(1, 0, 0, -180deg);
+}
+/* --------------------------- EFFECTS 20 END -------------------------- */
+
+/* -------------------------------EFFECTS-21 STARTS ------------------------------------*/
+.image-ultimate-square-effect-21  img { 	
+    -webkit-transition: all 0.4s ease-in-out 0.2s;
+    -o-transition: all 0.4s ease-in-out 0.2s;
+    -mox-transition: all 0.4s ease-in-out 0.2s;
+    -ms-transition: all 0.4s ease-in-out 0.2s;
+    transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;
+}
+
+.image-ultimate-square-effect-21 h3 {
+    display:inline;
+    margin-bottom:30px;
+    background: transparent;
+    -webkit-transform: translate(0px, 0px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transform: translate(0px, 0px);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transform: translate(0px, 0px);
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transform: translate(0px, 0px);
+    -moz-transition: all 0.2s ease-in-out;
+    transform: translate(0px, 0px);
+    transition: all 0.2s ease-in-out;
+}
+.image-ultimate-square-effect-21 p { 
+    -webkit-transform: translate(0px, 0px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transform: translate(0px, 0px);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transform: translate(0px, 0px);
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transform: translate(0px, 0px);
+    -moz-transition: all 0.2s ease-in-out;
+    transform: translate(0px, 0px);
+    transition: all 0.2s ease-in-out;
+}
+.image-ultimate-square-effect-21 a.image-ultimate-info-square, .image-ultimate-square-effect-21.image-ultimate-info-square { 
+    -webkit-transform: translate(0px, -100px);
+    -webkit-transition: all 0.2s 0.1s ease-in-out;
+    -o-transform: translate(0px, -100px);
+    -o-transition: all 0.2s 0.1s ease-in-out;
+    -ms-transform: translate(0px, -100px);
+    -ms-transition: all 0.2s 0.1s ease-in-out;
+    -moz-transform: translate(0px, -100px);
+    -moz-transition: all 0.2s 0.1s ease-in-out;
+    transform: translate(0px, -100px);
+    transition: all 0.2s 0.1s ease-in-out;
+} 
+
+.image-ultimate-square-effect-21 .image-ultimate-info-square {
+    background-color: rgba(115,146,184, 0.7); 
+    width: 100%;
+    padding: 60px;
+    height:100%;
+    opacity: 0;
+    -webkit-transform: translate(-265px, -145px) rotateX(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transform: translate(-265px, -145px) rotateX(45deg);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transform: translate(-265px, -145px) rotateX(45deg);
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transform: translate(-265px, -145px) rotateX(45deg);
+    -moz-transition: all 0.2s ease-in-out;
+    transform: translate(-265px, -145px) rotateX(45deg);
+    transition: all 0.2s ease-in-out;
+
+}
+.image-ultimate-square-effect-21:hover .image-ultimate-info-square { 
+    opacity:1; 
+    -webkit-transform: translate(80px, 125px) rotateX(45deg);
+    -o-transform: translate(80px, 125px) rotateX(45deg);
+    -moz-transform: translate(80px, 125px) rotateX(45deg);
+    -ms-transform: translate(80px, 125px) rotateX(45deg);
+    transform: translate(80px, 125px) rotateX(45deg);
+}							  
+.image-ultimate-square-effect-21:hover h3 { 
+    -webkit-transform: translate(0px,0px);
+    -webkit-transition-delay: 0.3s;
+    -o-transform: translate(0px,0px);
+    -o-transition-delay: 0.3s;
+    -ms-transform: translate(0px,0px);
+    -ms-transition-delay: 0.3s;
+    -moz-transform: translate(0px,0px);
+    -moz-transition-delay: 0.3s;
+    transform: translate(0px,0px);
+    transition-delay: 0.3s; 
+}
+.image-ultimate-square-effect-21:hover p { 
+    -webkit-transform: translate(0px,0px);
+    -webkit-transition-delay: 0.4s;
+    -o-transform: translate(0px,0px);
+    -o-transition-delay: 0.4s;
+    -ms-transform: translate(0px,0px);
+    -ms-transition-delay: 0.4s;
+    -moz-transform: translate(0px,0px);
+    -moz-transition-delay: 0.4s;
+    transform: translate(0px,0px); 
+    transition-delay: 0.4s;
+}
+.image-ultimate-square-effect-21 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-21:hover .image-ultimate-info-square {
+    -webkit-transform: translate(0px,0px); 
+    -webkit-transition-delay: 0.5s; 
+    -o-transform: translate(0px,0px); 
+    -o-transition-delay: 0.5s;
+    -ms-transform: translate(0px,0px); 
+    -ms-transition-delay: 0.5s; 
+    -moz-transform: translate(0px,0px); 
+    -moz-transition-delay: 0.5s; 
+    transform: translate(0px,0px); 
+    transition-delay: 0.5s;
+}
+
+
+/* -----------------------------EFFECTS-21 ENDS ----------------------------------*/
+
+
+
+/*------------------------------- EFFECTS 22 STARTS  -----------------------------*/
+
+
+.image-ultimate-square-effect-22 .image-ultimate-info-square {
+    background: rgba(14, 139, 203, 0.9);
+   
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-square-effect-22 .image-ultimate-info-square h3 {
+    visibility: hidden;
+    color: #fff;
+    position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0,0,0,0.3);
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-square-effect-22 .image-ultimate-info-square p {
+    color: #fff;
+    padding: 5%;
+    margin: 0 10%;
+    overflow:hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-square-effect-22 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-22:hover .image-ultimate-info-square {
+    opacity: 1
+}
+.image-ultimate-square-effect-22 a:hover h3, .image-ultimate-square-effect-22:hover h3 {
+    visibility: visible
+}
+.image-ultimate-square-effect-22 a:hover p, .image-ultimate-square-effect-22:hover p {
+    visibility: visible
+}
+.image-ultimate-square-effect-22.image-ultimate-right-to-left .image-ultimate-info-square h3 {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-right-to-left .image-ultimate-info-square p {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-right-to-left a:hover h3, .image-ultimate-square-effect-22.image-ultimate-right-to-left:hover h3 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-22.image-ultimate-right-to-left a:hover p, .image-ultimate-square-effect-22.image-ultimate-right-to-left:hover p {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-22.image-ultimate-left-to-right .image-ultimate-info-square h3 {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-left-to-right .image-ultimate-info-square p {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-left-to-right a:hover h3, .image-ultimate-square-effect-22.image-ultimate-left-to-right:hover h3 {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-22.image-ultimate-left-to-right a:hover p, .image-ultimate-square-effect-22.image-ultimate-left-to-right:hover p {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+.image-ultimate-square-effect-22.image-ultimate-top-to-bottom .image-ultimate-info-square h3 {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-top-to-bottom .image-ultimate-info-square p {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-top-to-bottom a:hover h3, .image-ultimate-square-effect-22.image-ultimate-top-to-bottom:hover h3  {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+.image-ultimate-square-effect-22.image-ultimate-top-to-bottom a:hover p, .image-ultimate-square-effect-22.image-ultimate-top-to-bottom:hover p  {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+.image-ultimate-square-effect-22.image-ultimate-bottom-to-top .image-ultimate-info-square h3 {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-bottom-to-top .image-ultimate-info-square p {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%)
+}
+.image-ultimate-square-effect-22.image-ultimate-bottom-to-top a:hover h3, .image-ultimate-square-effect-22.image-ultimate-bottom-to-top:hover h3 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+.image-ultimate-square-effect-22.image-ultimate-bottom-to-top a:hover p, .image-ultimate-square-effect-22.image-ultimate-bottom-to-top:hover p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}
+
+
+/*------------------------------- EFFECTS 22 ENDS -----------------------------*/
+
+/* -------------------------------EFFECTS-23 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-square-effect-23 .image-ultimate-info-square {
+    width: 100%;
+    height: 100%;
+    opacity: 0;  
+  }
+.image-ultimate-square-effect-23 .image-ultimate-info-square h3 {
+    visibility: hidden;
+    color: #fff;
+    position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0,0,0,0.3);
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-square-effect-23 .image-ultimate-info-square p {
+    color: #fff;
+    padding: 5%;
+    margin: 0 10%;
+    overflow:hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-square-effect-23 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-23:hover .image-ultimate-info-square {
+    opacity: 1
+}
+.image-ultimate-square-effect-23 a:hover h3, .image-ultimate-square-effect-23:hover h3 {
+    visibility: visible
+}
+.image-ultimate-square-effect-23 a:hover p, .image-ultimate-square-effect-23:hover p {
+    visibility: visible
+}
+
+.image-ultimate-square-effect-23 a:hover .hover-img, .image-ultimate-square-effect-23:hover .hover-img {
+    opacity: 0;  
+}
+.image-ultimate-square-effect-23 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-23:hover .image-ultimate-info-square {
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotateY(-1440deg);
+    -moz-transform: rotateY(-1440deg);
+    -o-transform: rotateY(-1440deg);
+    -ms-transform: rotateY(-1440deg);
+    transform: rotateY(-1440deg);
+    box-shadow: 0 45px 60px -50px #000000;
+
+    -webkit-transition: all .5s ease-in-out .5s;
+    -moz-transition: all .5s ease-in-out .5s;
+    transition: all .5s ease-in-out .5s;
+}
+
+
+/* -------------------------------EFFECTS-23 ends ------------------------------------*/
+
+
+/* -------------------------------EFFECTS-24 STARTS ------------------------------------*/
+
+
+
+.image-ultimate-square-effect-24 .image-ultimate-info-square {
+    width: 100%;
+    height: 100%;
+    opacity: 0;  
+    border: 10px solid #f6f6f6;
+}
+.image-ultimate-square-effect-24 .image-ultimate-info-square h3 {
+    color: #fff;
+    position: relative;
+}
+.image-ultimate-square-effect-24 .image-ultimate-info-square p {
+    color: #fff;
+    padding: 5%;
+     margin: 0 10%;
+    overflow:hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-square-effect-24 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-24:hover .image-ultimate-info-square  {
+    opacity: 1
+}
+.image-ultimate-square-effect-24 a:hover h3, .image-ultimate-square-effect-24:hover h3 {
+    visibility: visible
+}
+.image-ultimate-square-effect-24 a:hover p, .image-ultimate-square-effect-24:hover p {
+    visibility: visible
+}
+
+.image-ultimate-square-effect-24 a:hover .hover-img, .image-ultimate-square-effect-24:hover .hover-img {
+    opacity: 0;  
+}
+.image-ultimate-square-effect-24 a:hover .image-ultimate-info-square, .image-ultimate-square-effect-24:hover .image-ultimate-info-square {
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotateX(1440deg);
+    -moz-transform: rotateX(1440deg);
+    -o-transform: rotateX(1440deg);
+    -ms-transform: rotateX(1440deg);
+    transform: rotateX(1440deg);
+    box-shadow: 0 45px 60px -50px #000000;
+
+    -webkit-transition: all .5s ease-in-out .5s;
+    -moz-transition: all .5s ease-in-out .5s;
+    transition: all .5s ease-in-out .5s;
+}
+
+
+/* -------------------------------EFFECTS-24 ends ------------------------------------*/
+
+
+
+/*------------------------------- EFFECTS 25 STARTS  -----------------------------*/
+
+
+.image-ultimate-sqr-hover.image-ultimate-square .hover-img-3 {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.image-ultimate-sqr-hover.image-ultimate-square .hover-img-3:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+.image-ultimate-sqr-hover.image-ultimate-square .image-ultimate-info-square-25 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 0%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.image-ultimate-square-effect-25 .hover-img-3 {
+    z-index: 11;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+
+.image-ultimate-square-effect-25 .image-ultimate-info-square-25 {
+    background: rgba(14, 139, 203, 1);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out
+}
+.image-ultimate-square-effect-25 .image-ultimate-info-square-25 h3 {
+    color: #fff;
+    
+    position: relative;
+    text-shadow: 0 0 1px white, 0 1px 2px rgba(0,0,0,0.3)
+}
+.image-ultimate-square-effect-25 .image-ultimate-info-square-25 p {
+    color: #ffffff;
+    font-style: normal;
+    border-top: 1px solid rgba(255,255,255,0.5)
+}
+.image-ultimate-square-effect-25 a:hover .image-ultimate-info-square-25, .image-ultimate-square-effect-25:hover .image-ultimate-info-square-25 {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1)
+}
+.image-ultimate-square-effect-25.image-ultimate-top-to-bottom .image-ultimate-info-square-25 h3 {
+    margin: 0 30px;
+    padding: 25px 0 0;
+    height: 20%;
+}
+.image-ultimate-square-effect-25.image-ultimate-top-to-bottom .image-ultimate-info-square-25 p {
+    margin: 0 30px;
+    padding: 5px
+}
+.image-ultimate-square-effect-25.image-ultimate-top-to-bottom a:hover .hover-img-3, .image-ultimate-square-effect-25.image-ultimate-top-to-bottom:hover .hover-img-3 {
+    -webkit-transform: translateY(50px) scale(0.5);
+    -moz-transform: translateY(50px) scale(0.5);
+    -ms-transform: translateY(50px) scale(0.5);
+    -o-transform: translateY(50px) scale(0.5);
+    transform: translateY(50px) scale(0.5)
+}
+.image-ultimate-square-effect-25.image-ultimate-bottom-to-top .image-ultimate-info-square-25 h3 {
+    margin: 130px 30px 0;
+    padding: 25px 0 0;
+    height: 20%
+}
+.image-ultimate-square-effect-25.image-ultimate-bottom-to-top .image-ultimate-info-square-25 p {
+    margin: 0 30px;
+    padding: 5px
+}
+.image-ultimate-square-effect-25.image-ultimate-bottom-to-top a:hover .hover-img-3, .image-ultimate-square-effect-25.image-ultimate-bottom-to-top:hover .hover-img-3 {
+    -webkit-transform: translateY(-50px) scale(0.5);
+    -moz-transform: translateY(-50px) scale(0.5);
+    -ms-transform: translateY(-50px) scale(0.5);
+    -o-transform: translateY(-50px) scale(0.5);
+    transform: translateY(-50px) scale(0.5)
+}
+
+
+
+/*------------------------------- EFFECTS 25 ENDS  -----------------------------*/
+

@@ -6,7 +6,7 @@
 <?php if($htheme_meta_layout == '3' || !$htheme_meta_layout){ ?>
 	<!-- ROW -->
 <?php if ( is_archive() ) { ?>
-	<div class="htheme_row htheme_padding_bottom">
+	<div class="htheme_row htheme_padding_bottom [ row_initial ]">
 		<div class="htheme_container">
 			<div class="htheme_inner_col">
 				<!-- TITLE DEFAULT -->
