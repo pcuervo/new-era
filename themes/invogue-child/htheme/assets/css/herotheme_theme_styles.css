@@ -489,6 +489,15 @@ body { height: 100%; }
 
 .js-header{ width: 100%; }
 
+/*Filter tags*/
+
+.filter-tag{
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	background-color:rgba(255, 242, 0, 0.85);
+}
+
 /*Sidebar*/
 
 .htheme_filter_dropdown { background-color: #FFF200!important; }

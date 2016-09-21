@@ -12252,6 +12252,7 @@
 [15-Sep-2016 16:43:39 UTC] functions child
 [15-Sep-2016 16:43:42 UTC] functions child
 [15-Sep-2016 16:43:42 UTC] functions child
+<<<<<<< HEAD
 [15-Sep-2016 16:47:55 UTC] functions child
 [15-Sep-2016 16:48:55 UTC] functions child
 [15-Sep-2016 16:48:56 UTC] functions child
@@ -15516,3 +15517,36 @@
 [21-Sep-2016 00:24:29 UTC] functions child
 [21-Sep-2016 00:24:30 UTC] functions child
 [21-Sep-2016 00:24:30 UTC] functions child
+=======
+[19-Sep-2016 18:20:36 UTC] functions child
+[19-Sep-2016 18:20:49 UTC] functions child
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:50 UTC] PHP Notice:  Undefined index: sidebar in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue/htheme/classes/class.get.woo.php on line 519
+[19-Sep-2016 18:20:51 UTC] functions child
+[19-Sep-2016 18:20:51 UTC] functions child
+[19-Sep-2016 18:20:51 UTC] functions child
+[19-Sep-2016 18:20:51 UTC] functions child
+[19-Sep-2016 18:20:51 UTC] functions child
+[19-Sep-2016 18:20:51 UTC] functions child
+[19-Sep-2016 18:20:52 UTC] functions child
+[19-Sep-2016 18:20:53 UTC] functions child
+[19-Sep-2016 18:20:53 UTC] functions child
+[19-Sep-2016 18:20:53 UTC] functions child
+>>>>>>> 776bce131f25a3195fb2bf63308ab51fc31ace78
+[21-Sep-2016 00:25:00 UTC] functions child
