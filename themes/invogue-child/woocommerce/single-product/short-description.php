@@ -41,5 +41,5 @@ $id = $product->id;
 <?php endif; ?>
 
 <!-- link a guía de tallas -->
-<a href="<?php echo get_stylesheet_directory_uri(); ?>/guia-de-tallas" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">Conoce tu talla</a>
+<a href="<?php echo get_stylesheet_directory_uri(); ?>/guia-de-tallas" class="[ line-height--50 ][ margin-bottom ] htheme_btn_style_1 btn-primary">Conoce tu talla</a>
 

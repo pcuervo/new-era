@@ -1,7 +1,10 @@
 /* inVogue Child Theme - Stylesheet - Custom Developer Styles */
 
 /*HEADER*/
-@media(max-width:910px){.htheme_main_navigation.htheme_default { min-width: 590px;}}
+@media(max-width:910px){
+	.htheme_main_navigation.htheme_default { min-width: 590px;}
+	.htheme_account_holder { padding-right: 8px!important; margin-right: 8px!important; }
+}
 @media(min-width:911px){
 	.htheme_main_navigation.htheme_default { min-width: 700px;}
 	.htheme_nav ul { max-width: 700px!important;}
@@ -14,6 +17,7 @@
 	.htheme_main_navigation.htheme_default { min-width: 940px;}
 	.htheme_nav ul { max-width: 940px!important;}
 }
+
 
 	/*Header top*/
 .htheme_small_navigation { background-color: #fff!important; }
@@ -62,6 +66,7 @@ li.current-menu-item a,
 
 .single-product .htheme_nav ul .current-menu-parent > a { color: #fff!important; }
 
+.htheme_inner_navigation { float: right!important; }
 
 	/*Header mobile*/
 	@media(max-width: 768px ){

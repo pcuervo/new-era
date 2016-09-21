@@ -128,6 +128,7 @@ $htheme_copytext = $GLOBALS['htheme_global_object']['settings']['footer']['copyr
 						<?php if($htheme_copyright == 'true'){ ?>
 						<div class="htheme_copyright">
 							<?php echo esc_html($htheme_copytext); ?>
+							<a href="http://pcuervo.com/" target="_blank">Pequeño Cuervo</a>
 						</div>
 						<?php } ?>
 						<div class="htheme_footer_nav">
