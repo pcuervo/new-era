@@ -52,10 +52,10 @@ if($sidebar == 'no_sidebar'){
 					do_action( 'woocommerce_sidebar' );
 					?>
 				</div>
-		<div class="[ filter-tag ]"> Estilo </div> 
-		<div class="[ filter-tag ]"> Talla </div> 
-		<div class="[ filter-tag ]"> Silueta </div> 
-		<div class="[ filter-tag ]"> Colección </div> 
+		<!--<div class="[ filter-tag ]"> Estilo </div>
+		<div class="[ filter-tag ]"> Talla </div>
+		<div class="[ filter-tag ]"> Silueta </div>
+		<div class="[ filter-tag ]"> Colección </div> -->
 			</div>
 		</div>
 
@@ -89,11 +89,11 @@ if($sidebar == 'no_sidebar'){
 			</div>
 			<!-- PRODUCT FILTER -->
 			<?php } ?>
-			
-			<div class="[ filter-tag ]"> Estilo </div> 
-			<div class="[ filter-tag ]"> Talla </div> 
-			<div class="[ filter-tag ]"> Silueta </div> 
-			<div class="[ filter-tag ]"> Colección </div> 
+
+			<!--<div class="[ filter-tag ]"> Estilo </div>
+			<div class="[ filter-tag ]"> Talla </div>
+			<div class="[ filter-tag ]"> Silueta </div>
+			<div class="[ filter-tag ]"> Colección </div>-->
 
 			<!-- PRODUCT LIST -->
 			<div class="htheme_product_list" data-type="htheme_contained_loader"> <!-- htheme_contained_loader, htheme_contained_carousel, htheme_full_carousel -->
