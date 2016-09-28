@@ -139,8 +139,10 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 
 /*Margin*/
 .no-margin { margin: 0px!important; }
+.margin-top { margin-top: 20px!important; }
 .margin-top--small { margin-top: 10px!important; }
 .margin-bottom--small { margin-bottom: 10px!important; }
+.margin-bottom--none { margin-bottom: 0px!important; }
 
 @media(max-width: 768px ){ .margin-left--33-xs { margin-left: 33.333333333%!important; } }
 
@@ -456,6 +458,7 @@ a { text-decoration: none!important; }
 .background-color--gray--dark { background-color: #d5d4d4; }
 
 .border-bottom--dark {border-bottom: 1px solid #000000;}
+.border-bottom--none {border-bottom: 0px;}
 
 .woocommerce-page .woocommerce-Price-amount { color: #000000!important; }
 .archive.woocommerce-page .woocommerce-Price-amount { color: #fff!important; }
@@ -686,6 +689,7 @@ input[type=number]::-webkit-inner-spin-button,
 }
 .select-filter {
 	border-bottom: 1px solid #efefef;
+	height: 36px;
 }
 .select select {
 	padding: 5px 8px;
@@ -698,6 +702,9 @@ input[type=number]::-webkit-inner-spin-button,
 }
 .select-filter select {
 	height: 40px;
+	position: relative;
+	top: -2px;
+	left: -4px;
 }
 
 .variations select, .variations label { color: #000000!important; }
@@ -919,3 +926,17 @@ table.variations { border-bottom: 1px solid #FFF200!important;}
 /*My account*/
 
 .woocommerce-account td.order-total { font-size: 14px; }
+
+/*Filtro*/
+.item-filtro h3{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500!important;
+}
+.item-filtro p{ display: inline-block; }
+
+input:focus {
+box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)!important;
+-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)!important;
+-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)!important;
+}

@@ -54,7 +54,13 @@ if($sidebar == 'no_sidebar'){
 
 					<!-- Filter -->
 					<div class="htheme_sidebar_container">
-						<h2>Filtrado por</h2>
+						<h2>Filtrado por:</h2>
+					</div>
+					<div class="[ item-filtro ]"><h3>Producto: </h3><p>Gorra</p></div>
+					<div class="[ item-filtro ]"><h3>Género: </h3><p>Hombre</p></div>
+					<div class="[ item-filtro ]"><h3>Ajuste: </h3><p>Elástica</p></div>
+					<div class="htheme_sidebar_container [ margin-bottom--none margin-top ]">
+						<h2>Selecciona filtros</h2>
 					</div>
 					<div class="select select-filter">
 						<select name="producto" id="producto">
@@ -164,13 +170,7 @@ if($sidebar == 'no_sidebar'){
 					</div>
 				</div>
 			</div>
-			<!-- PRODUCT FILTER -->
 			<?php } ?>
-
-			<div class="[ filter-tag ]"> Estilo </div>
-			<div class="[ filter-tag ]"> Talla </div>
-			<div class="[ filter-tag ]"> Silueta </div>
-			<div class="[ filter-tag ]"> Colección </div>
 
 			<!-- PRODUCT LIST -->
 			<div class="htheme_product_list" data-type="htheme_contained_loader"> <!-- htheme_contained_loader, htheme_contained_carousel, htheme_full_carousel -->
