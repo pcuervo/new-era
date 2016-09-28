@@ -29,8 +29,8 @@ function iheb_oxi_effects_shortcode($atts) {
         $output = '<div class="image-ultimate-container">   <div class="image-ultimate-row"> ';
         $output .= ' <style>
             .hover-img-shadow:before, .hover-img-shadow-squre:before{ box-shadow: inset 0 0 0 12px rgba(255,255,255,0.6),0 1px 2px rgba(0,0,0,0.3); }
-            .image-ultimate-info-circle h3, .image-ultimate-info-circle-2 h3, .image-ultimate-info-square h3, .image-ultimate-main-sqr-2 h3, .image-ultimate-main-sqr-4 h3, .image-ultimate-info-square h3{ color:#fff ;font-size:20px; padding:30% 0 5% 0;border-bottom: 1px solid; font-weight: 500;}
-            .image-ultimate-info-circle p , .image-ultimate-info-circle-2 p, .image-ultimate-info-square p, .image-ultimate-main-sqr-2 p, .image-ultimate-main-sqr-4 p, .image-ultimate-info-square p{ color:#ffffff;font-size:14px; }
+            .image-ultimate-info-circle h3, .image-ultimate-info-circle-2 h3, .image-ultimate-info-square h3, .image-ultimate-main-sqr-2 h3, .image-ultimate-main-sqr-4 h3, .image-ultimate-info-square h3{ color:#fff ;font-size:20px !important; padding:30% 0 5% 0;border-bottom: 1px solid; font-weight: 500;}
+            .image-ultimate-info-circle p , .image-ultimate-info-circle-2 p, .image-ultimate-info-square p, .image-ultimate-main-sqr-2 p, .image-ultimate-main-sqr-4 p, .image-ultimate-info-square p{ color:#ffffff;font-size:14px !important; }
             </style> ';
 
         foreach ($iheb_oxi_meta as $info) {

@@ -2,8 +2,8 @@
 Contributors: Biplob Adhikari
 Tags: 3d, responsive, responsive image effects, awesome css3 effects, awesome image effects, image style, modern style, CSS Animation, css effects, css3, responsive plugin, css3 effects, effects, effects css3, responsive images, css3 powered effects, effects hover, hover, hover css effects, hover effects, mouse over top hover effects wordpress, animated image wp, 3d style effects, top image effects for wordpress, top image caption for wordpress, wordpress image hover plugin, image styles wordpress, best photo caption, best hover effects, best image caption wordpress, wordpress animation, css3 image caption, hover effect, css3 hover effects, css3 transition, animation, button, circle, css3, creative, css, effect, gallery, grid, hover, image, material, minimal, 3d, animated, animation, clean, css, css3, effects, hover, gallery, grid, hover, square, thumbnail, transition, caption, css3, hover, image, Caption Wordpress Plugin, latest css3 effects, Css Caption Plugin, pure css3 effects, awesome image effects, responsive hover effects, gallery, photogallery, photos, text effect, thumbnails, wordpress hover, ihover wordpress plugin, image hover, wp image caption, css3 transition, content hover, captions, image captions, pure css3 effects, css3 hover item, css3 effects for wordpress, 2016 top image caption. 
 Requires at least: 3.0.1
-Stable tag: 4.0
-Tested up to: 4.5.3
+Stable tag: 4.1
+Tested up to: 4.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -125,6 +125,9 @@ That’s all about the installation process. For further query you’re welcome 
 
 
 == Changelog ==
+
+= 4.0 = 
+* Fixed some Bugs
 
 = 4.0 = 
 * Added Bottom text option

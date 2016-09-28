@@ -59,85 +59,87 @@ if($sidebar == 'no_sidebar'){
 					<div class="[ item-filtro ]"><h3>Producto: </h3><p>Gorra</p></div>
 					<div class="[ item-filtro ]"><h3>Género: </h3><p>Hombre</p></div>
 					<div class="[ item-filtro ]"><h3>Ajuste: </h3><p>Elástica</p></div>
-					<div class="htheme_sidebar_container [ margin-bottom--none margin-top ]">
-						<h2>Selecciona filtros</h2>
-					</div>
-					<div class="select select-filter">
-						<select name="producto" id="producto">
-							<option value="">Tipo de producto</option>
-							<option value="gorra">gorra</option>
-							<option value="beanie">beanie</option>
-							<option value="knits">knits</option>
-							<option value="backpack">backpack</option>
-						</select>
-					</div>
-					<div class="select select-filter">
-						<select name="genero" id="genero">
-							<option value="">Género</option>
-							<option value="hombre">hombre</option>
-							<option value="mujer">mujer</option>
-							<option value="genero">genero</option>
-						</select>
-					</div>
-					<div class="select select-filter">
-						<select name="talla" id="talla">
-							<option value="">Talla</option>
-							<option value="7">7</option>
-							<option value="7 1/8">7 1/8</option>
-							<option value="7 1/4">7 1/4</option>
-							<option value="7 3/8">7 3/8</option>
-							<option value="sm">S-M</option>
-							<option value="ml">M-L</option>
-						</select>
-					</div>
-					<div class="select select-filter">
-						<select name="ajuste" id="ajuste">
-							<option value="">Ajuste</option>
-							<option value="Cerrada">Cerrada</option>
-							<option value="snapback">Snapback</option>
-							<option value="strapback">Strapback</option>
-							<option value="elastica">Elástica</option>
-						</select>
-					</div>
-					<div class="select select-filter">
-						<select name="visera" id="visera">
-							<option value="">Visera</option>
-							<option value="plana">Plana</option>
-							<option value="curva">Curva</option>
-						</select>
-					</div>
-					<div class="select select-filter">
-						<select name="silueta" id="silueta">
-							<option value="">Silueta</option>
-							<option value="59Fifty">59Fifty</option>
-							<option value="9Fifty">9Fifty</option>
-							<option value="39Thirty">39Thirty</option>
-							<option value="9Forty">9Forty</option>
-						</select>
-					</div>
-					<div class="select select-filter">
-						<select name="equipo" id="equipo">
-							<option value="">Equipo</option>
-							<option value="Yankees">Yankees</option>
-							<option value="Cowboys">Cowboys</option>
-							<option value="Diablos">Diablos</option>
-							<option value="Tomateros">Tomateros</option>
-							<option value="Lakers">Lakers</option>
-						</select>
-					</div>
-					<div class="select select-filter">
-						<select name="coleccion" id="coleccion">
-							<option value="">Colección</option>
-							<option value="Sideline">Sideline</option>
-							<option value="ac">AC</option>
-							<option value="Ghostbuster">Ghostbuster</option>
-							<option value="suicide-squad">Suicide Squad</option>
-							<option value="bca">BCA</option>
-							<option value="serie-caribe">Serie del Caribe</option>
-							<option value="juegos-olimpicos">Juegos Olímpicos</option>
-						</select>
-					</div>
 
+					<div class="[ margin-bottom ]">
+						<div class="htheme_sidebar_container [ margin-bottom--none margin-top ]">
+							<h2>Selecciona filtros</h2>
+						</div>
+						<div class="select select-filter">
+							<select name="producto" id="producto">
+								<option value="">Tipo de producto</option>
+								<option value="gorra">gorra</option>
+								<option value="beanie">beanie</option>
+								<option value="knits">knits</option>
+								<option value="backpack">backpack</option>
+							</select>
+						</div>
+						<div class="select select-filter">
+							<select name="genero" id="genero">
+								<option value="">Género</option>
+								<option value="hombre">hombre</option>
+								<option value="mujer">mujer</option>
+								<option value="genero">genero</option>
+							</select>
+						</div>
+						<div class="select select-filter">
+							<select name="talla" id="talla">
+								<option value="">Talla</option>
+								<option value="7">7</option>
+								<option value="7 1/8">7 1/8</option>
+								<option value="7 1/4">7 1/4</option>
+								<option value="7 3/8">7 3/8</option>
+								<option value="sm">S-M</option>
+								<option value="ml">M-L</option>
+							</select>
+						</div>
+						<div class="select select-filter">
+							<select name="ajuste" id="ajuste">
+								<option value="">Ajuste</option>
+								<option value="Cerrada">Cerrada</option>
+								<option value="snapback">Snapback</option>
+								<option value="strapback">Strapback</option>
+								<option value="elastica">Elástica</option>
+							</select>
+						</div>
+						<div class="select select-filter">
+							<select name="visera" id="visera">
+								<option value="">Visera</option>
+								<option value="plana">Plana</option>
+								<option value="curva">Curva</option>
+							</select>
+						</div>
+						<div class="select select-filter">
+							<select name="silueta" id="silueta">
+								<option value="">Silueta</option>
+								<option value="59Fifty">59Fifty</option>
+								<option value="9Fifty">9Fifty</option>
+								<option value="39Thirty">39Thirty</option>
+								<option value="9Forty">9Forty</option>
+							</select>
+						</div>
+						<div class="select select-filter">
+							<select name="equipo" id="equipo">
+								<option value="">Equipo</option>
+								<option value="Yankees">Yankees</option>
+								<option value="Cowboys">Cowboys</option>
+								<option value="Diablos">Diablos</option>
+								<option value="Tomateros">Tomateros</option>
+								<option value="Lakers">Lakers</option>
+							</select>
+						</div>
+						<div class="select select-filter">
+							<select name="coleccion" id="coleccion">
+								<option value="">Colección</option>
+								<option value="Sideline">Sideline</option>
+								<option value="ac">AC</option>
+								<option value="Ghostbuster">Ghostbuster</option>
+								<option value="suicide-squad">Suicide Squad</option>
+								<option value="bca">BCA</option>
+								<option value="serie-caribe">Serie del Caribe</option>
+								<option value="juegos-olimpicos">Juegos Olímpicos</option>
+							</select>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

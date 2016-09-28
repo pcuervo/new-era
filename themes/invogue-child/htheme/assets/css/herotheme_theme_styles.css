@@ -77,6 +77,8 @@ li.current-menu-item a,
 .htheme_nav ul .current-menu-parent > a,
 .htheme_nav ul li > ul li:hover > a{ color:#FFF200!important; }
 
+.sub-menu { z-index: 99; }
+
 .single-product .htheme_nav ul .current-menu-parent > a { color: #fff!important; }
 
 .htheme_inner_navigation { float: right!important; }
@@ -97,8 +99,8 @@ li.current-menu-item a,
 }*/
 .htheme_footer_holder .formas-pago img {
 	width: 70px;
-	padding-right: 10px;
-	padding-bottom: 10px;
+	border-radius: 5px;
+	margin: 5px;
 }
 
 .htheme_main_footer a, .htheme_main_footer p { line-height: 24px; color:#fff!important; }

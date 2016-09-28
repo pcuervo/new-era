@@ -5,7 +5,7 @@ Plugin URI: http://www.oxilab.org
 Description: Image Hover Effects Ultimate is an impressive, lightweight, responsive Image hover effects. Use modern and elegant CSS hover effects and animations.  
 Author: Biplob Adhikari
 Author URI: http://www.oxilab.org/
-Version: 4.0
+Version: 4.1
 */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
