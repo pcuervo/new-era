@@ -110,7 +110,7 @@ li.current-menu-item a,
 .htheme_main_footer .social-wrap a:hover p:before { color: #FFF200;  }
 .htheme_main_footer .social-wrap a img { vertical-align: middle; }
 
-.htheme_footer_social_wrap a { width: auto!important; color: #000000; text-transform: none!important; }
+.htheme_footer_social_wrap a { width: auto!important; color: #FFFFFF; text-transform: none!important; }
 .htheme_footer_social_wrap a:hover { text-decoration: underline!important; }
 .htheme_footer_social_wrap p { float: left!important; margin: 0 10px!important; line-height: 70px!important; }
 .htheme_footer_social_wrap .htheme_footer_social_item { display: none!important; }
@@ -236,8 +236,14 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 
 .single input[type=number]{ font-size: 22px!important; }
 
+.htheme_product_list_title {
+	height: 42px!important;
+	line-height: 22px;
+}
+
 	/*Archive*/
-.archive ul.products .htheme_product_list_title { height: 15px; }
+
+.archive ul.products .htheme_product_list_title { height: 42px; }
 
 	/*Image*/
 
@@ -321,6 +327,11 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 }
 
 .single .sku_wrapper { color: #000; }
+
+.single-product .htheme_social_row .htheme_social_icon {
+	font-size: 30px;
+	color: #333;
+}
 
 	/*Simple*/
 
@@ -509,14 +520,22 @@ input { text-transform: none!important;}
 
 button.htheme_btn_style_1{ display: inline-block; border: none;}
 
+.woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] { opacity: 1!important; }
+.htheme_cart_button_light { color: #000000!important; }
+
 /*Checkout*/
 
 .box-review {
-	background-color: #FFF200;
+	background-color: #ddd;
 	border-radius: 10px;
 	padding: 30px;
 }
-.woocommerce-checkout #payment, .place-order, .box-review th { background-color: #FFF200!important; }
+.box-review input[name="woocommerce_checkout_place_order"]{
+	background-color: #fff200!important;
+	color: #000000!important;
+	border: 0px!important;
+}
+.woocommerce-checkout #payment, .place-order, .box-review th { background-color: #ddd!important; }
 .box-review h3 { text-align: center; margin-bottom: 20px; }
 .box-review th, .box-review td { border: none!important;}
 .box-review td span { color: #000000!important; }
@@ -665,6 +684,9 @@ input[type=number]::-webkit-inner-spin-button,
 	overflow: hidden;
 	background: #fff url("arrowdown.gif") no-repeat 90% center;
 }
+.select-filter {
+	border-bottom: 1px solid #efefef;
+}
 .select select {
 	padding: 5px 8px;
 	width: 110%;
@@ -673,6 +695,9 @@ input[type=number]::-webkit-inner-spin-button,
 	background-color: transparent;
 	background-image: none;
 	appearance: none;
+}
+.select-filter select {
+	height: 40px;
 }
 
 .variations select, .variations label { color: #000000!important; }
