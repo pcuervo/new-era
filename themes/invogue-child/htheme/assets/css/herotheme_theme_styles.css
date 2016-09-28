@@ -582,7 +582,7 @@ body { height: 100%; }
 
 /*Sidebar*/
 
-.htheme_filter_dropdown { background-color: #FFF200!important; }
+.htheme_filter_dropdown { background-color: #f2f2f2!important; }
 
 .widget_product_categories select {
 	text-transform: none!important;
