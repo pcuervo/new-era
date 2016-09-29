@@ -188,17 +188,17 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 
 	/*Promo*/
 .htheme_product_list_new {
-	width: 70px!important; height: 70px!important;
-	line-height: 70px!important;
+	width: 80px!important; height: 30px!important;
+	line-height: 30px!important;
 	margin-bottom: 9px;
 	position: absolute!important;
 	font-weight: 400!important;font-size: 10px!important;
 	z-index: 1;
+	border-radius: 0px!important;
 }
 @media(max-width:480px){
 	.htheme_product_list_new {
-		width: 68px!important; height: 30px!important;
-		line-height: 30px!important;
+		width: 68px!important;
 		font-size: 9px!important;
 		border-radius: 0px!important;
 	}
@@ -427,7 +427,8 @@ body {
 
 .no-padding-bottom { padding-bottom: 0px!important;}
 
-.no-padding-top { padding-top: 0px!important; }
+.no-padding-top,
+.htheme_row.no-padding-top { padding-top: 0px!important; }
 .padding-top--xlarge { padding-top: 50px!important; }
 
 .paddin-top-bottom { padding-top: 10px; padding-bottom: 10px; }

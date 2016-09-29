@@ -30,7 +30,7 @@ $id = $product->id;
 ?>
 
 <!-- link a guía de tallas -->
-<a href="<?php echo site_url('/'); ?>/guia-de-tallas" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">Conoce tu talla</a>
+<a href="<?php echo site_url('/'); ?>/guia-de-tallas" target="_blank" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">Conoce tu talla</a>
 
 
 <div itemprop="description" class="[ margin-top ] htheme_single_product_excerpt htheme_default_content">

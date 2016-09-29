@@ -57,7 +57,7 @@ if($post_type == 'product'){
 ?>
 <?php if($item_count != 0 && $htheme_show_social !== 'false'){ ?>
 <!-- ROW -->
-<div class="htheme_row htheme_social_row htheme_no_padding <?php echo esc_attr($htheme_row_style); ?>">
+<div class="[ no-padding-top ] htheme_row htheme_social_row htheme_no_padding <?php echo esc_attr($htheme_row_style); ?>">
 	<?php foreach($htheme_social_array[0] as $social){ if($social['status'] == 'true'){?>
 	<div class="<?php echo esc_attr($social_col); ?>">
 		<div class="htheme_inner_col htheme_social_trigger" data-hover-type="hover_social" data-color="blue">

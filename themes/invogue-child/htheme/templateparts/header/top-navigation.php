@@ -85,6 +85,18 @@
 				<div class="htheme_main_navigation">
 					<div class="htheme_inner_navigation">
 						<div class="htheme_nav">
+
+							<?php
+								/*Prueba categorías con productos*/
+								/*$category = get_queried_object();
+								$theCount = $category->count;
+
+								if ( ( is_product_category( 'Streetstyle' ) ) && ( $theCount > 0 ) ){
+								    echo '<p>Total: ' . $theCount . ' products in this category</p>';
+								    echo '<p>Streetstyle</p>';
+								}*/
+							 ?>
+
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '', 'menu_id' => 'primary' ) ); ?>
 						</div>
 						<?php if($htheme_header_search_status == 'true' || class_exists( 'WooCommerce' )){ ?>

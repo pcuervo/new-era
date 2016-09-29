@@ -42,3 +42,14 @@ if ( ! woocommerce_products_will_display() )
 	}
 	?>
 </p>
+
+<?php
+/*$category = get_queried_object();
+$theCount = $category->count;
+
+if ( ( is_product_category( 'Streetstyle' ) ) && ( $theCount > 0 ) ){
+    echo 'Total: ' . $theCount . ' products in this category';
+} else {
+    echo 'There are no products in this category';
+}*/
+?>
