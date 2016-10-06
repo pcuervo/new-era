@@ -3,7 +3,7 @@
  * Plugin Name: WP Image Zoom
  * Plugin URI: https://wordpress.org/plugins/wp-image-zoooom/
  * Description: Add zoom effect over the an image, whether it is an image in a post/page or the featured image of a product in a WooCommerce shop 
- * Version: 1.3.1
+ * Version: 1.4
  * Author: Diana Burduja
  * Author URI: https://www.silkypress.com
  * License: GPL2
@@ -24,7 +24,7 @@ if ( ! class_exists( 'ImageZoooom' ) ) :
  * @class ImageZoooom
  */
 final class ImageZoooom {
-    public $version = '1.3.1';
+    public $version = '1.4';
     public $testing = false;
     public $free = true;
     protected static $_instance = null; 
@@ -97,7 +97,7 @@ final class ImageZoooom {
         add_filter( 'the_content', array( $this, 'find_bigger_image' ), 40 );
 
         add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) );
-        add_action( 'wp_head', array( $this, 'theme_bridge_compatibility' ) );
+        add_action( 'wp_head', array( $this, 'wp_head_compatibilities' ) );
 
         add_filter( 'wp_calculate_image_srcset', array( $this, 'wp_calculate_image_srcset' ), 40, 5  );
     }
@@ -221,12 +221,17 @@ final class ImageZoooom {
 
 
     /**
-     * Theme Bridge compatibility
+     * wp_head compatibilities 
      */
-    function theme_bridge_compatibility() {
-        if ( get_template() != 'bridge' ) return false;
+    function wp_head_compatibilities() {
+        $theme = get_template();
+        if ( $theme == 'bridge' ) { 
+            echo '<style type="text/css"> .wrapper { z-index: 40 !important; } </style>' . PHP_EOL;
+        }
 
-        echo '<style type="text/css"> .wrapper { z-index: 40 !important; } </style>' . PHP_EOL;
+        if ( $theme == 'artcore' ) {
+            echo '<style type="text/css"> .sidebar-menu-push { z-index: 40 !important; } </style>' . PHP_EOL;
+        } 
     }
 
 
@@ -263,6 +268,7 @@ final class ImageZoooom {
 
         $default = array(
             'with_woocommerce' => '1',
+            'exchange_thumbnails' => '1',
             'woo_categories' => (isset($general['woo_cat']) && $general['woo_cat'] == 1 ) ? '1' : '0',
             'lazy_load' => ( isset($general['force_lazyload']) && $general['force_lazyload'] == 1 ) ? '1' : '0',
             'options' => $options,
@@ -277,6 +283,9 @@ final class ImageZoooom {
 
         if ( isset($general['enable_woocommerce']) && empty($general['enable_woocommerce']))
             $default['with_woocommerce'] = '0';
+
+        if ( isset($general['exchange_thumbnails']) && empty($general['exchange_thumbnails']))
+            $default['exchange_thumbnails'] = '0';
 
         return $default;
     }
@@ -375,6 +384,9 @@ final class ImageZoooom {
 
         if (!isset($general['enable_woocommerce']))
             $general['enable_woocommerce'] = true;
+
+        if (!isset($general['exchange_thumbnails']))
+            $general['exchange_thumbnails'] = true;
 
         if ( !isset( $general['enable_mobile'] ) )
             $general['enable_mobile'] = false;

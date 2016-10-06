@@ -107,7 +107,7 @@ class ImageZoooom_Notices {
             $link = 'https://www.silkypress.com/wp-image-zoooom-pro-special-offer/?a=' . $this->convert_numbers_letters( $this->activation_time );
         }
 
-        $lower_part = sprintf( '<div style="margin-top: 7px;"><a href="%s">%s</a> | <a href="#" class="dismiss_notice"  target="_parent">%s</a></div>', $link, 'Get WP Image Zoooom PRO', 'Dismiss this notice' ); 
+        $lower_part = sprintf( '<div style="margin-top: 7px;"><a href="%s" target="_blank">%s</a> | <a href="#" class="dismiss_notice"  target="_parent">%s</a></div>', $link, 'Get WP Image Zoooom PRO', 'Dismiss this notice' ); 
 
         switch ( $notice ) {
             case '1_day' :

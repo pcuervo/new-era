@@ -28,7 +28,7 @@
     <h3><?php _e('Like this Plugin?'); ?></h3>
         <div class="metabox-holder"> 
         <p><?php ('Tell everyone your opinion about this plugin on the WordPress Plugin Repository.'); ?></p>
-        <p><a href="https://wordpress.org/support/view/plugin-reviews/wp-image-zoooom" target="_blank" class="button-primary"><?php _e('Rate Plugin'); ?></a></p>
+        <p><a href="https://wordpress.org/plugins/wp-image-zoooom/" target="_blank" class="button-primary"><?php _e('Rate Plugin'); ?></a></p>
         </div> 
     </div>   
 </div>

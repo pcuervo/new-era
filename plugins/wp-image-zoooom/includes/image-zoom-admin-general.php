@@ -23,6 +23,13 @@ include_once( 'premium-tooltips.php' );
     .control-label{ height: auto; }
 </style>
 
+<script type="text/javascript">
+
+    jQuery(document).ready(function($) {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
 <div class="wrap">
 
 <h2>WP Image Zoom</h2>
@@ -55,7 +62,7 @@ include_once( 'premium-tooltips.php' );
         <?php
             $iz_forms_helper->label_class = 'col-sm-6 control-label';
 
-        foreach ( array('enable_woocommerce', 'woo_cat', 'enable_mobile', 'remove_lightbox_thumbnails', 'remove_lightbox', 'force_lazyload', 'force_attachments', 'flexslider', 'huge_it_gallery' ) as $_field ) {
+        foreach ( array('enable_woocommerce', 'exchange_thumbnails', 'woo_cat', 'enable_mobile', 'remove_lightbox_thumbnails', 'remove_lightbox', 'force_lazyload', 'force_attachments', 'flexslider', 'huge_it_gallery' ) as $_field ) {
             $this_settings = $iz_admin->get_settings( $_field);
             $this_settings['value'] = '';
             if ( isset( $settings[$_field] ) ) {

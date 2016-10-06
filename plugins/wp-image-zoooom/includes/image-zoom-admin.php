@@ -210,6 +210,12 @@ class ImageZoooom_Admin {
                 'value' => true,
                 'input_form' => 'checkbox',
             ),
+            'exchange_thumbnails' => array(
+                'label' => __('Exchange the thumbnail with main image on WooCommerce products', 'zoooom'),
+                'value' => true,
+                'input_form' => 'checkbox',
+                'description' => __('On a WooCommerce gallery, when clicking on a thumbnail, not only the main image will be replaced with the thumbnail\'s image, but also the thumbnail will be replaced with the main image', 'zoooom'),
+            ),
             'enable_mobile' => array(
                 'label' => __('Enable the zoom on mobile devices', 'zoooom'),
                 'value' => false,
@@ -526,6 +532,7 @@ class ImageZoooom_Admin {
         if( $post == null ) {
             return array(
                 'enable_woocommerce' => true,
+                'exchange_thumbnails' => true,
                 'enable_mobile' => false,
                 'woo_cat' => false,
                 'force_woocommerce' => true,
@@ -535,6 +542,8 @@ class ImageZoooom_Admin {
 
         if ( ! isset( $post['enable_woocommerce'] ) ) 
             $post['enable_woocommerce'] = false;
+        if ( ! isset( $post['exchange_thumbnails'] ) ) 
+            $post['exchange_thumbnails'] = false;
         if ( ! isset( $post['enable_mobile'] ) ) 
             $post['enable_mobile'] = false;
         if ( ! isset( $post['woo_cat'] ) ) 
@@ -546,6 +555,7 @@ class ImageZoooom_Admin {
 
         $new_settings = array(
             'enable_woocommerce' => $this->validateCheckbox('enable_woocommerce', $post['enable_woocommerce']),
+            'exchange_thumbnails' => $this->validateCheckbox('exchange_thumbnails', $post['exchange_thumbnails']),
             'enable_mobile' => $this->validateCheckbox('enable_mobile', $post['enable_mobile']),
             'woo_cat' => $this->validateCheckbox('woo_cat', $post['woo_cat']),
             'force_woocommerce' => $this->validateCheckbox('force_woocommerce', $post['force_woocommerce']),

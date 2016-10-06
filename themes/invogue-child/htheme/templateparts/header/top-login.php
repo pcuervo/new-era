@@ -29,6 +29,7 @@
 			<div class="htheme_icon_search_btn [ inline-block ][ middle ][ position-initial ][ height--30 ][ width--20 ]">
 				<img class="relative top---16" src="<?php echo get_stylesheet_directory_uri(); ?>/htheme/assets/images/icons/search.png" alt="icono carrito">
 			</div>
+			<input type="hidden" name="post_type" value="product" />
 	</form>
 </div>
 

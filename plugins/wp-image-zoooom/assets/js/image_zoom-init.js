@@ -65,24 +65,28 @@ jQuery(document).ready(function( $ ){
                     } else {
                         obj1.removeAttr( attr );
                     }
-                    if ( temp && temp.length > 0 ) {
-                        obj2.attr(attr, temp);
-                    } else {
-                        obj2.removeAttr( attr );
+                    if ( IZ.exchange_thumbnails == '1' ) {
+                        if ( temp && temp.length > 0 ) {
+                            obj2.attr(attr, temp);
+                        } else {
+                            obj2.removeAttr( attr );
+                        }
                     }
                 });
 
                 // Exchange the link sources
                 var temp;
                 temp = obj2.parent().attr('href');
-                obj2.parent().attr('href', obj1.parent().attr('href'));
+                if ( IZ.exchange_thumbnails == '1' ) {
+                    obj2.parent().attr('href', obj1.parent().attr('href'));
+                }
                 obj1.parent().attr('href', temp );
 
                 // Set the obj1.src = the link source
                 obj1.attr('src', temp ); 
 
                 // Set the obj2.src = data-thumbnail-src
-                if ( obj1.data('thumbnail-src') ) {
+                if ( obj1.data('thumbnail-src') && IZ.exchange_thumbnails == '1' ) {
                     obj2.attr( 'src', obj1.attr('data-thumbnail-src'));
                 }
 

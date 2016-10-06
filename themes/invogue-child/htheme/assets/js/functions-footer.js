@@ -9,7 +9,9 @@ var $=jQuery.noConflict();
         \*------------------------------------*/
         $(window).ready(function(){
             footerBottom();
-            $( "#spinner" ).spinner();
+            if ( $('.js-spinner').length > 0 ){
+                $('.js-spinner').spinner();
+            }
         });
 
         $(window).on('resize', function(){
