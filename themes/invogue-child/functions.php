@@ -83,3 +83,10 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_r
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 20 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 30 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
+
+
+/*------------------------------------*\
+	#INCLUDES
+\*------------------------------------*/
+
+	require_once('inc/post-types.php');

@@ -9,7 +9,7 @@
  * as little as possible, but it does happen. When this occurs the version of the template file will.
  * be bumped and the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
+ * @see 	http://docs.woothemes.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
  * @version 1.6.4
@@ -31,10 +31,10 @@ global $product;
 					<span><?php echo $product->get_categories( ', ', '' . _n( 'Category:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
 				<?php } ?>
 				<?php if($product->get_sku()){ ?>
-				<span class="[ hidden ]"> Product SKU: <a> <?php echo esc_html($product->get_sku()); ?> </a> </span>
+				<span class="[ hidden ]">Product SKU: <a> <?php echo esc_html($product->get_sku()); ?> </a> </span>
 				<?php } ?>
 				<?php if($product->get_tags()){ ?>
-					<span class="[ hidden ]"> Tags: <?php echo $product->get_tags( ', ', '' . _n( 'Tags:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
+					<span class="[ hidden ]">Tags: <?php echo $product->get_tags( ', ', '' . _n( 'Tags:', '', -1, 'woocommerce' ) . ' ', '' ); ?> </span>
 				<?php } ?>
 			</div>
 		</div>
@@ -44,12 +44,24 @@ global $product;
 
 <!-- SILUETA -->
 
+<?php
+	$taxSiluetas = array(
+	    'product_cat',
+	);
+
+	$termsSiluetas = get_terms($taxSiluetas);
+	$siluetas = $termsSiluetas[0];
+	$siluetaSlug = $siluetas->slug;
+	$siluetaName = $siluetas->name;
+
+?>
+
 <div class="htheme_row">
 	<div class="htheme_container">
 		<div class="htheme_inner_col">
 			<!-- TITLE SIDE BY SIDE ICON -->
 			<div class="htheme_title_container" data-title-type="default">
-				<div class="htheme_title"><h2 class="[ text-left ]">SILUETA 59FIFTY FITTED</h2></div>
+				<div class="htheme_title"><h2 class="[ text-left ]">Silueta <?php echo $siluetaName; ?></h2></div>
 			</div>
 		</div>
 	</div>
