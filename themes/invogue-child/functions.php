@@ -90,3 +90,4 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_s
 \*------------------------------------*/
 
 	require_once('inc/post-types.php');
+	require_once('inc/taxonomies.php');

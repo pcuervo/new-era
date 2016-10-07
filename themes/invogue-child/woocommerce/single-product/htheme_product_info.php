@@ -66,6 +66,26 @@ global $product;
 		</div>
 	</div>
 </div>
+
+<?php
+	$siluetaArgs = array(
+		'post_type' => 'silueta',
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'tipo',
+				'field'    => 'slug',
+				'terms'    => $siluetaSlug
+			),
+		),
+	);
+	$siluetaQuery = new WP_Query( $args );
+	echo '<pre>';
+		print_r($siluetaQuery);
+	echo '</pre>';
+
+?>
+
+
 <div class="htheme_row">
 	<div class="htheme_container">
 		<!-- PRODUCT LIST -->
