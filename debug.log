@@ -554,3 +554,5 @@ Stack trace:
 #4 /Users/rauldezamacona/Documents/sites/new-era/wp-admin/admin-ajax.php(22): require_once('/Users/rauldeza...')
 #5 {main}
   thrown in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue-child/inc/taxonomies.php on line 194
+[07-Oct-2016 20:11:13 UTC] functions child
+[07-Oct-2016 20:11:17 UTC] functions child
