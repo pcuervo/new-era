@@ -541,3 +541,16 @@ Stack trace:
 [07-Oct-2016 20:03:14 UTC] functions child
 [07-Oct-2016 20:05:10 UTC] functions child
 [07-Oct-2016 20:05:15 UTC] functions child
+[07-Oct-2016 20:07:11 UTC] functions child
+[07-Oct-2016 20:07:16 UTC] functions child
+[07-Oct-2016 20:09:12 UTC] functions child
+[07-Oct-2016 20:09:16 UTC] functions child
+[07-Oct-2016 20:09:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function insert_muestra_taxonomy_terms() in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue-child/inc/taxonomies.php:194
+Stack trace:
+#0 /Users/rauldezamacona/Documents/sites/new-era/wp-includes/plugin.php(524): custom_taxonomies_callback('')
+#1 /Users/rauldezamacona/Documents/sites/new-era/wp-settings.php(411): do_action('init')
+#2 /Users/rauldezamacona/Documents/sites/new-era/wp-config.php(91): require_once('/Users/rauldeza...')
+#3 /Users/rauldezamacona/Documents/sites/new-era/wp-load.php(39): require_once('/Users/rauldeza...')
+#4 /Users/rauldezamacona/Documents/sites/new-era/wp-admin/admin-ajax.php(22): require_once('/Users/rauldeza...')
+#5 {main}
+  thrown in /Users/rauldezamacona/Documents/sites/new-era/wp-content/themes/invogue-child/inc/taxonomies.php on line 194
