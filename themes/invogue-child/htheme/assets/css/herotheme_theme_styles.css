@@ -146,6 +146,13 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link--
 .margin-bottom--small { margin-bottom: 10px!important; }
 .margin-bottom--none { margin-bottom: 0px!important; }
 
+/*Padding*/
+.no-padding { padding: 0px!important; }
+.padding-top { padding-top: 20px!important; }
+.padding-top--small { padding-top: 10px!important; }
+.padding-bottom--small { padding-bottom: 10px!important; }
+.padding-bottom--none { padding-bottom: 0px!important; }
+
 @media(max-width: 768px ){ .margin-left--33-xs { margin-left: 33.333333333%!important; } }
 
 /*Display*/
