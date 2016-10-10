@@ -277,11 +277,11 @@ class AitImport {
 	 */
 	public function validate_row($data) {
 		//VALIDAR QUE LOS CAMPOS REQUERIDOS ESTEN SETEADOS Y NO ESTEN VACIOS
-		/*
-		if(!isset($data[0]) || empty($data[0]) || !isset($data[1]) || empty($data[1]) || !isset($data[2]) || empty($data[2]) || !isset($data[3]) || empty($data[3]) || !isset($data[12]) || empty($data[12]) || !isset($data[13]) || empty($data[13]) || !isset($data[14]) || empty($data[14]) || !isset($data[15]) || empty($data[15]) || !isset($data[22]) || empty($data[22]) || !isset($data[23]) || empty($data[23]) || !isset($data[24]) || empty($data[24]) ) {
+		
+		if(!isset($data[0]) || empty($data[0]) || !isset($data[1]) || empty($data[1]) || !isset($data[2]) || empty($data[2]) || !isset($data[3]) || empty($data[3]) ||  !isset($data[12]) || empty($data[12]) || !isset($data[16]) || empty($data[16]) || !isset($data[14]) || empty($data[14]) || !isset($data[15]) || empty($data[15]) ||  !isset($data[25]) || empty($data[25]) || !isset($data[23]) || empty($data[23]) || !isset($data[24]) || empty($data[24]) ) {
 	    	return true;
 	    }
-	    */
+	    
 	    //VALIDAR QUE EL PRECIO SEA UN VALOR NUMERICO >= 1
 	    if($data[12] < 0 || !is_numeric($data[12])) {
 	    	return true;
@@ -359,6 +359,11 @@ class AitImport {
 	    return $string;
 	}
 
+	function sanitize_txt ( $text ) {
+        $san_text = filter_var($text, FILTER_SANITIZE_STRING, FILTER_FLAG_ENCODE_HIGH | FILTER_FLAG_STRIP_LOW ) ;
+        return $san_text;
+    }  
+
 	/**
 	 * Import items from CSV file
 	 *
@@ -403,7 +408,7 @@ class AitImport {
 			// $handle = Encoding::toUTF8($handle);
 			//VARIABLE PARA PRUEBAS, ELIMINAR CONDICION DEL WHILE EN PRODUCCION
 			$insertar = 0;
-			while (($data_row = fgetcsv($handle, 10000, $delim, '"')) !== FALSE /* && $insertar < 1 */) {
+			while (($data_row = fgetcsv($handle, 10000, $delim, '"')) !== FALSE /* && $insertar < 1 */ ) {
 				
 				$ignore = false;
 				// if first line define separator for microsoft office
@@ -495,12 +500,15 @@ class AitImport {
 
 						$attrs['post_title'] = $data_row[2]; //columna 'nombre' del archivo csv
 						$attrs['post_content'] = '';	//columna 'descripcion' del archivo csv	
-						
+						//$sku_exitosos .= '['.$attrs['post_content'].']';
+						//$attrs['post_content'] = sanitize_post_field( 'post_content', $post_content, $post_id, 'db' );
+						//$attrs = sanitize_post($attrs, 'db');
 						// insert or update
 						$post_id = wp_insert_post( $attrs, true );
 
 						if ( is_wp_error($post_id) ){
 							echo '<div class="error"><p>' . $post_id->get_error_message() . ' - SKU : '.$data_row[0].'</p></div>';
+							//var_dump($post_id->get_error_data());
 						} else {
 							$insertar++;
 							$sku_exitosos .= $data_row[1].', ';
@@ -541,6 +549,7 @@ class AitImport {
 									$aux = substr($opt, 0, 8);
 									if($aux == 'TAXGORRA') { $opt = $aux; }
 									*/
+									$data_row[$key] = $this->sanitize_txt($data_row[$key]);
 									switch ($opt) {
 										case 'UPC':
 												$opt = '_sku';
@@ -549,7 +558,7 @@ class AitImport {
 										case 'DESCRIPCION':
 												//$opt = 'post_title';
 												//update_post_meta( $post_id, $opt, $data_row[$key] );
-												$post_content .= $this->limpiarCaracteresEspeciales($data_row[$key]);
+												$post_content .= $this->sanitize_txt($data_row[$key]);
 												$post_content .= '<ul>';
 											break;
 										case 'PRECIO':
@@ -588,7 +597,7 @@ class AitImport {
 												}
 											break;											
 										case 'SE MUESTRA EN':
-												if(!empty($data_row[$key]) && isset($data_row[$key])) {
+												if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
 													$term_id = get_term_by('name', $data_row[$key], 'semuestraen');
 													if ($term_id){
 														$result = wp_set_post_terms($post_id, $term_id->term_id, 'semuestraen', true);
@@ -601,7 +610,7 @@ class AitImport {
 											break;
 										case 'GENERO':
 												//$sku_exitosos .= $data_row[$key].' - 1 ->';
-												if(!empty($data_row[$key]) && isset($data_row[$key])) {
+												if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
 													$term_id = get_term_by('name', $data_row[$key], 'genero');
 													//$sku_exitosos .= $term_id->term_id.' - 2 ->';
 													if ($term_id){
@@ -615,7 +624,7 @@ class AitImport {
 												}
 											break;
 										case 'SILUETA':
-												if(!empty($data_row[$key]) && isset($data_row[$key])) {
+												if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
 													$term_id = get_term_by('name', $data_row[$key], 'silueta');
 													if ($term_id){
 														$result = wp_set_post_terms($post_id, $term_id->term_id, 'silueta', true);
@@ -627,7 +636,7 @@ class AitImport {
 												}
 											break;
 										case 'VICERA':
-												if(!empty($data_row[$key]) && isset($data_row[$key])) {
+												if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
 													$term_id = get_term_by('name', $data_row[$key], 'vicera');
 													if ($term_id){
 														$result = wp_set_post_terms($post_id, $term_id->term_id, 'vicera', true);
@@ -639,7 +648,7 @@ class AitImport {
 												}
 											break;
 										case 'AJUSTE':
-												if(!empty($data_row[$key]) && isset($data_row[$key])) {
+												if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
 													$term_id = get_term_by('name', $data_row[$key], 'ajuste');
 													if ($term_id){
 														$result = wp_set_post_terms($post_id, $term_id->term_id, 'ajuste', true);
@@ -651,7 +660,7 @@ class AitImport {
 												}
 											break;
 										case 'EQUIPO':
-												if(!empty($data_row[$key]) && isset($data_row[$key])) {
+												if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
 													$term_id = get_term_by('name', $data_row[$key], 'equipo');
 													if ($term_id){
 														$result = wp_set_post_terms($post_id, $term_id->term_id, 'equipo', true);
@@ -663,7 +672,7 @@ class AitImport {
 												}
 											break;
 										case 'COLECCION':
-												if(!empty($data_row[$key]) && isset($data_row[$key])) {
+												if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
 													$term_id = get_term_by('name', $data_row[$key], 'coleccion');
 													if ($term_id){
 														$result = wp_set_post_terms($post_id, $term_id->term_id, 'coleccion', true);
@@ -703,8 +712,8 @@ class AitImport {
 												}
 												else {
 													if ($opt == 'BULLET1' || $opt == 'BULLET2' || $opt == 'BULLET3' || $opt == 'BULLET4' || $opt == 'BULLET5' || $opt == 'BULLET6' || $opt == 'BULLET7' || $opt == 'BULLET8' ) {
-														if(!empty($data_row[$key]) && isset($data_row[$key])) {
-															$post_content .= '<li>'.$this->limpiarCaracteresEspeciales($data_row[$key]).'</li>';
+														if(!empty($data_row[$key]) && isset($data_row[$key]) && $data_row[$key] != '') {
+															$post_content .= '<li>'.$this->sanitize_txt($data_row[$key]).'</li>';
 														}
 													} 
 													else {
@@ -722,6 +731,7 @@ class AitImport {
 
 								//FINALIZAR DE SETEAR EL CONETENIDO 
 								$post_content .= '</ul>';
+								//$post_content = sanitize_post_field( 'post_content', $post_content, $post_id, 'db' );
 								$my_post = array(
 								    'ID'           => $post_id,
 								    'post_content' => $post_content,
