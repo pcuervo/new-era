@@ -28,20 +28,6 @@ global $post;
 global $product;
 $id = $product->id;
 ?>
-
-<!-- link a guía de tallas -->
-<a href="<?php echo site_url('/'); ?>/guia-de-tallas" target="_blank" class="[ line-height--50 ] htheme_btn_style_1 btn-primary">Conoce tu talla</a>
-
-
-<div itemprop="description" class="[ margin-top ] htheme_single_product_excerpt htheme_default_content">
+<div itemprop="description" class="[ margin-top no-padding ] htheme_single_product_excerpt htheme_default_content">
 	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
 </div>
-<div class="[ margin-bottom--large ]">
-	<?php echo $product->get_categories( ', ', '<span class="htheme_single_product_category htheme_h2_sub ">' . _n( 'Category:', '', 'woocommerce' ) . ' ', '</span>' ); ?>
-</div>
-<!--<p>ID: <?php echo $id; ?></p>-->
-<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
-		<span class="sku_wrapper [ font-weight--200 ][ block margin-bottom ]"><?php esc_html_e( 'ID:', 'woocommerce' ); ?> <span class="sku" itemprop="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : esc_html__( 'N/A', 'woocommerce' ); ?></span></span>
-<?php endif; ?>
-
-

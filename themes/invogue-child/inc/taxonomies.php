@@ -204,10 +204,11 @@ function custom_taxonomies_callback(){
 
 //Custom terms
 wp_insert_term('9fifty', 'tipo');
-wp_insert_term('9fifty', 'tipo');
-wp_insert_term('9fifty', 'tipo');
-wp_insert_term('9fifty', 'tipo');
-wp_insert_term('9fifty', 'tipo');
+wp_insert_term('59fifty', 'tipo');
+wp_insert_term('19twenty', 'tipo');
+wp_insert_term('39thirty', 'tipo');
+wp_insert_term('9forty', 'tipo');
+wp_insert_term('9twenty', 'tipo');
 
 
 
